@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+__MACOSX/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Build
+dist/
+.cache/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Binarios grandes — el PDF y ZIP ya están en support/ pero no en git
+# (demasiado pesados para el repo — mantener localmente o en Drive)
+*.pdf
+*.zip
