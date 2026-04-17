@@ -14,7 +14,7 @@ Cuando se necesita revisar el estado de un sitio web.
 - ¿Se usa la tipografía Gotham?
 - ¿Los colores corresponden al manual de identidad?
 - ¿Los logos usados son los oficiales de `support/logotipos/`?
-- ¿Los textos reflejan el tono de empresa tech de California?
+- ¿Los textos reflejan el tono de startup tecnológica?
 
 ### 2. Contenido
 - ¿Los datos de contacto están actualizados?

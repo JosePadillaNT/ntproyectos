@@ -6,7 +6,7 @@ Trabajo con el equipo comercial (sin conocimientos técnicos) y con el CIO.
 
 ## La empresa
 
-**Next Group** es el holding corporativo de tecnología con sede en California.  
+**Next Group** es el holding corporativo de tecnología con sede en startup tecnológica.  
 Operamos bajo dos empresas principales:
 - **Next Technologies** — empresa tecnológica, cara comercial al mercado
 - **NT Soluciones** — suite de software empresarial
@@ -14,10 +14,10 @@ Operamos bajo dos empresas principales:
 ### Presencia actual
 | País | Dominio | Estado |
 |---|---|---|
-| República Dominicana 🇩🇴 | next-technologies.com.do | ✅ Activo |
-| México 🇲🇽 | next-technologies.com.mx | ✅ Activo |
-| Colombia 🇨🇴 | next-technologies.com.co | 🔧 Por crear |
-| España 🇪🇸 | next-technologies.es | 🔧 Por crear |
+| República Dominicana | next-technologies.com.do | Activo |
+| México | next-technologies.com.mx | Activo |
+| Colombia | next-technologies.com.co | Por crear |
+| España | next-technologies.es | Por crear |
 
 ## Productos NT Soluciones
 

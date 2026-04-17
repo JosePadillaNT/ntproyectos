@@ -14,7 +14,7 @@ description: >
 - ¿Se usa tipografía Gotham? (verificar con `support/docs/brand-guide.md`)
 - ¿Los colores corresponden al manual de identidad?
 - ¿Los logos son los oficiales de `support/logotipos/`?
-- ¿El tono de texto es profesional y tecnológico (estilo empresa California)?
+- ¿El tono de texto es profesional y tecnológico (estilo startup tecnológica)?
 
 ### 2. Contenido
 - ¿Datos de contacto actualizados? (teléfono, email, WhatsApp, dirección)

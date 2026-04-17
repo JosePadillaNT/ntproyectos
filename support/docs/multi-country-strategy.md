@@ -1,4 +1,4 @@
-# 🌍 Estrategia Multi-País — Sin dominio .com
+# Estrategia Multi-País — Sin dominio .com
 
 ## El desafío
 Next Technologies no tiene el dominio `.com`. La estrategia se basa en **dominios por país**, lo cual es una práctica común y tiene ventajas reales.
@@ -46,7 +46,7 @@ Cada sitio tiene su `config.js` con datos locales:
 export const country = {
   code: 'mx',
   name: 'México',
-  flag: '🇲🇽',
+  flag: 'MX',
   phone: '+52 55 3192 8571',
   whatsapp: '525531928571',
   email: 'ventas@next-technologies.com.mx',
@@ -65,10 +65,10 @@ export const country = {
 
 | País | Dominio | Hosting recomendado |
 |---|---|---|
-| 🇩🇴 Rep. Dominicana | next-technologies.com.do | Netlify / Cloudflare Pages |
-| 🇲🇽 México | next-technologies.com.mx | Netlify / Cloudflare Pages |
-| 🇨🇴 Colombia | next-technologies.com.co | Netlify / Cloudflare Pages |
-| 🇪🇸 España | next-technologies.es | Netlify / Cloudflare Pages |
+| DO Rep. Dominicana | next-technologies.com.do | Netlify / Cloudflare Pages |
+| MX México | next-technologies.com.mx | Netlify / Cloudflare Pages |
+| CO Colombia | next-technologies.com.co | Netlify / Cloudflare Pages |
+| ES España | next-technologies.es | Netlify / Cloudflare Pages |
 
 **Recomendación:** Cloudflare Pages — deploy directo desde GitHub, CDN global, SSL automático, gratis.
 
@@ -92,8 +92,8 @@ Cambio en GitHub → CI/CD detecta país afectado → Build → Deploy automáti
 
 | País | Nombre del documento | Autoridad fiscal |
 |---|---|---|
-| 🇲🇽 México | CFDI | SAT |
-| 🇩🇴 Rep. Dominicana | NCF / e-CF | DGII |
-| 🇨🇴 Colombia | Factura Electrónica | DIAN |
-| 🇪🇸 España | FacturaE | AEAT |
-| 🇨🇷 Costa Rica | Factura Electrónica | Hacienda |
+| MX México | CFDI | SAT |
+| DO Rep. Dominicana | NCF / e-CF | DGII |
+| CO Colombia | Factura Electrónica | DIAN |
+| ES España | FacturaE | AEAT |
+| CR Costa Rica | Factura Electrónica | Hacienda |

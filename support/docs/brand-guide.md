@@ -1,4 +1,4 @@
-# 🎨 Guía de Identidad de Marca — Next Technologies / NT Group
+# Guía de Identidad de Marca — Next Technologies / NT Group
 
 > Referencia oficial extraída del Manual de Identidad V2.
 > Archivo completo: `support/Next_ManualIdentidadV2.pdf`
@@ -8,7 +8,7 @@
 ## 1. Estructura de marcas
 
 ```
-Next Group  (Holding corporativo — California)
+Next Group  (Holding tecnológico)
 ├── Next Technologies  (Empresa de tecnología — cara comercial)
 └── NT Soluciones      (Suite de productos de software)
     ├── Business
@@ -94,7 +94,7 @@ Cada producto tiene 4 variantes en `NT Soluciones/`:
 
 ## 5. Tono de comunicación
 
-Next Technologies es una **empresa de tecnología de California**. El tono debe reflejar:
+Next Technologies es una **startup tecnológica**. El tono debe reflejar:
 
 - **Profesional pero accesible** — no frío ni corporativo
 - **Innovador** — tecnología de punta, soluciones modernas

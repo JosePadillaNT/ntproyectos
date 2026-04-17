@@ -47,7 +47,7 @@ Antes de responder, consulto:
 
 ## La empresa
 
-**Next Group** — Holding tecnológico, California
+**Next Group** — Holding tecnológico
 **Next Technologies** — Empresa tech (cara al mercado)
 **NT Soluciones** — Suite: Business, FactoIA, Hospitality, iSquare, Nómina, Orders, Valid
 **FactoSuite** — Suite de facturación electrónica multi-país

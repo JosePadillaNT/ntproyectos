@@ -39,7 +39,7 @@
 
 ---
 
-### 👥 Nómina
+### Nómina
 **Descripción:** Gestión completa de nómina y recursos humanos. Cálculo automático de impuestos, prestaciones y timbrado de recibos.  
 **Mercado objetivo:** Empresas con 10+ empleados.  
 **Países disponibles:** MX, DO  
@@ -47,7 +47,7 @@
 
 ---
 
-### 📋 Orders
+### Orders
 **Descripción:** Sistema de gestión de pedidos y órdenes de trabajo. Flujo completo desde la solicitud hasta la entrega y facturación.  
 **Mercado objetivo:** Distribuidoras, empresas de servicios, restaurantes.  
 **Países disponibles:** MX, DO, CO  
@@ -55,7 +55,7 @@
 
 ---
 
-### ✅ Valid
+### Valid
 **Descripción:** Plataforma de validación y compliance fiscal. Verifica la autenticidad de facturas electrónicas ante los organismos fiscales de cada país.  
 **Mercado objetivo:** Contadores, áreas de finanzas, auditorías.  
 **Países disponibles:** MX, DO, CO, ES  
@@ -86,4 +86,4 @@
 | Valid | ✅ | ✅ | ✅ | ✅ |
 | FactoSuite | ✅ | ✅ | ✅ | ✅ |
 
-✅ Disponible · 🔧 En desarrollo / pendiente de lanzamiento
+Disponible / En desarrollo
