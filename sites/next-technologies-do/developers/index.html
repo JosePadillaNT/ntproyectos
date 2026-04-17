@@ -85,6 +85,14 @@
   </style>
 </head>
 <body>
+  <!-- ── Auth guard ── -->
+  <script>
+    (function() {
+      var token = sessionStorage.getItem('nt_dev_token');
+      if (!token) { window.location.replace('./login.html'); }
+    })();
+  </script>
+
 
   <!-- TOP BAR -->
   <div class="dev-topbar">
@@ -95,6 +103,8 @@
       <span class="dev-topbar-badge">v3.1.0 · República Dominicana</span>
     </div>
     <div class="dev-topbar-right">
+      <span id="user-badge" style="font-size:.75rem;color:#64748b;font-family:'JetBrains Mono',monospace;background:#0f172a;border:1px solid #1e293b;padding:.2rem .65rem;border-radius:100px;"></span>
+      <button onclick="logout()" style="background:none;border:1px solid #1e293b;color:#64748b;font-size:.75rem;padding:.2rem .65rem;border-radius:100px;cursor:pointer;font-family:'JetBrains Mono',monospace;transition:all .2s;" onmouseover="this.style.color='#f87171';this.style.borderColor='#f87171'" onmouseout="this.style.color='#64748b';this.style.borderColor='#1e293b'">Cerrar sesión</button>
       <a href="./openapi.yaml" class="spec-link" target="_blank">openapi.yaml</a>
       <a href="../index.html" class="back">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
@@ -824,6 +834,19 @@ components:
               mensaje:
                 type: string
 `;
+
+    // ── Logout ──
+    function logout() {
+      sessionStorage.removeItem('nt_dev_token');
+      sessionStorage.removeItem('nt_dev_user');
+      sessionStorage.removeItem('nt_dev_login_ts');
+      window.location.replace('./login.html');
+    }
+
+    // ── Show user in topbar ──
+    var u = sessionStorage.getItem('nt_dev_user');
+    if (u) { var badge = document.getElementById('user-badge'); if (badge) badge.textContent = u; }
+
     const el = document.getElementById('elements-api');
     if (el) {
       el.apiDescriptionDocument = spec;
