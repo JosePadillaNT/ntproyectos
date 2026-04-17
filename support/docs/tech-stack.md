@@ -1,114 +1,104 @@
-# ⚙️ Stack Técnico — NT Landing Pages
+# Stack Técnico — NT Landing Pages
 
-## Decisiones técnicas
+## Decisiones de diseño
 
-### Frontend
-| Tecnología | Versión | Motivo |
+### Tema
+- **Light theme** — fondo blanco / gris muy claro (#f8fafc)
+- Sin dark mode en sitios de marketing
+- Colores de acento para resaltar lo importante, fondo neutro para legibilidad
+
+### Paleta de colores
+| Rol | Color | Hex |
 |---|---|---|
-| **HTML5** | Estándar | Base semántica, SEO nativo |
-| **VanillaJS** | ES2022+ | Sin dependencias, máximo rendimiento |
-| **Tailwind CSS** | v4 | Utilidades CSS, consistencia de diseño, fácil de mantener |
+| Fondo principal | Blanco roto | #f8fafc |
+| Fondo secundario | Gris muy claro | #f1f5f9 |
+| Texto principal | Casi negro | #0f172a |
+| Texto secundario | Gris | #64748b |
+| Acento primario | Índigo NT | #4f46e5 |
+| Acento secundario | Violeta | #7c3aed |
+| Highlight | Cyan | #06b6d4 |
+| Bordes | Gris claro | #e2e8f0 |
 
-**Sin frameworks pesados** (no React, no Vue, no Angular).  
-Motivo: Los sitios son principalmente informativos. La velocidad de carga y el SEO son prioritarios. El equipo comercial no necesita un SPA.
-
----
-
-### Estructura de cada sitio
-
-```
-sites/next-technologies-mx/
-├── index.html          ← página principal
-├── config.js           ← datos del país (teléfono, email, productos, legal)
-├── assets/
-│   ├── css/
-│   │   └── main.css    ← estilos generados por Tailwind
-│   ├── js/
-│   │   └── main.js     ← interacciones (menu mobile, formularios, animaciones)
-│   └── images/         ← imágenes del sitio
-└── README.md           ← instrucciones de deploy para este país
-```
+### Tipografía
+- **Fuente**: Inter (Google Fonts) — equivalente web de Gotham
+- Títulos: 700–900 weight
+- Cuerpo: 400–500 weight
 
 ---
 
-### Design System (tokens Tailwind)
+## Librerías (CDN, sin npm)
 
-Basado en la identidad de marca NT. Definidos en `tailwind.config.js` compartido:
+| Necesidad | Librería | Por qué |
+|---|---|---|
+| Iconos | **Lucide Icons** v0.263 | SVG limpio, 1,000+ íconos, MIT, usado por Linear/Vercel |
+| Animaciones scroll | **AOS** (Animate On Scroll) v2.3 | Simple, declarativo, MIT, 6KB |
+| Parallax | **Rellax.js** v1.12 | 2KB, sin dependencias, suave |
+| CSS framework | **Tailwind CSS** v3 CDN | Ya en uso, flexible |
+| Sin jQuery | — | Vanilla JS únicamente |
 
-```javascript
-// Colores (basados en manual de identidad)
-colors: {
-  'nt-primary':   '#[definir del manual]',
-  'nt-secondary': '#[definir del manual]',
-  'nt-dark':      '#2a2b2f',    // color dark del sitio MX actual
-  'nt-light':     '#ffffff',
-  'nt-accent':    '#[definir del manual]',
-}
+### CDN URLs
+```html
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 
-// Tipografía
-fontFamily: {
-  'gotham': ['Gotham', 'sans-serif'],
-}
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Rellax -->
+<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@1.12.1/rellax.min.js"></script>
 ```
 
-> ⚠️ Los valores de color exactos se deben extraer del Manual de Identidad V2 (PDF).
-> Actualizar este archivo cuando el CIO los confirme.
-
----
-
-### Backend (opcional, futuro)
-
-Solo si se necesita funcionalidad dinámica:
-
-| Necesidad | Solución |
-|---|---|
-| Formulario de contacto | Formspree / EmailJS (sin backend) |
-| CRM / leads | HubSpot embed o microservicio GCP |
-| Autenticación | Auth0 (si se necesita área de clientes) |
-| API datos | Microservicio Cloud Run (GCP) |
-
-**Regla:** No agregar backend hasta que sea estrictamente necesario.
-
----
-
-### Control de versiones y deploy
-
-```
-GitHub (repositorio central)
-    ↓
-GitHub Actions (CI/CD)
-    ↓
-Cloudflare Pages (hosting)
-    ↓
-Dominio por país
+### Uso de Lucide en HTML
+```html
+<i data-lucide="check-circle" class="w-5 h-5 text-indigo-600"></i>
+<!-- Activar con: lucide.createIcons() al final del body -->
 ```
 
-**Ramas:**
-| Rama | Uso |
-|---|---|
-| `main` | Producción — auto-deploy a todos los dominios |
-| `dev` | Desarrollo — preview URL |
-| `feature/[nombre]` | Cambios específicos — el agente crea estas ramas |
+---
 
-**Regla:** El agente nunca hace push directo a `main`. Siempre crea una rama y el CIO aprueba el merge.
+## Estructura de archivos por sitio
+
+```
+sites/next-technologies-[pais]/
+  index.html          → página principal
+  config.js           → datos del país (tel, email, productos activos)
+  assets/
+    css/main.css      → design tokens + componentes custom
+    js/main.js        → VanillaJS (navbar, AOS init, Rellax init, forms)
+    images/
+      logos/          → logos NT (copiados de support/logotipos/)
+      products/       → capturas de productos (copiados de support/sites-scraped/)
+      clients/        → logos de clientes
+```
 
 ---
 
-### Presentaciones HTML
+## Reglas de diseño (obligatorias)
 
-Las presentaciones usan la misma base tecnológica:
-- HTML5 + CSS con identidad NT
-- [Reveal.js](https://revealjs.com/) para navegación de slides
-- Sin dependencias externas (todo embebido para compartir como .zip)
+- NUNCA emojis en el HTML de los sitios
+- SIEMPRE alt text en imágenes
+- SIEMPRE mobile-first (Tailwind breakpoints)
+- Los iconos van con Lucide, no con Font Awesome ni emojis
+- Animaciones: data-aos="fade-up" en secciones, NO en elementos inline
+- Parallax: solo en imágenes de hero, clase "rellax" con data-rellax-speed="-2"
+- Imágenes reales del sitio se toman de support/sites-scraped/
+- Logos siempre de support/logotipos/
 
 ---
 
-### Performance objetivo
+## Contenido real (de los sitios actuales)
 
-| Métrica | Objetivo |
-|---|---|
-| Lighthouse Score | > 90 |
-| First Contentful Paint | < 1.5s |
-| LCP | < 2.5s |
-| CLS | < 0.1 |
-| Mobile friendly | ✅ Siempre |
+### México (next-technologies.com.mx)
+- Tel: +52 55 1205 8000
+- Email: ventas@next-technologies.com.mx
+- Clientes: 50+ satisfechos, presencia internacional
+- Segmentos: Negocio, Emprendedor, PYMES, Corporativos
+- Testimonial: "Verónica Burgoa, TI Director — Next-Technologies tiene muy clara la visión del compromiso con sus clientes"
+- Partners tecnológicos: AWS, Azure, GCP
+
+### Rep. Dominicana (next-technologies.com.do)
+- 15 años de experiencia en LATAM
+- Especializados en hospitalidad y retail
+- Integración con Oracle PMS
+- Regulación: NCF / DGII

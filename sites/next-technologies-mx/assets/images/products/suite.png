@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--    <script>window.location.replace("https://ntgroup.mx/"); </script> -->
+    <title>NT Group</title>
+    <meta charset="utf-8">
+    <!--[if IE]><meta https-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="robots" content="factura electrónica, web services, tecnología">
+    <meta name="keywords" content="factura electrónica, web services, tecnología">
+    <meta name="description" content="En Next Technologies ofrecemos soluciones de alta tecnología en TI en todas las actividades de desarrollo económico. Nuestra misión es ser un motor de vanguardia en el desarrollo de pequeñas y medianas empresas en Latinoamerica y el mundo. Somos consientes que la tecnología transforma negocios y es el diferenciador competitivo, haciendo a los negocios mas eficientes y con mejores oportunidades de crecimiento. Queremos ser parte de tu diferenciador.">
+    <meta name="author" content="NT Group">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#2a2b2f">
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" href="images/favicon/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png">
+    <link rel="icon" sizes="192x192" href="images/favicon/icon-192x192.png">
+
+    <!-- CSS -->
+    <!--  GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- REVOSLIDER CSS SETTINGS -->
+
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link href="revo-slider/css/settings.css" rel="stylesheet" type="text/css">
+
+    <!-- REVOLUTION NAVIGATION STYLES -->
+    <link rel="stylesheet" type="text/css" href="revo-slider/css/navigation-skins/hermes-custom.css">
+
+    <!--  BOOTSTRAP -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- ICONS ELEGANT FONT & FONT AWESOME & LINEA ICONS  -->
+    <link rel="stylesheet" href="css/icons-fonts.css">
+
+    <!--  CSS THEME -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ANIMATE -->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <link rel="stylesheet" href="./css/clients.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+
+    <!-- IE Warning CSS -->
+    <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie-warning.css" ><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie8-fix.css" ><![endif]-->
+
+    <!-- Magnific popup, Owl Carousel Assets in style.css -->
+
+    <!-- CSS end -->
+
+    <!-- JS begin some js files in bottom of file-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+		  <script src="https://www.oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		  <script src="https://www.oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38108356-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-38108356-3');
+    </script>
+    <link rel="stylesheet" href="./css/help-desk.css">
+
+
+
+</head>
+
+<body>
+    <script type="text/javascript">
+        _linkedin_partner_id = "712146";
+        window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+        window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none;" alt=""
+            src="https://www.dc.ads.linkedin.com/collect/?pid=712146&fmt=gif" />
+    </noscript>
+    <!-- LOADER -->
+    <div id="loader-overflow">
+        <div id="loader3" class="loader-cont">Please enable JS</div>
+    </div>
+
+    <div id="wrap" class="boxed ">
+        <div class="grey-bg">
+            <!-- Grey BG  -->
+
+            <!--[if lte IE 8]>
+				<div id="ie-container">
+					<div id="ie-cont-close">
+						<a href="#" onclick="javascript&#058;this.parentNode.parentNode.style.display="none"; return false;"><img src="images/ie-warn/ie-warning-close.jpg" style="border: none;" alt="Close"></a>
+					</div>
+					<div id="ie-cont-content" >
+						<div id="ie-cont-warning">
+							<img src="images/ie-warn/ie-warning.jpg" alt="Warning!">
+						</div>
+						<div id="ie-cont-text" >
+							<div id="ie-text-bold">
+								You are using an outdated browser
+							</div>
+							<div id="ie-text">
+								For a better experience using this site, please upgrade to a modern web browser.
+							</div>
+						</div>
+						<div id="ie-cont-brows" >
+							<a href="https://www.www.firefox.com" target="_blank"><img src="images/ie-warn/ie-warning-firefox.jpg" alt="Download Firefox"></a>
+							<a href="https://www.www.opera.com/download/" target="_blank"><img src="images/ie-warn/ie-warning-opera.jpg" alt="Download Opera"></a>
+							<a href="https://www.www.apple.com/safari/download/" target="_blank"><img src="images/ie-warn/ie-warning-safari.jpg" alt="Download Safari"></a>
+							<a href="https://www.www.google.com/chrome" target="_blank"><img src="images/ie-warn/ie-warning-chrome.jpg" alt="Download Google Chrome"></a>
+						</div>
+					</div>
+				</div>
+				<![endif]-->
+
+            <!-- HEADER 1 FONT WHITE TRANSPARENT -->
+            <div class="header-black-bg"></div>
+            <div class="whp-zone">
+                <a class="btn btn-success" target="_blank" href="https://wa.me/525531928571?text=Hola%2C+me+interesa+m%C3%A1s+informaci%C3%B3n+de+sus+productos"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <!-- NEED FOR TRANSPARENT HEADER ON MOBILE -->
+            <header id="nav" class="header header-1 header-black affix-on-mobile">
+                <div class="header-wrapper">
+                    <div class="container-m-30 clearfix">
+                        <div class="logo-row">
+
+                            <!-- LOGO -->
+                            <div class="logo-container-2">
+                                <div class="logo-2">
+                                    <a href="index.html" class="clearfix">
+                                        <img src="images/logo-white.png" class="logo-img" alt="Logo">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- BUTTON -->
+                            <div class="menu-btn-respons-container">
+                                <button id="menu-btn" type="button" class="navbar-toggle btn-navbar collapsed"
+                                    data-toggle="collapse" data-target="#main-menu .navbar-collapse">
+                                    <span aria-hidden="true" class="icon_menu hamb-mob-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MAIN MENU CONTAINER -->
+                    <div class="main-menu-container">
+                        <div class="container-m-30 clearfix">
+                            <!-- MAIN MENU -->
+                            <div id="main-menu">
+                                <div class="navbar navbar-default" role="navigation">
+
+                                    <!-- MAIN MENU LIST -->
+                                    <nav class="collapse collapsing navbar-collapse right-1024">
+                                        <ul id="nav-onepage" class="nav navbar-nav">
+
+                                            <!-- MENU ITEM -->
+                                            <li class="current">
+                                                <a href="index.html">
+                                                    <div class="main-menu-title">Inicio</div>
+                                                </a>
+                                            </li>
+
+                                            <!-- MENU ITEM -->
+                                            <!-- <li class="parent">
+                                                <a href="#" class="open-sub">
+                                                    <div class="main-menu-title">Grupo</div>
+                                                </a>
+                                                <ul class="sub">
+                                                    <li><a href="">nt disruptive</a></li>
+                                                    <li><a href="">nt intelligence</a></li>
+                                                    <li><a href="">nt facto</a></li>
+                                                    <li><a href="">nt innovation</a></li>
+                                                </ul>
+                                            </li> -->
+                                            <!-- MENU ITEM -->
+                                            <li class="parent">
+                                                <a href="facto/" class="open-sub">
+                                                    <div class="main-menu-title">Productos</div>
+                                                </a>
+                                                <ul class="sub">
+                                                    <li><a href="./facto/hospitality/index.html">FACTO® Hospitality</a>
+                                                    </li>
+                                                    <li><a href="./facto/business/index.html">FACTO® Business</a></li>
+                                                    <li><a href="./facto/orders/index.html">FACTO® Orders</a></li>
+                                                    <li><a href="./facto/valid/index.html">FACTO® Valid</a></li>
+                                                    <!-- <li><a href="">FACTO® Conta</a></li>
+                                                    <li><a href="">FACTO® Payroll</a></li>
+                                                    <li><a href="">time box</a></li>
+                                                    <li><a href="">edoc transfer</a></li>
+                                                    <li><a href="">RFC Check</a></li> -->
+                                                    <li><a href="./facto/addons/frontonline/index.html">+front
+                                                            online</a></li>
+                                                    <li><a href="https://www.audit.com.mx">Audit Beyond</a></li>
+                                                    <!-- <li><a href="">Analytics Beyond</a></li>
+                                                    <li><a href="">nt interface</a></li>
+                                                    <li><a href="">hODS</a></li>
+                                                    <li><a href="">hEALTHBOT</a></li> -->
+                                                </ul>
+                                            </li>
+
+
+                                            <!-- MENU ITEM -->
+                                            <!--
+				                      <li>
+				                        <a href="#atencion"><div class="main-menu-title">Ayuda</div></a>
+				                      </li>
+-->
+                                            <!-- MENU ITEM -->
+                                            <!--
+				                      <li>
+				                        <a href="#faq"><div class="main-menu-title">FAQ</div></a>
+				                      </li>
+-->
+                                            <!-- MENU ITEM -->
+                                            <li>
+                                                <a href="#nosotros">
+                                                    <div class="main-menu-title">Nosotros</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://ayuda.next-technologies.com.mx/support/home"
+                                                    target="new">
+                                                    <div class="main-menu-title">Soporte/Atención a Clientes</div>
+                                                </a>
+                                            </li>
+
+                                            <!-- MENU ITEM -->
+                                            <li id="menu-contact-info-big" class="parent megamenu">
+                                                <a href="#" class="open-sub">
+                                                    <div class="main-menu-title">Contacto</div>
+                                                </a>
+                                                <ul class="sub">
+                                                    <li class="clearfix">
+                                                        <div class="menu-sub-container">
+
+                                                            <div class="box col-md-3 menu-demo-info closed">
+                                                                <h5 class="title open-sub">Oficinas de Contacto</h5>
+                                                                <ul>
+                                                                    <li><a href="/">México</a></li>
+                                                                    <li><a href="https://www.www.next-technologies.co.cr"
+                                                                            target="new">Costa Rica</a></li>
+                                                                    <!-- 				                                  <li><a href="https://www.www.next-technologies.com.co" target="new">Colombia</a></li> -->
+                                                                    <li><a href="https://www.www.next-technologies.world"
+                                                                            target="new">International</a></li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="col-md-3 menu-contact-info">
+                                                                <ul class="contact-list">
+                                                                    <li class="contact-loc clearfix">
+                                                                        <div class="loc-icon-container">
+                                                                            <div
+                                                                                class="icon icon-basic-map main-menu-contact-icon">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="menu-contact-text-container"
+                                                                            style="color: #000000;font-size: 1.2em;">
+                                                                            México</div>
+                                                                    </li>
+                                                                    <li class="contact-phone clearfix">
+                                                                        <div class="loc-icon-container">
+                                                                            <div
+                                                                                class="icon icon-basic-smartphone main-menu-contact-icon">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="menu-contact-text-container"
+                                                                            style="color: #000000;font-size: 1.2em;">+52
+                                                                            55 1205 8000</div>
+                                                                    </li>
+                                                                    <li class="contact-mail clearfix">
+                                                                        <div class="loc-icon-container">
+                                                                            <div
+                                                                                class="icon icon-basic-mail main-menu-contact-icon">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="menu-contact-text-container">
+                                                                            <a class="a-mail"
+                                                                                href="ventas@next-technologies.com.mx"><span
+                                                                                    style="color: #000000;font-size: 1.2em;">ventas@next-technologies.com.mx</span></a>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="col-md-6 menu-map-container hide-max-960 ">
+                                                                <!-- Google Maps -->
+                                                                <div class="google-map-container">
+                                                                    <img src="./images/map-line2.png" alt="alt">
+                                                                </div>
+                                                                <!-- Google Maps / End -->
+                                                            </div>
+
+                                                        </div>
+                                                    </li>
+
+                                                </ul>
+
+                                    </nav>
+
+                                </div>
+                            </div>
+                            <!-- END main-menu -->
+
+                        </div>
+                        <!-- END container-m-30 -->
+
+                    </div>
+                    <!-- END main-menu-container -->
+
+                    <!-- SEARCH READ DOCUMENTATION -->
+                    <ul class="cd-header-buttons">
+                        <li><a class="cd-search-trigger" href="#cd-search"><span></span></a></li>
+                    </ul>
+                    <!-- cd-header-buttons -->
+                    <div id="cd-search" class="cd-search">
+                        <form class="form-search" id="searchForm" action="page-search-results.html" method="get">
+                            <input type="text" value="" name="q" id="q" placeholder="Search...">
+                        </form>
+                    </div>
+
+                </div>
+                <!-- END header-wrapper -->
+
+            </header>
+
+            <!-- SLIDER Revo 2 -->
+            <div id="index-link" class="relative" style="overflow:hidden;">
+
+                <div class="rev_slider_wrapper fullscreen-container" id="rev_slider_280_1_wrapper"
+                    style="background-color:#fff;padding:0px;">
+
+                    <!-- START REVOLUTION SLIDER fullscreen mode -->
+                    <div id="rev_slider_202_1" class="rev_slider fullscreenbanner" style="display:none;"
+                        data-version="5.1.1RC">
+                        <ul>
+                            <!-- SLIDE 2-->
+                            <li data-index="rs-674" data-transition="slidingoverlayhorizontal" data-slotamount="default"
+                                data-easein="default" data-easeout="default" data-masterspeed="default"
+                                data-thumb="./images/background_2.jpg" data-rotate="0"
+                                data-saveperformance="off" data-title="AUDIT BEYOND" data-description="">
+                                <!-- MAIN IMAGE -->
+                                <img src="./images/background_2.jpg" alt="" data-bgposition="center center"
+                                    data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg"
+                                    data-no-retina>
+                                <!-- LAYERS -->
+                                <!-- LAYER NR. 1 -->
+                                <div class="tp-caption font-poppins font-white tp-resizeme rs-parallaxlevel-6"
+                                    id="slide-899-layer-1" style="z-index: 8; white-space: nowrap;"
+                                    data-fontsize="['70','60','50','40']" data-fontweight="600" data-height="none"
+                                    data-lineheight="['112','92','84','72']" data-responsive_offset="on"
+                                    data-splitin="none" data-splitout="none"
+                                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1050,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"nothing"}]'
+                                    data-whitespace="nowrap" data-width="none" data-x="['left','left','left','left']"
+                                    data-hoffset="['40','40','40','20']" data-y="['center','center','center','center']"
+                                    data-voffset="['-100','-90','-80','-70']">
+                                    Ve tu facturación electrónica
+                                </div>
+
+                                <!-- LAYER NR. 2 -->
+                                <div class="tp-caption font-poppins font-white tp-resizeme rs-parallaxlevel-6"
+                                    id="slide-899-layer-2" style="z-index: 8; white-space: nowrap;"
+                                    data-fontsize="['70','60','50','40']" data-fontweight="600" data-height="none"
+                                    data-lineheight="['112','92','84','72']" data-responsive_offset="on"
+                                    data-splitin="none" data-splitout="none"
+                                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1350,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"nothing"}]'
+                                    data-whitespace="nowrap" data-width="none" data-x="['left','left','left','left']"
+                                    data-hoffset="['40','40','40','20']" data-y="['center','center','center','center']"
+                                    data-voffset="['0','0','0','0']">
+                                    como la ve el SAT<span class="red-dot">.</span>
+                                </div>
+
+                                <!-- LAYER NR. 3 -->
+                                <div class="tp-caption font-poppins font-white tp-resizeme rs-parallaxlevel-6"
+                                    id="slide-899-layer-3" style="z-index: 8; white-space: nowrap;"
+                                    data-fontsize="['98','78','70','60']" data-fontweight="600" data-height="none"
+                                    data-lineheight="['112','92','84','72']" data-responsive_offset="on"
+                                    data-splitin="none" data-splitout="none"
+                                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1650,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"nothing"}]'
+                                    data-whitespace="nowrap" data-width="none" data-x="['left','left','left','left']"
+                                    data-hoffset="['40','40','40','20']" data-y="['center','center','center','center']"
+                                    data-voffset="['100','90','80','70']">
+                                    <a class="button rounded large gray" href="https://www.audit.com.mx"><span
+                                            class="button-text-anim" style="font-size: 20px;">Conoce Audit
+                                            Beyond</span><span aria-hidden="true" style="font-size: 16px;"
+                                            class="button-icon-anim arrow_right"></span></a>
+                                </div>
+                            </li>
+                            <!-- SLIDE 1-->
+                            <li data-index="rs-672" data-transition="slidingoverlayhorizontal" data-slotamount="default"
+                                data-easein="default" data-easeout="default" data-masterspeed="default"
+                                data-thumb="images/fo-bg.jpg" data-rotate="0" data-saveperformance="off"
+                                data-title="+front online" data-description="">
+                                <!-- MAIN IMAGE -->
+                                <img src="images/fo-bg.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
+                                    data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+                                <!-- LAYERS -->
+
+                                <!-- LAYER NR. 1 -->
+                                <div class="tp-caption font-poppins font-white tp-resizeme rs-parallaxlevel-6"
+                                    id="slide-898-layer-1" style="z-index: 8; white-space: nowrap;"
+                                    data-fontsize="['90','70','62','52']" data-fontweight="600" data-height="none"
+                                    data-lineheight="['102','82','74','64']" data-responsive_offset="on"
+                                    data-splitin="none" data-splitout="none"
+                                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1050,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"nothing"}]'
+                                    data-whitespace="nowrap" data-width="none" data-x="['left','left','left','left']"
+                                    data-hoffset="['40','40','40','20']" data-y="['center','center','center','center']"
+                                    data-voffset="['-30','-30','-30','-30']">
+                                    <img src="images/logo-next.png" class="logo-img" alt="Logo"
+                                        style="padding: 10px;"><br>
+                                </div>
+
+                                <!-- LAYER NR. 2 -->
+                                <div class="tp-caption font-poppins font-white tp-resizeme rs-parallaxlevel-6"
+                                    id="slide-898-layer-2" style="z-index: 8; white-space: nowrap;"
+                                    data-fontsize="['50','40','30','20']" data-fontweight="600" data-height="none"
+                                    data-lineheight="['40','40','40','40']" data-responsive_offset="on"
+                                    data-splitin="none" data-splitout="none"
+                                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1450,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"nothing"}]'
+                                    data-whitespace="nowrap" data-width="none" data-x="['left','left','left','left']"
+                                    data-hoffset="['40','40','40','20']" data-y="['center','center','center','center']"
+                                    data-voffset="['90','80','70',50']">
+                                    <br><br><span
+                                        style="color: #2D3B8A;font-family: 'Roboto', sans-serif;padding-top: 10px;line-height: normal;">Despídete
+                                        de las filas<br>con +front online</span><br><br>
+                                    <a class="button rounded large" href="facto/addons/frontonline/"
+                                        style="padding-top:15px;background: #A2A7E3;"><span class="button-text-anim"
+                                            style="font-size: 20px;">Descubre nuestra solución</span><span
+                                            aria-hidden="true" class="button-icon-anim arrow_right"></span></a>
+                                </div>
+
+                            </li>
+                            </li>
+                        </ul>
+                        <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                    </div>
+                </div>
+                <!-- END REVOLUTION SLIDER -->
+
+                <!-- SCROLL ICON -->
+                <div class="local-scroll-cont font-white">
+                    <a href="#productos" class="scroll-down smooth-scroll">
+                        <div class="icon icon-arrows-down"></div>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- CLIENTS 3 2 ROWS -->
+            <div class="page-section p-100-cont" style="background:url('images/pattern1.jpg');">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-sm-3">
+                            <a href="https://bestplacetocode.com/company/next-technologies" target="_blank">
+                                <center><img style="width: 200px;height: auto;" src="images/bptc.png" align="top"
+                                        style="margin: 0 auto 0px;"></center>
+                                <div>
+                                    <h4 style="text-align: center;">2020</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <center><img style="max-width: 200px;height: auto;" align="top" src="images/azure-logo.png"
+                                    style="margin: 0 auto 0px;"></center>
+                            <div>
+                                <h4 style="text-align: center;">Partnership</h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <center><img style="width: auto;height: 75px!important;" align="top" src="images/aws.png"
+                                    style="margin: 0 auto 0px;"></center>
+                            <div>
+                                <h4 style="text-align: center;">Development</h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <center><img style="max-width: auto;height: 75px!important;" align="top"
+                                    src="images/gcp.png" style="margin: 0 auto 0px;"></center>
+                            <div>
+                                <h4 style="text-align: center;">Development</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CLIENTS 3 2 ROWS -->
+            <div class="page-section p-100-cont bg-gray">
+                <div class="container">
+                    <center>
+                        <h1><strong style="color: black">Clientes Internacionales que Confían en Nosotros</strong></h1>
+                    </center>
+                    <div class="row">
+
+                        <div class="col-xs-6 col-sm-2 client2-item">
+                            <img alt="client" src="./images/clients/1.png">
+                        </div>
+
+                        <div class="col-xs-6 col-sm-2 client2-item">
+                            <img alt="client" src="./images/clients/2.png">
+                        </div>
+
+                        <div class="col-xs-6 col-sm-2 client2-item">
+                            <img alt="client" src="./images/clients/3.png">
+                        </div>
+
+                        <div class="col-xs-6 col-sm-2 client2-item">
+                            <img alt="client" src="./images/clients/4.png">
+                        </div>
+
+                        <div class="col-xs-6 col-sm-2 client2-item">
+                            <img alt="client" src="./images/clients/5.png">
+                        </div>
+
+                        <div class="col-xs-6 col-sm-2 client2-item" align="top">
+                            <h1 align="top" style="margin:0px;">+50<br><small style="font-size: 14px;">Clientes
+                                    Satisfechos</small></h1>
+                            <!--                 <img alt="client" src="https://www.next-technologies.co.cr/images/clients/6.png"> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- FACTO SUITE-->
+            <!--
+		<div class="page-section" id="servicios">
+			<div class="container-fluid">
+				<div data-equal=".equal-height" class="row row-sm-fix">
+					<div class="col-md-6 fes12-img equal-height" style="background-image: url('images/guest.jpg')">
+						<div class="fes2-main-text-cont text-black">
+						</div>
+					</div>
+					<div id="productos" class="col-md-6 fes12-img equal-height" style="background:url('images/pattern1.jpg');">
+						<div class="fes2-main-text-cont text-white">
+							<div class="fes2-title-45 font-poppins text-white">
+								<center><img src="images/suite.png" style="max-width: 250px;"></center><br>
+								<strong style="color: black">FACTO Suite®</strong>
+        					</div>
+							<div class="fes2-text-cont" style="color: black"><span style="font-size: 1.2em;">Los productos de FACTO Suite® no sólo revolucionarán la forma en la que usted administra un hotel, restaurante o negocio, sino que le facilitará el trabajo de todos sus colaboradores y el proceso de facturación de sus adquirientes.<br><br>
+								Conozca toda la linea de soluciones en facturación electrónica que FACTO Suite® le ofrece.</span>
+							</div>
+							<div class="fes12-btn-cont mt-30">
+                  	<a class="button rounded large gray" href="facto/index.html"><span class="button-text-anim" style="font-size: 1.2em;">Conoce más sobre<br>FACTO Suite®</span><span aria-hidden="true" class="button-icon-anim arrow_right"></span></a>
+                  			</div>
+        				</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+-->
+
+            <!-- TESTIMONIALS 4 -->
+            <div id="clientes" class="page-section p-130-cont bg-white">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <div class="mb-70">
+                                <h2 class="section-title2 font-light text-center p-0" style="color: white;">Lo que
+                                    nuestros clientes dicen de nosotros</h2>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 next_clients">
+
+                            <div class="ts4-text-cont bg-gray-light next_clients--review" style="font-size: 1.2em;">
+                                Next-Technologies tiene muy clara la visión del compromiso con sus clientes y eso se
+                                transmite en el éxito de cada uno de los proyectos que hemos realizado con ellos y el
+                                personal calificado con el que cuentan.
+                            </div>
+                            <div class="ts4-author-cont clearfix">
+                                <div class="ts4-author-img">
+                                    <img src="./images/clients/1.png" class="img-circle" alt="img">
+                                </div>
+                                <div class="ts4-author-info">
+                                    <div class="ts-name">Verónica Burgoa</div>
+                                    <div class="ts-type">TI Director</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-6 next_clients">
+
+                            <div class="ts4-text-cont bg-gray-light next_clients--review" style="font-size: 1.2em;">
+                                FACTO ha sido un excelente socio de negocios y su inigualable servicio al cliente nos
+                                mantiene enfocados en los asuntos más importantes de nuestra empresa.
+                            </div>
+                            <div class="ts4-author-cont clearfix">
+                                <!-- <div class="ts4-author-img">
+                                    <img src="https://www.next-technologies.co.cr/images/clients/vistana.png" class="img-circle" alt="img">
+                                </div> -->
+                                <div class="ts4-author-info">
+                                    <div class="ts-name">Marco Ortiz</div>
+                                    <div class="ts-type">Vistana</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!--
+            <div class="row">
+            	<div class="col-sm-6">
+	                <div class="mb-30">
+	                  <div class="ts4-text-cont bg-gray-light" style="font-size: 1.2em;">
+	                    Cras in tincidunt tellus. Integer eget massa nulla. Nullam mattis pellentesque turpis. In at luctus turpis. Vivamus dapibus feugiat lacus, id tincidunt arcu. Praesent commodo urna sit amet neque. 
+	                  </div>
+	                  <div class="ts4-author-cont clearfix">
+	                    <div class="ts4-author-img">
+	                      <img src="images/testimonials/ts-author2.jpg" class="img-circle" alt="img" >
+	                    </div>
+	                    <div class="ts4-author-info">
+	                      <div class="ts-name" style="color: white;">Colin Little</div>
+	                      <div class="ts-type" style="color: white;">CEO, Pixate</div>
+	                    </div>
+	                  </div>
+	            </div>
+			</div>
+			<div class="col-sm-6">
+            	<div class="mb-30">
+                	<div class="ts4-text-cont bg-gray-light" style="font-size: 1.2em;">
+                    Etiam varius quis magna eu efficitur. Proin non ortor ante. Nullam vel orci dictum, bibendum nequena, ultrices metus. Praesent a mauris Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                	</div>
+					<div class="ts4-author-cont clearfix">
+                    	<div class="ts4-author-img">
+							<img src="images/testimonials/ts-author4.jpg" class="img-circle" alt="img" >
+                    	</div>
+						<div class="ts4-author-info">
+						<div class="ts-name" style="color: white;">Robert Jackson</div>
+						<div class="ts-type" style="color: white;">Founder, Drillbox</div>
+                    	</div>
+		            </div>
+		        </div>
+			</div>
+-->
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCTOS -->
+        <!--
+		<div class="page-section pt-120-b-120-cont" style="background: url('images/banner-index.jpg');background-size: cover;">
+			<div class="container">
+				<div class="row">
+          		<div class="col-md-12">
+		  				
+          			<h2 class="section-title3 text-center p-0"><strong>Conozca qué productos cubren sus<br>necesidades en Facturación Electrónica</strong></h2>
+          		</div>
+          	</div>
+            	<div class="row">
+					<div class="col-xs-12 col-sm-3 col-md-3">
+						<div class="mb-70 wow fadeIn">
+								  <div class="fes17-title-cont" >
+								  	<div class="fes17-box-icon">
+								  		<img src="images/1.png" width="200" height="auto" style="padding-top: 25px">
+								  	</div>
+								  	<h3><strong>Negocio</strong></h3>
+								  </div>
+								  <div class="text-center">
+								    <p style="font-size: 1.2em;">¿Tiene un negocio pequeño y quiere facturar electrónicamente menos de 100 facturas al mes? Revise esta opción para negocios.</p>
+								    <center><a class="button small gray rounded thin btn-4 btn-4cc" href="negocios/index.html"><span class="button-text-anim">VER MAS</span><span aria-hidden="true" class="button-icon-anim arrow_right"></span></a></center> 
+								  </div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3 col-md-3">
+                <div class="mb-70 wow fadeIn" data-wow-delay="200ms">
+								  <div class="fes17-title-cont" >
+								  	<div class="fes17-box-icon">
+								  		<img src="images/2.png" width="200" height="auto" style="padding-top: 25px">
+								  	</div>
+								  	<h3><strong>Emprendedor</strong></h3>
+								  </div>
+								  <div class="text-center">
+								    <p style="font-size: 1.2em;">¿Eres emprendedor y su nivel de facturación está creciendo? Revise estas soluciones en facturación electrónica.</p>
+								    <center><a class="button small gray rounded thin btn-4 btn-4cc" href="emprendedores/index.html"><span class="button-text-anim">VER MAS</span><span aria-hidden="true" class="button-icon-anim arrow_right"></span></a></center> 
+								  </div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3 col-md-3">
+                <div class="mb-70 wow fadeIn" data-wow-delay="400ms">
+								  <div class="fes17-title-cont" >
+								  	<div class="fes17-box-icon">
+								  		<img src="images/3.png" width="200" height="auto" style="padding-top: 25px">
+								  	</div>
+								  	<h3><strong>PYMES y Empresas</strong></h3>
+								  </div>
+								  <div class="text-center">
+								   <p style="font-size: 1.2em;">¿Tiene una PYME o una empresa y necesita integrar sus soluciones de ventas con facturación electrónica? Revise las opciones que tenemos para usted.</p>
+								   <center><a class="button small gray rounded thin btn-4 btn-4cc" href="empresas/index.html"><span class="button-text-anim">VER MAS</span><span aria-hidden="true" class="button-icon-anim arrow_right"></span></a></center> 
+								  </div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3 col-md-3">
+                <div class="mb-70 wow fadeIn" data-wow-delay="400ms">
+								  <div class="fes17-title-cont" >
+								  	<div class="fes17-box-icon">
+								  		<img src="images/4.png" width="200" height="auto" style="padding-top: 25px">
+								  	</div>
+								  	<h3><strong>Corporativos</strong></h3>
+								  </div>
+								  <div class="text-center">
+								   <p style="font-size: 1.2em;">¿El corporativo donde usted labora necesita herramientas especializadas para facturación electrónica? Revise nuestros productos especializados.</p>
+								   <center><a class="button small gray rounded thin btn-4 btn-4cc" href="corporativos/index.html"><span class="button-text-anim">VER MAS</span><span aria-hidden="true" class="button-icon-anim arrow_right"></span></a></center> 
+								  </div>
+								</div>
+							</div>
+              
+						</div>
+					</div>
+					</div>
+				</div>
+-->
+        <!-- ABOUT US 3 -->
+        <div id="nosotros" class="page-section pt-100-cont" style="background:url('images/pattern1.jpg');">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <div>
+                            <h2 class="au3-title section-title2 font-montserrat">Nosotros</h2>
+                        </div>
+                        <div class="au3-text" style="font-size: 1.2em;">En Next Technologies ofrecemos soluciones de
+                            alta tecnología en TI en todas las actividades de desarrollo económico.<br><br> Nuestra
+                            misión es ser un motor de vanguardia en el desarrollo de pequeñas y medianas empresas en
+                            Latinoamerica
+                            y el mundo.<br><br> Somos conscientes que la tecnología transforma negocios y es el
+                            diferenciador competitivo, haciendo a los negocios mas eficientes y con mejores
+                            oportunidades de crecimiento. <br><br> Queremos ser parte de
+                            tu diferenciador.</div>
+                        <!-- <div class="au3-btn-cont">
+                            <a class="button rounded medium gray" href="nosotros/index.html"><span
+                                    class="button-text-anim" style="font-size: 1.2em;">Conoce más sobre Next
+                                    Technologies</span><span aria-hidden="true"
+                                    class="button-icon-anim arrow_right"></span></a>
+                        </div> -->
+                    </div>
+
+                    <div class="col-md-offset-1 col-md-8 text-center wow fadeInUp" data-wow-duration="1s">
+                        <img src="images/oficinas2.jpg" alt="img">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- SOPORTE-->
+        <!--
+		<div class="page-section" id="atencion">
+			<div class="container-fluid">
+				<div data-equal=".equal-height" class="row row-sm-fix">
+					
+					<div class="col-md-6 fes12-img equal-height" style="background:url('images/pattern1.jpg');">
+						<div class="fes2-main-text-cont text-white">
+							<div class="fes2-title-45 font-poppins text-white">
+								<strong style="color: black">Atención 24/7</strong>
+        					</div>
+							<div class="fes2-text-cont" style="color: black"><span style="font-size: 1.2em;">Creemos que usted se merece una atención digna y personalizada. Hemos habilitado algunos canales de comunicación donde le ofrecemos ayuda completamente gratuita sobre facturación electrónica en México.<br><br>
+								Contáctenos y con gusto le atenderemos.</span>
+							</div>
+							<div class="fes12-btn-cont mt-30">
+                  	<a class="button medium gray rounded thin btn-4 btn-4cc" href="tel:+525512058000"><span class="button-text-anim" style="font-size: 1.2em;">Llame ahora +52 55 1205 8000</span><span aria-hidden="true" class="button-icon-anim arrow_right"></span></a>
+                  			</div>
+                  			<div class="fes12-btn-cont mt-30">
+                  	<a class="button medium gray rounded thin btn-4 btn-4cc" href="mailto:ventas@next-technologies.com.mx"><span class="button-text-anim" style="font-size: 1.2em;">Contáctanos vía mail</span><span aria-hidden="true" class="button-icon-anim arrow_right"></span></a>
+                  			</div>
+                  			<div class="fes12-btn-cont mt-30">
+                  	<a class="button medium gray rounded thin btn-4 btn-4cc" href="https://www.www.facebook.com/nexttechmx/" target="new"><span class="button-text-anim" style="font-size: 1.2em;">Contáctenos vía Facebook</span><span aria-hidden="true" class="button-icon-anim arrow_right"></span></a>
+                  			</div>
+        				</div>
+					</div>
+					<div class="col-md-6 fes12-img equal-height" style="background-image: url(images/oficinas1.jpg)">
+						<div class="fes2-main-text-cont text-black">
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+-->
+
+        <!-- FAQ -->
+        <!--
+        <div class="page-section p-110-cont" id="faq">
+          <div class="container">
+            
+            <div class="row text-center">
+            
+              <div class="col-md-12">
+                <div class="mb-50">
+								  <h2 class="section-title2">Preguntas Frecuentes</h2>
+								</div>
+							</div>
+              
+						</div>
+            <div class="row">
+              <div class="col-md-6 mb-30">
+                
+                  <dl class="toggle">
+                    <dt>
+                      <a href="#" style="font-size: 1.3em;">¿Cómo facturo mi ticket?</a>
+                    </dt>
+                    <dd>
+                    Paso 1:<br>
+                    En el ticket de tu consumo podrás localizar la liga web con la cual podrás emitir tu factura, por lo general lo puedes ubicar en la parte superior o inferior del ticket de compra.<br><br>
+                    Paso 2:<br>
+                    Ingresa tu número de referencia (numero de ticket) y el RFC con el cual se va a emitir este documento.<br><br>
+                    Paso 3:<br>
+                    Una vez dentro solo darás clic en Facturar y ¡listo!
+                    <br> <br>
+Para mayor indicación puedes regalarnos una llamada al (55) 1205 8000 ext atención al cliente o con los ingenieros de Soporte Técnico.
+                    </dd>
+                    <dt>
+                      <a href="#" style="font-size: 1.3em;">¿Cuáles son los requisitos que debe cumplir una factura electrónica?</a>
+                    </dt>
+                    <dd>
+                    El SAT señala los siguientes requerimientos para que una factura electrónica sea legal:<br><br>
+Los requisitos que deben reunir las Facturas Electrónicas (CFDI) son:<br><br>
+<br>I. Clave del Registro Federal de Contribuyentes de quien los expida.
+<br>II. Régimen Fiscal en que tributen conforme a la Ley del ISR. (Consulte el procedimiento para obtener el régimen fiscal).
+<br>III. Sí se tiene más de un local o establecimiento, se deberá señalar el domicilio del local o establecimiento en el que se expidan las Facturas Electrónicas.
+<br>IV. Contener el número de folio asignado por el SAT y el sello digital del SAT.
+<br>V. Sello digital del contribuyente que lo expide.
+<br>VI. Lugar y fecha de expedición.
+<br>VII. Clave del Registro Federal de Contribuyentes de la persona a favor de quien se expida.
+<br>VIII. Cantidad, unidad de medida y clase de los bienes, mercancías o descripción del servicio o del uso o goce que amparen.
+<br>IX. Valor unitario consignado en número.
+<br>X. Importe total señalado en número o en letra,
+<br>XI. Señalamiento expreso cuando la prestación se pague en una sola exhibición o en parcialidades.
+<br>XII. Cuando proceda, se indicará el monto de los impuestos trasladados, desglosados por tasa de impuesto y, en su caso, el monto de los impuestos retenidos.
+<br>XIII. Forma en que se realizó el pago (efectivo, transferencia electrónica, cheque nominativo o tarjeta de débito, de crédito, de servicio o la denominada monedero electrónico, indicando al menos los últimos cuatro dígitos del número de cuenta o de la tarjeta correspondiente).
+<br>XIV. Número y fecha del documento aduanero,tratándose de ventas de primera mano de mercancías de importación.
+Además debe contener los siguientes datos:<br><br>
+a) Fecha y hora de certificación.
+<br>b) Número de serie del certificado digital del SAT con el que se realizó el sellado.<br><br>
+Las facturas electrónicas (CFDI) cuentan con un elemento opcional llamado “Addenda”, que permite integrar información de tipo no fiscal o mercantil, en caso de requerirse. Esta “addenda” debe incorporarse una vez que la factura haya sido validada por el SAT o el Proveedor de Certificación Autorizado (PAC) y se le hubiera asignado el folio.<br><br>
+Asimismo, se deben cumplir las especificaciones técnicas establecidas en la Resolución Miscelánea Fiscal y su Anexo 20, a saber:<br><br>
+•	Utilizar el estándar del comprobante fiscal digital a través de Internet extensible [XML] (esquema-comprobante.xsd).<br><br>
+Contemplar las reglas para la generación del sello digital de las Facturas Electrónicas (CFDI).
+
+
+                    </dd>
+                  </dl>
+                  
+              </div>
+                          
+              <div class="col-md-6 mb-30">
+                <div class="tabs-3">
+                  <ul class="nav nav-tabs bootstrap-tabs">
+                    <li class="active"><a href="#about-tab" class="a-inv" data-toggle="tab" style="font-size: 1.3em;">Facturación Electrónica</a></li>                  
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="about-tab">
+                      <p style="font-size: 1.2em;">Para poder emitir facturas electrónicas hay que obtener la firma digital y el certificado digital. Pero además tendemos que buscar uno de los Proveedores Autorizados de Certificación (PAC) que el SAT ha aceptado como empresas que pueden validar facturas electrónicas. Los PAC los puedes encontrar en la página web del SAT, por lo que no tendrás problemas para identificarlos y evitar a empresas patitos. Recuerda que si tu factura no es legal, tendrás problemas con el Servicio de Administración Tributaria que castiga con penas económicas y de prisión.</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+           
+            </div>
+          </div>
+        </div>
+-->
+
+
+
+        <!-- ABOUT US-->
+        <!--
+		<div class="page-section" id="nosotros">
+			<div class="container-fluid">
+				<div data-equal=".equal-height" class="row row-sm-fix">
+					<div class="col-md-6 fes12-img equal-height" style="background-image: url(images/oficinas2.jpg)">
+						<div class="fes2-main-text-cont text-black">
+						</div>
+					</div>
+					<div class="col-md-6 fes12-img equal-height" style="background:url('images/pattern1.jpg');">
+						<div class="fes2-main-text-cont text-white">
+							<div class="fes2-title-45 font-poppins text-white">
+								<strong style="color: black">Next Technologies</strong>
+        					</div>
+							<div class="fes2-text-cont" style="color: black;font-size: 1.2em;">
+								En Next Technologies ofrecemos soluciones de alta tecnología en TI en todas las actividades de desarrollo económico.<br><br>
+
+Nuestra misión es ser un motor de vanguardia en el desarrollo de pequeñas y medianas empresas en Latinoamerica y el mundo.<br><br>
+
+Somos consientes que la tecnología transforma negocios y es el diferenciador competitivo, haciendo a los negocios mas eficientes y con mejores oportunidades de crecimiento. <br><br>
+
+Queremos ser parte de tu diferenciador.<br>
+<table>
+<tr>
+	<td align="right" width="150"><img style="width: 60%;height: auto;" src="images/mcortazar.png"></td><td width="150" align="left"><h1 style="font-size: 20px;line-height: 20px;text-align: left;padding-left: 10px;">Mauricio Cortazar<br><span style="font-size: 15px;">Director</span></h1></td>
+</tr>
+</table>
+
+</div>
+							<div class="fes12-btn-cont mt-30">
+                  	<a class="button medium gray rounded thin btn-4 btn-4cc" href="nosotros/index.html"><span class="button-text-anim" style="font-size: 1.2em;">Conoce más sobre Next Technologies</span><span aria-hidden="true" class="button-icon-anim arrow_right"></span></a>
+                  			</div>
+        				</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+-->
+
+
+        <!-- CONTACT INFO SECTION 1 FONT JOSEFIN -->
+        <div id="contacto" class="page-section p-50-cont bg-gray">
+            <div class="container">
+                <div class="row">
+                    <h1>Contáctanos</h1>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="cis-cont">
+                            <div class="cis-icon">
+                                <div class="icon icon-basic-map"></div>
+                            </div>
+                            <div class="cis-text">
+                                <h3 class="font-montserrat"><strong>Dirección</strong></h3>
+                                <p>Insurgentes Sur 800, Col. Del Valle, 03100</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="cis-cont">
+                            <div class="cis-icon">
+                                <div class="icon icon-basic-mail"></div>
+                            </div>
+                            <div class="cis-text">
+                                <h3 class="font-montserrat"><strong>Mail</strong></h3>
+                                <p><a href="mailto:ventas@next-technologies.com.mx">ventas@next-technologies.com.mx</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="cis-cont">
+                            <div class="cis-icon">
+                                <div class="icon icon-basic-smartphone"></div>
+                            </div>
+                            <div class="cis-text">
+                                <h3 class="font-montserrat"><strong>Llámenos</strong></h3>
+                                <p>+52 55 1205 8000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER 1 only social links -->
+        <footer id="contacto" class="page-section text-center p-50-cont">
+            <div class="container">
+
+                <!-- Social Links -->
+                <div class="footer-soc-a">
+                    <a href="https://www.fb.com/nexttechint" title="Facebook" target="_blank"><i
+                            class="fa fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/nexttechmx" title="Twitter" target="_blank"><i
+                            class="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/nexttechnologiesworld" title="LinkedIn+"
+                        target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="./avisoprivacidad.html" title="Aviso de Privacidad" target="_blank"
+                        style="font-size: 12px;">Aviso de Privacidad</a>
+                    <a href="./avisoprivacidadProveedores.html" title="Aviso de Privacidad Proveedores" target="_blank"
+                        style="font-size: 12px;">Proveedores</a>
+                    <a href="./AvisoLegal.html" title="Aviso Legal" target="_blank" style="font-size: 12px;">Aviso
+                        Legal</a>
+                    <a href="./PoliticaUso.html" title="Política de uso" target="_blank"
+                        style="font-size: 12px;">Política de Uso</a>
+                    <a href="./UsoCookies.html" title="Aviso de Privacidad Proveedores" target="_blank"
+                        style="font-size: 12px;">Uso de Cookies</a>
+
+                </div>
+
+            </div>
+        </footer>
+
+        <!-- BACK TO TOP -->
+        <p id="back-top">
+            <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
+        </p>
+
+    </div>
+    <!-- End BG -->
+    </div>
+    <!-- End wrap -->
+
+    <!-- JS begin -->
+
+    <!-- jQuery  -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- MAGNIFIC POPUP -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <!-- PORTFOLIO SCRIPTS -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+
+    <!-- COUNTER -->
+    <script src="js/jquery.countTo.js"></script>
+
+    <!-- APPEAR -->
+    <script src="js/jquery.appear.js"></script>
+
+    <!-- OWL CAROUSEL -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- JQUERY TWEETS -->
+    <script src="js/twitter/jquery.tweet.js"></script>
+
+    <!-- MAIN SCRIPT -->
+    <script src="js/main.js"></script>
+
+    <!-- REVOSLIDER SCRIPTS  -->
+    <script src="revo-slider/js/jquery.themepunch.tools.min.js">
+    </script>
+    <script src="revo-slider/js/jquery.themepunch.revolution.min.js">
+    </script>
+
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
+      (Load Extensions only on Local File Systems ! 
+      The following part can be removed on Server for On Demand Loading) -->
+    <script src="revo-slider/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="revo-slider/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="revo-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="revo-slider/js/extensions/revolution.extension.layeranimation.min.js">
+    </script>
+    <script src="revo-slider/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="revo-slider/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="revo-slider/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="revo-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="revo-slider/js/extensions/revolution.extension.video.min.js"></script>
+
+    <!-- SLIDER REVOLUTION INITIALIZATION  -->
+    <script>
+        jQuery(document).ready(function () {
+            jQuery("#rev_slider_202_1").show().revolution({
+                sliderType: "standard",
+                jsFileLocation: "revo-slider/js/",
+                sliderLayout: "fullscreen",
+                dottedOverlay: "none",
+                delay: 9000,
+                navigation: {
+                    keyboardNavigation: "off",
+                    keyboard_direction: "horizontal",
+                    mouseScrollNavigation: "off",
+                    onHoverStop: "off",
+                    touch: {
+                        touchenabled: "on",
+                        swipe_threshold: 75,
+                        swipe_min_touches: 50,
+                        swipe_direction: "horizontal",
+                        drag_block_vertical: false
+                    },
+                    arrows: {
+                        style: "hermes",
+                        enable: true,
+                        hide_onmobile: true,
+                        hide_onleave: true,
+                        tmp: '<div class="tp-arr-allwrapper">	<div class="tp-arr-imgholder"></div>	<div class="tp-arr-titleholder">{{title}}</div>	</div>',
+                        left: {
+                            h_align: "left",
+                            v_align: "center",
+                            h_offset: 0,
+                            v_offset: 0
+                        },
+                        right: {
+                            h_align: "right",
+                            v_align: "center",
+                            h_offset: 0,
+                            v_offset: 0
+                        }
+                    },
+                },
+                responsiveLevels: [1240, 1024, 778, 480],
+                visibilityLevels: [1240, 1024, 778, 480],
+                gridwidth: [1240, 1024, 778, 480],
+                gridheight: [868, 768, 960, 720],
+                lazyType: "none",
+                parallax: {
+                    type: "off",
+                    origo: "slidercenter",
+                    speed: 1000,
+                    levels: [0],
+                    type: "scroll",
+                    disable_onmobile: "on"
+                },
+                shadow: 0,
+                spinner: "spinner2",
+                stopLoop: "off",
+                stopAfterLoops: -1,
+                stopAtSlide: -1,
+                shuffle: "off",
+                autoHeight: "off",
+                fullScreenAutoWidth: "off",
+                fullScreenAlignForce: "off",
+                fullScreenOffsetContainer: "",
+                fullScreenOffset: "",
+                disableProgressBar: "on",
+                hideThumbsOnMobile: "off",
+                hideSliderAtLimit: 0,
+                hideCaptionAtLimit: 0,
+                hideAllCaptionAtLilmit: 0,
+                debugMode: false,
+                fallbacks: {
+                    simplifyAll: "off",
+                    nextSlideOnWindowFocus: "off",
+                    disableFocusListener: false,
+                }
+            });
+
+        }); /*ready*/
+    </script>
+    <!-- JS end -->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#eaf7f7",
+                    "text": "#5c7291"
+                },
+                "button": {
+                    "background": "#56cbdb",
+                    "text": "#ffffff"
+                }
+            },
+            "content": {
+                "message": "Utilizamos cookies propias y de terceros para mejorar nuestros servicios. Si continúa con la navegación, consideraremos que acepta este uso",
+                "dismiss": "Aceptar",
+                "deny": "Rechazar",
+                "link": "Leer más",
+                "href": "UsoCookies.html"
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>
