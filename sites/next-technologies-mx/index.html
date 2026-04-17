@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Next Technologies México — Tecnología que transforma negocios</title>
+  <meta name="description" content="Soluciones tecnológicas de vanguardia para empresas en México. Facturación electrónica CFDI, Hospitality, Nómina, IA y más. Parte del Next Group — California." />
+  <meta name="keywords" content="facturación electrónica, CFDI, SAT, tecnología empresarial, ERP, hospitalidad, nómina, México" />
+  <meta name="author" content="Next Technologies — NT Group" />
+  <meta name="theme-color" content="#0a0a0f" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Next Technologies México" />
+  <meta property="og:description" content="Soluciones tecnológicas de vanguardia para empresas mexicanas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://next-technologies.com.mx" />
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" type="image/png" href="assets/images/logos/nt-black.png" />
+
+  <!-- Tipografía: Gotham via Google Fonts fallback (Inter similar) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS v3 CDN (producción: compilar) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'nt-dark':    '#0a0a0f',
+            'nt-dark-2':  '#12121a',
+            'nt-dark-3':  '#1a1a28',
+            'nt-primary': '#4f46e5',
+            'nt-accent':  '#7c3aed',
+            'nt-cyan':    '#06b6d4',
+          },
+          fontFamily: {
+            'gotham': ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="font-gotham bg-nt-dark text-white overflow-x-hidden">
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════════════════════════════════════ -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent px-[5%]">
+    <div class="max-w-7xl mx-auto flex items-center justify-between h-20">
+
+      <!-- Logo -->
+      <a href="#inicio" class="flex items-center gap-3">
+        <img src="assets/images/logos/nt-white.png" alt="Next Technologies" class="h-8 w-auto" />
+      </a>
+
+      <!-- Desktop Nav -->
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <li><a href="#inicio"    class="hover:text-white transition-colors">Inicio</a></li>
+        <li><a href="#productos" class="hover:text-white transition-colors">Productos</a></li>
+        <li><a href="#nosotros"  class="hover:text-white transition-colors">Nosotros</a></li>
+        <li><a href="#presencia" class="hover:text-white transition-colors">Presencia</a></li>
+        <li><a href="#contacto"  class="hover:text-white transition-colors">Contacto</a></li>
+      </ul>
+
+      <!-- CTA Desktop -->
+      <div class="hidden md:flex items-center gap-3">
+        <a href="https://wa.me/525531928571?text=Hola%2C+me+interesa+más+información+de+sus+productos"
+           target="_blank" rel="noopener"
+           class="btn-primary text-sm py-2.5 px-5">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button id="menu-btn" class="md:hidden p-2 rounded-lg hover:bg-white/10 transition-colors"
+              aria-label="Abrir menú" aria-expanded="false">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-nt-dark-2 border-t border-white/10 px-6 py-4 space-y-3">
+      <a href="#inicio"    class="block py-2 text-slate-300 hover:text-white transition-colors">Inicio</a>
+      <a href="#productos" class="block py-2 text-slate-300 hover:text-white transition-colors">Productos</a>
+      <a href="#nosotros"  class="block py-2 text-slate-300 hover:text-white transition-colors">Nosotros</a>
+      <a href="#presencia" class="block py-2 text-slate-300 hover:text-white transition-colors">Presencia</a>
+      <a href="#contacto"  class="block py-2 text-slate-300 hover:text-white transition-colors">Contacto</a>
+      <a href="https://wa.me/525531928571" target="_blank" class="btn-primary w-full justify-center mt-2">WhatsApp</a>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════════════════════════════════════ -->
+  <section id="inicio" class="hero-bg min-h-screen flex items-center pt-20">
+    <div class="max-w-7xl mx-auto w-full px-[5%] py-24 grid md:grid-cols-2 gap-12 items-center">
+
+      <!-- Left: copy -->
+      <div>
+        <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-2 text-sm text-nt-cyan font-medium mb-6">
+          <span class="w-2 h-2 rounded-full bg-nt-cyan animate-pulse"></span>
+          Parte del Next Group — California
+        </div>
+        <h1 class="text-5xl md:text-6xl font-black leading-tight mb-6">
+          Tecnología que<br/>
+          <span class="gradient-text">transforma</span><br/>
+          tu negocio
+        </h1>
+        <p class="text-lg text-slate-400 mb-8 max-w-md">
+          Suite completa de soluciones empresariales: facturación electrónica con IA, 
+          hospitalidad, nómina, pedidos y más. Todo integrado, todo en la nube.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#productos" class="btn-primary">
+            Conoce nuestros productos
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </a>
+          <a href="#contacto" class="btn-outline">Agendar demo</a>
+        </div>
+
+        <!-- Trust badges -->
+        <div class="flex items-center gap-6 mt-12 text-sm text-slate-500">
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            Certificado SAT
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            Integración Opera & Micros
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            Soporte 24/7
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Stats cards -->
+      <div class="grid grid-cols-2 gap-4 fade-in">
+        <div class="glass p-6 col-span-2">
+          <p class="text-slate-400 text-sm mb-1">Empresas que confían en nosotros</p>
+          <div class="stat-number"><span data-target="1500">0</span>+</div>
+          <p class="text-slate-500 text-xs mt-1">En México y Latinoamérica</p>
+        </div>
+        <div class="glass p-6">
+          <p class="text-slate-400 text-sm mb-1">Países</p>
+          <div class="stat-number"><span data-target="5">0</span></div>
+          <p class="text-slate-500 text-xs mt-1">MX · DO · CO · ES · CR</p>
+        </div>
+        <div class="glass p-6">
+          <p class="text-slate-400 text-sm mb-1">Años de experiencia</p>
+          <div class="stat-number"><span data-target="15">0</span>+</div>
+          <p class="text-slate-500 text-xs mt-1">En tecnología empresarial</p>
+        </div>
+        <div class="glass p-6 col-span-2">
+          <p class="text-slate-400 text-sm mb-1">Facturas procesadas</p>
+          <div class="stat-number"><span data-target="50">0</span>M+</div>
+          <p class="text-slate-500 text-xs mt-1">Solo en el último año</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+       PRODUCTOS
+  ════════════════════════════════════════════════════════════════════════ -->
+  <section id="productos" class="bg-nt-dark-2">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16 fade-in">
+        <p class="section-label">NT Soluciones</p>
+        <h2 class="section-title">Suite completa para tu empresa</h2>
+        <p class="section-subtitle mx-auto text-center">
+          Cada producto está diseñado para integrarse con los demás y con tus sistemas actuales.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- FactoIA -->
+        <div class="glass p-6 product-card fade-in group">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-violet-500 to-purple-700 flex items-center justify-center mb-4">
+            <img src="assets/images/logos/factoia-white.png" alt="FactoIA" class="w-7 h-7 object-contain" onerror="this.style.display='none'">
+            <span class="text-xl hidden group-[.no-img]:block">🤖</span>
+          </div>
+          <h3 class="font-bold text-lg mb-2">FactoIA</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Facturación electrónica CFDI potenciada con IA. Automatiza, valida y timbra ante el SAT en segundos.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="text-xs bg-violet-500/20 text-violet-300 rounded-full px-3 py-1">CFDI 4.0</span>
+            <span class="text-xs bg-violet-500/20 text-violet-300 rounded-full px-3 py-1">SAT</span>
+          </div>
+        </div>
+
+        <!-- Hospitality -->
+        <div class="glass p-6 product-card fade-in group">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-700 flex items-center justify-center mb-4">
+            <img src="assets/images/logos/hospitality-white.png" alt="Hospitality" class="w-7 h-7 object-contain" onerror="this.style.display='none'">
+          </div>
+          <h3 class="font-bold text-lg mb-2">Hospitality</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Solución integral para hoteles y restaurantes. Integra Opera PMS y Micros POS con tu sistema de facturación.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="text-xs bg-cyan-500/20 text-cyan-300 rounded-full px-3 py-1">Opera PMS</span>
+            <span class="text-xs bg-cyan-500/20 text-cyan-300 rounded-full px-3 py-1">Micros POS</span>
+          </div>
+        </div>
+
+        <!-- Business -->
+        <div class="glass p-6 product-card fade-in">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-500 to-blue-700 flex items-center justify-center mb-4">
+            <img src="assets/images/logos/business-white.png" alt="Business" class="w-7 h-7 object-contain" onerror="this.style.display='none'">
+          </div>
+          <h3 class="font-bold text-lg mb-2">Business</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Plataforma de gestión empresarial integral. SAP, Oracle y Dynamics integrados con tu operación diaria.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="text-xs bg-indigo-500/20 text-indigo-300 rounded-full px-3 py-1">SAP</span>
+            <span class="text-xs bg-indigo-500/20 text-indigo-300 rounded-full px-3 py-1">Oracle</span>
+          </div>
+        </div>
+
+        <!-- iSquare -->
+        <div class="glass p-6 product-card fade-in">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-700 flex items-center justify-center mb-4">
+            <span class="text-2xl">🔗</span>
+          </div>
+          <h3 class="font-bold text-lg mb-2">iSquare</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Middleware de integración entre POS, PMS, ERP y facturación. Conecta tus sistemas sin reescribir nada.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="text-xs bg-emerald-500/20 text-emerald-300 rounded-full px-3 py-1">Integración</span>
+          </div>
+        </div>
+
+        <!-- Nómina -->
+        <div class="glass p-6 product-card fade-in">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center mb-4">
+            <img src="assets/images/logos/nomina-white.png" alt="Nómina" class="w-7 h-7 object-contain" onerror="this.style.display='none'">
+          </div>
+          <h3 class="font-bold text-lg mb-2">Nómina</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Gestión completa de nómina y RRHH. Cálculo automático de IMSS, SAR, INFONAVIT y timbrado de recibos.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="text-xs bg-orange-500/20 text-orange-300 rounded-full px-3 py-1">IMSS</span>
+            <span class="text-xs bg-orange-500/20 text-orange-300 rounded-full px-3 py-1">SAT</span>
+          </div>
+        </div>
+
+        <!-- Orders -->
+        <div class="glass p-6 product-card fade-in">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-pink-500 to-rose-700 flex items-center justify-center mb-4">
+            <img src="assets/images/logos/orders-white.png" alt="Orders" class="w-7 h-7 object-contain" onerror="this.style.display='none'">
+          </div>
+          <h3 class="font-bold text-lg mb-2">Orders</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Gestión de pedidos y órdenes de trabajo. Desde la solicitud hasta la entrega y facturación automática.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="text-xs bg-pink-500/20 text-pink-300 rounded-full px-3 py-1">Pedidos</span>
+            <span class="text-xs bg-pink-500/20 text-pink-300 rounded-full px-3 py-1">Facturación</span>
+          </div>
+        </div>
+
+        <!-- Valid -->
+        <div class="glass p-6 product-card fade-in">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-emerald-700 flex items-center justify-center mb-4">
+            <img src="assets/images/logos/valid-white.png" alt="Valid" class="w-7 h-7 object-contain" onerror="this.style.display='none'">
+          </div>
+          <h3 class="font-bold text-lg mb-2">Valid</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Validación de facturas en tiempo real ante el SAT. Compliance fiscal automatizado para tu contabilidad.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="text-xs bg-green-500/20 text-green-300 rounded-full px-3 py-1">Validación SAT</span>
+          </div>
+        </div>
+
+        <!-- FactoSuite — destacado -->
+        <div class="glass p-6 product-card fade-in border-nt-primary/40 relative overflow-hidden">
+          <div class="absolute top-3 right-3">
+            <span class="text-xs bg-nt-primary text-white rounded-full px-2 py-1 font-bold">SUITE COMPLETA</span>
+          </div>
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-nt-primary to-nt-accent flex items-center justify-center mb-4">
+            <img src="assets/images/logos/factosuite-white.png" alt="FactoSuite" class="w-7 h-7 object-contain" onerror="this.style.display='none'">
+          </div>
+          <h3 class="font-bold text-lg mb-2">FactoSuite</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Suite completa de facturación electrónica multi-país. MX, DO, CO, ES y CR en una sola plataforma.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="text-xs bg-nt-primary/30 text-indigo-300 rounded-full px-3 py-1">Multi-país</span>
+            <span class="text-xs bg-nt-primary/30 text-indigo-300 rounded-full px-3 py-1">Todo en uno</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+       NOSOTROS
+  ════════════════════════════════════════════════════════════════════════ -->
+  <section id="nosotros" class="bg-nt-dark">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <div class="fade-in">
+        <p class="section-label">Quiénes somos</p>
+        <h2 class="section-title">Tecnología de California<br/>al servicio de México</h2>
+        <p class="text-slate-400 mb-6 leading-relaxed">
+          Somos parte del <strong class="text-white">Next Group</strong>, empresa tecnológica fundada en California 
+          con presencia en México, República Dominicana, Colombia y España.
+        </p>
+        <p class="text-slate-400 mb-8 leading-relaxed">
+          Nuestra misión es ser el motor de vanguardia para el desarrollo de empresas en Latinoamérica, 
+          con soluciones de clase mundial adaptadas a la realidad fiscal y operativa de cada país.
+        </p>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="glass p-4">
+            <div class="text-2xl font-black text-nt-cyan">🇺🇸 California</div>
+            <p class="text-slate-400 text-sm mt-1">Sede corporativa</p>
+          </div>
+          <div class="glass p-4">
+            <div class="text-2xl font-black text-white">5 países</div>
+            <p class="text-slate-400 text-sm mt-1">Presencia activa</p>
+          </div>
+          <div class="glass p-4">
+            <div class="text-2xl font-black gradient-text">1,500+</div>
+            <p class="text-slate-400 text-sm mt-1">Empresas clientes</p>
+          </div>
+          <div class="glass p-4">
+            <div class="text-2xl font-black text-nt-cyan">15+ años</div>
+            <p class="text-slate-400 text-sm mt-1">En el mercado</p>
+          </div>
+        </div>
+      </div>
+      <div class="fade-in space-y-4">
+        <div class="glass p-6 flex gap-4 items-start">
+          <div class="text-3xl">🚀</div>
+          <div>
+            <h4 class="font-bold mb-1">Innovación constante</h4>
+            <p class="text-slate-400 text-sm">Desarrollamos tecnología de punta. Nuestros productos usan IA, cloud y microservicios de última generación.</p>
+          </div>
+        </div>
+        <div class="glass p-6 flex gap-4 items-start">
+          <div class="text-3xl">🔒</div>
+          <div>
+            <h4 class="font-bold mb-1">Seguridad y compliance</h4>
+            <p class="text-slate-400 text-sm">Certificados ante el SAT. Cumplimos con todas las regulaciones fiscales de México y los países donde operamos.</p>
+          </div>
+        </div>
+        <div class="glass p-6 flex gap-4 items-start">
+          <div class="text-3xl">🤝</div>
+          <div>
+            <h4 class="font-bold mb-1">Soporte dedicado</h4>
+            <p class="text-slate-400 text-sm">Nuestro equipo de soporte está disponible para ayudarte a implementar, integrar y optimizar tus procesos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+       PRESENCIA
+  ════════════════════════════════════════════════════════════════════════ -->
+  <section id="presencia" class="bg-nt-dark-2">
+    <div class="max-w-7xl mx-auto text-center">
+      <p class="section-label">Cobertura global</p>
+      <h2 class="section-title fade-in">Presencia en toda<br/>Latinoamérica y Europa</h2>
+      <p class="section-subtitle mx-auto text-center fade-in mb-16">
+        Un solo proveedor para todas tus operaciones, sin importar en qué país estés.
+      </p>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-4 fade-in">
+        <div class="glass p-6 text-center">
+          <div class="text-4xl mb-3">🇲🇽</div>
+          <div class="font-bold">México</div>
+          <div class="text-xs text-nt-cyan mt-1">CFDI / SAT</div>
+          <div class="mt-2 w-2 h-2 rounded-full bg-green-400 mx-auto"></div>
+        </div>
+        <div class="glass p-6 text-center">
+          <div class="text-4xl mb-3">🇩🇴</div>
+          <div class="font-bold">Rep. Dominicana</div>
+          <div class="text-xs text-nt-cyan mt-1">NCF / DGII</div>
+          <div class="mt-2 w-2 h-2 rounded-full bg-green-400 mx-auto"></div>
+        </div>
+        <div class="glass p-6 text-center">
+          <div class="text-4xl mb-3">🇨🇴</div>
+          <div class="font-bold">Colombia</div>
+          <div class="text-xs text-nt-cyan mt-1">FE / DIAN</div>
+          <div class="mt-2 w-2 h-2 rounded-full bg-yellow-400 mx-auto"></div>
+        </div>
+        <div class="glass p-6 text-center">
+          <div class="text-4xl mb-3">��🇸</div>
+          <div class="font-bold">España</div>
+          <div class="text-xs text-nt-cyan mt-1">FacturaE / AEAT</div>
+          <div class="mt-2 w-2 h-2 rounded-full bg-yellow-400 mx-auto"></div>
+        </div>
+        <div class="glass p-6 text-center">
+          <div class="text-4xl mb-3">🇨🇷</div>
+          <div class="font-bold">Costa Rica</div>
+          <div class="text-xs text-nt-cyan mt-1">FE / Hacienda</div>
+          <div class="mt-2 w-2 h-2 rounded-full bg-green-400 mx-auto"></div>
+        </div>
+      </div>
+      <div class="flex justify-center gap-6 mt-6 text-sm text-slate-400">
+        <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-green-400"></span> Activo</div>
+        <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-yellow-400"></span> En expansión</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+       CONTACTO
+  ════════════════════════════════════════════════════════════════════════ -->
+  <section id="contacto" class="bg-nt-dark">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+
+      <!-- Info -->
+      <div class="fade-in">
+        <p class="section-label">Contáctanos</p>
+        <h2 class="section-title">¿Listo para<br/><span class="gradient-text">transformar</span><br/>tu empresa?</h2>
+        <p class="text-slate-400 mb-8">Agenda una demo sin costo. Te mostramos cómo nuestras soluciones se adaptan a tu negocio.</p>
+
+        <div class="space-y-4">
+          <a href="https://wa.me/525531928571" target="_blank" rel="noopener"
+             class="flex items-center gap-4 glass p-4 hover:border-green-500/50 transition-colors group">
+            <div class="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center">
+              <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div>
+              <div class="text-sm text-slate-400">WhatsApp</div>
+              <div class="font-semibold group-hover:text-green-400 transition-colors">+52 55 3192 8571</div>
+            </div>
+          </a>
+
+          <a href="mailto:ventas@next-technologies.com.mx"
+             class="flex items-center gap-4 glass p-4 hover:border-nt-primary/50 transition-colors group">
+            <div class="w-10 h-10 rounded-full bg-nt-primary/20 flex items-center justify-center">
+              <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="text-sm text-slate-400">Correo electrónico</div>
+              <div class="font-semibold group-hover:text-indigo-400 transition-colors">ventas@next-technologies.com.mx</div>
+            </div>
+          </a>
+
+          <div class="flex items-center gap-4 glass p-4">
+            <div class="w-10 h-10 rounded-full bg-nt-cyan/20 flex items-center justify-center">
+              <svg class="w-5 h-5 text-nt-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="text-sm text-slate-400">Sede México</div>
+              <div class="font-semibold">Ciudad de México, México</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulario -->
+      <div class="fade-in">
+        <form id="contact-form" class="glass p-8 space-y-4">
+          <h3 class="text-xl font-bold mb-6">Agenda tu demo gratuita</h3>
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm text-slate-400 mb-2">Nombre *</label>
+              <input type="text" class="form-input" placeholder="Tu nombre" required />
+            </div>
+            <div>
+              <label class="block text-sm text-slate-400 mb-2">Apellido *</label>
+              <input type="text" class="form-input" placeholder="Tu apellido" required />
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm text-slate-400 mb-2">Correo empresarial *</label>
+            <input type="email" class="form-input" placeholder="nombre@empresa.com" required />
+          </div>
+          <div>
+            <label class="block text-sm text-slate-400 mb-2">Empresa *</label>
+            <input type="text" class="form-input" placeholder="Nombre de tu empresa" required />
+          </div>
+          <div>
+            <label class="block text-sm text-slate-400 mb-2">Producto de interés</label>
+            <select class="form-input">
+              <option value="" class="bg-nt-dark-2">Selecciona un producto</option>
+              <option value="factoia" class="bg-nt-dark-2">FactoIA — Facturación con IA</option>
+              <option value="hospitality" class="bg-nt-dark-2">Hospitality — Hoteles y restaurantes</option>
+              <option value="business" class="bg-nt-dark-2">Business — Gestión empresarial</option>
+              <option value="nomina" class="bg-nt-dark-2">Nómina — RRHH y nómina</option>
+              <option value="orders" class="bg-nt-dark-2">Orders — Gestión de pedidos</option>
+              <option value="valid" class="bg-nt-dark-2">Valid — Validación fiscal</option>
+              <option value="factosuite" class="bg-nt-dark-2">FactoSuite — Suite completa</option>
+              <option value="isquare" class="bg-nt-dark-2">iSquare — Integración de sistemas</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm text-slate-400 mb-2">Mensaje</label>
+            <textarea class="form-input h-24 resize-none" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary w-full justify-center">
+            Solicitar demo gratuita
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </button>
+          <p class="text-xs text-slate-500 text-center">Sin compromisos. Te contactamos en menos de 24 horas.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════════════════════════════ -->
+  <footer class="bg-nt-dark-2 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-[5%] py-16">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <!-- Brand -->
+        <div class="md:col-span-1">
+          <img src="assets/images/logos/nt-white.png" alt="Next Technologies" class="h-8 w-auto mb-4" />
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Parte del Next Group — Empresa tecnológica con sede en California, presente en 5 países de América y Europa.
+          </p>
+        </div>
+        <!-- Productos -->
+        <div>
+          <h5 class="font-bold mb-4 text-sm uppercase tracking-wider text-slate-300">Productos</h5>
+          <ul class="space-y-2 text-slate-400 text-sm">
+            <li><a href="#productos" class="hover:text-white transition-colors">FactoIA</a></li>
+            <li><a href="#productos" class="hover:text-white transition-colors">Hospitality</a></li>
+            <li><a href="#productos" class="hover:text-white transition-colors">Business</a></li>
+            <li><a href="#productos" class="hover:text-white transition-colors">Nómina</a></li>
+            <li><a href="#productos" class="hover:text-white transition-colors">Orders</a></li>
+            <li><a href="#productos" class="hover:text-white transition-colors">FactoSuite</a></li>
+          </ul>
+        </div>
+        <!-- Empresa -->
+        <div>
+          <h5 class="font-bold mb-4 text-sm uppercase tracking-wider text-slate-300">Empresa</h5>
+          <ul class="space-y-2 text-slate-400 text-sm">
+            <li><a href="#nosotros" class="hover:text-white transition-colors">Nosotros</a></li>
+            <li><a href="#presencia" class="hover:text-white transition-colors">Presencia</a></li>
+            <li><a href="#contacto" class="hover:text-white transition-colors">Contacto</a></li>
+          </ul>
+        </div>
+        <!-- Contacto -->
+        <div>
+          <h5 class="font-bold mb-4 text-sm uppercase tracking-wider text-slate-300">Contacto MX</h5>
+          <ul class="space-y-2 text-slate-400 text-sm">
+            <li>+52 55 3192 8571</li>
+            <li>ventas@next-technologies.com.mx</li>
+            <li>Ciudad de México, México</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+        <p>© 2025 NT Group S.A. de C.V. — Todos los derechos reservados.</p>
+        <p>Hecho con ❤️ en California · Operado en México</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
