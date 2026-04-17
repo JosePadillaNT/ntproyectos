@@ -23,6 +23,7 @@
         <li><a href="#como-funciona">Cómo funciona</a></li>
         <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="#contacto">Contacto</a></li>
+        <li><a href="developers/login.html">Developers</a></li>
       </ul>
       <div class="nav-cta">
         <a href="https://wa.me/34600000000?text=Hola%2C+me+interesa+informaci%C3%B3n+de+sus+servicios" target="_blank" rel="noopener" class="btn btn-ghost" style="font-size:.85rem">WhatsApp</a>
@@ -133,47 +134,6 @@
   </section>
 
 
-  <!-- ─────────────── DEVELOPER STRIP ─────────────── -->
-  <section class="dev-strip">
-    <div class="dev-strip-inner">
-      <div class="dev-strip-left">
-        <div class="dev-strip-badge">
-          <span class="dev-strip-dot"></span>
-          FacturaE / Verifactu · AEAT
-        </div>
-        <h2 class="dev-strip-title">¿Eres desarrollador?<br>Integra en minutos.</h2>
-        <p class="dev-strip-desc">Emite facturas electrónicas y envía registros Verifactu a la AEAT. Compatible con TicketBAI y facturación B2B / B2C.</p>
-        <div class="dev-strip-actions">
-          <a href="developers/login.html" class="dev-strip-cta">
-            Ir al portal →
-          </a>
-          <a href="developers/login.html" class="dev-strip-secondary">Ver documentación API</a>
-        </div>
-      </div>
-      <div class="dev-strip-right">
-        <div class="code-window">
-          <div class="code-window-bar">
-            <span class="cw-dot cw-red"></span>
-            <span class="cw-dot cw-yellow"></span>
-            <span class="cw-dot cw-green"></span>
-            <span class="cw-lang">shell</span>
-          </div>
-          <pre class="code-window-body"><span class="code-comment"># 1. Obtener token</span>
-<span class="code-cmd">curl</span> <span class="code-flag">-X POST</span> https://api.next-technologies.com/auth/token \
-  <span class="code-flag">-d</span> <span class="code-str">'&#123;"api_key":"TU_API_KEY"&#125;'</span>
-
-<span class="code-comment"># 2. Emitir comprobante</span>
-<span class="code-cmd">curl</span> <span class="code-flag">-X POST</span> https://api.next-technologies.com/factura/emitir \
-  <span class="code-flag">-H</span> <span class="code-str">"Authorization: Bearer $TOKEN"</span> \
-  <span class="code-flag">-d</span> <span class="code-str">@factura.json</span>
-
-<span class="code-comment"># Respuesta ✓</span>
-<span class="code-green">&#123; "uuid": "abc-123", "status": "timbrado" &#125;</span></pre>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ─────────────── /DEVELOPER STRIP ─────────────── -->
 
   <section id="como-funciona" class="bg-light">
     <div class="container">
