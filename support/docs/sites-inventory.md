@@ -95,3 +95,8 @@ Antes de lanzar cualquier sitio nuevo verificar:
 - [ ] Formulario de contacto funcionando
 - [ ] Mobile responsive
 - [ ] Footer con año actualizado y nombre legal correcto
+
+### Subpaginas activas — MX
+| Ruta | Producto | Estado |
+|---|---|---|
+| `/identity-connect/` | NT Identity Connect — PUI | Activo v1 |

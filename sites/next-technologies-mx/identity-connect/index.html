@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NT Identity Connect — Cumplimiento PUI para Hoteles | Next Technologies</title>
+  <meta name="description" content="Plataforma automática para que tu hotel cumpla con la obligación legal PUI (SEGOB/RENAPO). Evita multas de hasta $2.34 millones de pesos.">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50:  '#f0fafb',
+              100: '#d9f2f5',
+              200: '#b3e5eb',
+              300: '#80d3de',
+              400: '#56cbdb',
+              500: '#3ba8b8',
+              600: '#2d8a9a',
+              700: '#276f7d',
+              800: '#255a66',
+              900: '#1a3d45',
+              950: '#0f2329'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-feature-settings: 'cv02','cv03','cv04','cv11'; }
+
+    .reveal-up    { opacity:0; transform:translateY(30px);  transition:opacity .6s ease, transform .6s ease; }
+    .reveal-up.visible    { opacity:1; transform:translateY(0); }
+    .reveal-left  { opacity:0; transform:translateX(-30px); transition:opacity .5s ease, transform .5s ease; }
+    .reveal-left.visible  { opacity:1; transform:translateX(0); }
+    .reveal-right { opacity:0; transform:translateX(30px);  transition:opacity .5s ease, transform .5s ease; }
+    .reveal-right.visible { opacity:1; transform:translateX(0); }
+    .reveal-scale { opacity:0; transform:scale(.95);        transition:opacity .5s ease, transform .5s ease; }
+    .reveal-scale.visible { opacity:1; transform:scale(1); }
+
+    .material-symbols-outlined { font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24; vertical-align:middle; }
+    .icon-sm { font-size:20px; }
+    .icon-md { font-size:24px; }
+    .icon-lg { font-size:32px; }
+    .icon-xl { font-size:40px; }
+
+    .stepper-bar { height:4px; background:#e5e7eb; position:relative; }
+    .stepper-bar-fill { height:100%; width:0; background:linear-gradient(to right,#c0392b,#f39c12,#56cbdb); transition:width 1.2s ease; border-radius:2px; }
+    .stepper-bar.visible .stepper-bar-fill { width:100%; }
+    .stepper-dot { width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:13px; color:#fff; position:relative; z-index:1; transition:transform .3s ease; }
+    .stepper-dot:hover { transform:scale(1.1); }
+
+    .chat-msg   { max-width:75%; padding:14px 18px; border-radius:14px; position:relative; }
+    .chat-left  { background:#fff; border:1px solid #e5e7eb; border-bottom-left-radius:4px; margin-right:auto; }
+    .chat-right { background:#f0fafb; border:1px solid #d9f2f5; border-bottom-right-radius:4px; margin-left:auto; }
+    .chat-center{ background:#f0fdf4; border:1px solid #bbf7d0; border-radius:14px; margin:0 auto; text-align:center; }
+
+    .source-card { transition:all .3s ease; border:1px solid #e5e7eb; }
+    .source-card:hover { border-color:#56cbdb; transform:translateY(-4px); box-shadow:0 8px 30px rgba(86,203,219,.12); }
+    .source-line { width:2px; height:0; background:#56cbdb; transition:height .6s ease; margin:0 auto; }
+    .source-line.visible { height:40px; }
+
+    .ocr-doc    { background:#f8f9fa; border:2px dashed #d1d5db; border-radius:12px; padding:24px; font-family:monospace; font-size:13px; color:#999; line-height:1.8; }
+    .ocr-result { background:#f0fdf4; border:2px solid #86efac; border-radius:12px; padding:24px; }
+    .ocr-highlight { background:#fef08a; padding:1px 4px; border-radius:3px; font-weight:700; color:#333; }
+
+    .compare-check { width:20px; height:20px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; }
+
+    /* Back to main site link */
+    .back-link { display:inline-flex; align-items:center; gap:.375rem; font-size:.8rem; color:#6b7280; transition:color .2s; text-decoration:none; }
+    .back-link:hover { color:#56cbdb; }
+  </style>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+  <div class="max-w-6xl mx-auto px-6 py-3.5 flex items-center justify-between">
+    <a href="../index.html" class="flex items-center gap-3">
+      <img src="../assets/images/logos/nt-black.png" alt="Next Technologies" style="height:32px;width:auto;">
+    </a>
+    <div class="hidden md:flex items-center gap-7 text-sm text-gray-500">
+      <a href="#que-es"        class="hover:text-brand-500 transition">Que es PUI</a>
+      <a href="#como-funciona" class="hover:text-brand-500 transition">Como funciona</a>
+      <a href="#fuentes"       class="hover:text-brand-500 transition">Fuentes de datos</a>
+      <a href="#planes"        class="hover:text-brand-500 transition">Planes</a>
+      <a href="#contacto" class="bg-brand-400 text-white px-5 py-2 rounded-lg hover:bg-brand-500 transition text-sm font-medium">Agendar demo</a>
+    </div>
+    <a href="../index.html" class="back-link md:hidden">
+      <span class="material-symbols-outlined icon-sm">arrow_back</span> Inicio
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="min-h-screen flex items-center pt-16" style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 60%,#1a3d45 100%);">
+  <div class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-16 items-center">
+    <div>
+      <div class="flex items-center gap-2 mb-5">
+        <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+        <span class="text-red-300 text-sm font-medium">Obligacion legal vigente — Plazo vencido Marzo 2026</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-5">
+        Tu hotel tiene una obligacion legal con el gobierno
+      </h1>
+      <p class="text-lg text-gray-400 mb-3">
+        La Plataforma Unica de Identidad (PUI) exige que todos los hoteles de Mexico busquen personas desaparecidas en sus registros de huespedes.
+      </p>
+      <p class="text-red-400 font-semibold mb-8">
+        La multa por no cumplir: hasta $2.34 millones de pesos por infraccion.
+      </p>
+      <div class="flex gap-3 flex-wrap">
+        <a href="#contacto" class="bg-brand-400 text-white px-7 py-3.5 rounded-lg text-base font-semibold hover:bg-brand-500 transition">Agendar demo</a>
+        <a href="#como-funciona" class="border border-white/20 text-white px-7 py-3.5 rounded-lg text-base hover:border-brand-400 hover:text-brand-400 transition">Como funciona</a>
+      </div>
+    </div>
+    <div class="hidden md:block">
+      <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-7">
+        <div class="text-xs text-brand-400 font-mono mb-5 tracking-wider">FLUJO PUI SIMPLIFICADO</div>
+        <div class="space-y-5">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined icon-md text-red-400">account_balance</span>
+            </div>
+            <div>
+              <div class="font-semibold text-white text-sm">Gobierno registra persona desaparecida</div>
+              <div class="text-xs text-gray-500">SEGOB / CNB / RNPDNO</div>
+            </div>
+          </div>
+          <div class="border-l-2 border-brand-400/20 ml-5 h-4"></div>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-brand-400/20 flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined icon-md text-brand-400">send</span>
+            </div>
+            <div>
+              <div class="font-semibold text-white text-sm">PUI envia reporte a tu hotel</div>
+              <div class="text-xs text-gray-500">Con CURP y datos de la persona</div>
+            </div>
+          </div>
+          <div class="border-l-2 border-brand-400/20 ml-5 h-4"></div>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-brand-400/20 flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined icon-md text-brand-300">search</span>
+            </div>
+            <div>
+              <div class="font-semibold text-brand-300 text-sm">NT Identity Connect busca automaticamente</div>
+              <div class="text-xs text-gray-500">3 fases: datos basicos, historica, continua</div>
+            </div>
+          </div>
+          <div class="border-l-2 border-brand-400/20 ml-5 h-4"></div>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-emerald-500/20 flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined icon-md text-emerald-400">verified</span>
+            </div>
+            <div>
+              <div class="font-semibold text-white text-sm">Coincidencia notificada cifrada</div>
+              <div class="text-xs text-gray-500">AES-256-GCM automatico al gobierno</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUE ES PUI -->
+<section id="que-es" class="py-20 bg-gray-50">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="text-center mb-10 reveal-up">
+      <h2 class="text-3xl font-bold text-gray-900 mb-2">Que es PUI y por que te afecta</h2>
+      <p class="text-gray-500">La Plataforma Unica de Identidad en 3 puntos</p>
+    </div>
+    <div class="reveal-up mb-12">
+      <div class="flex items-center justify-between max-w-2xl mx-auto relative">
+        <div class="absolute top-6 left-[15%] right-[15%] stepper-bar"><div class="stepper-bar-fill"></div></div>
+        <div class="text-center z-10">
+          <div class="stepper-dot bg-red-500 mx-auto">DOF</div>
+          <div class="text-sm font-bold mt-3">27 Nov 2025</div>
+          <div class="text-xs text-gray-400 mt-0.5">Lineamientos<br>publicados</div>
+        </div>
+        <div class="text-center z-10">
+          <div class="stepper-dot bg-amber-500 mx-auto">v1.03</div>
+          <div class="text-sm font-bold mt-3">23 Ene 2026</div>
+          <div class="text-xs text-gray-400 mt-0.5">Manual Tecnico<br>publicado</div>
+        </div>
+        <div class="text-center z-10">
+          <div class="stepper-dot bg-brand-400 mx-auto">HOY</div>
+          <div class="text-sm font-bold mt-3">Plazo vencido</div>
+          <div class="text-xs text-gray-400 mt-0.5">Riesgo de multas<br>activo</div>
+        </div>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-5">
+      <div class="bg-white rounded-xl p-6 border border-gray-100 reveal-up" style="transition-delay:.1s">
+        <span class="material-symbols-outlined icon-lg text-brand-400 mb-3" style="display:block;">policy</span>
+        <div class="text-xs font-semibold text-brand-500 uppercase tracking-wider mb-2">Que es</div>
+        <p class="text-sm text-gray-600 leading-relaxed">Una plataforma del gobierno federal (SEGOB/RENAPO) para buscar personas desaparecidas cruzando datos en registros administrativos de instituciones.</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 border border-gray-100 reveal-up" style="transition-delay:.2s">
+        <span class="material-symbols-outlined icon-lg text-brand-400 mb-3" style="display:block;">hotel</span>
+        <div class="text-xs font-semibold text-brand-500 uppercase tracking-wider mb-2">Por que los hoteles</div>
+        <p class="text-sm text-gray-600 leading-relaxed">Los hoteles registran huespedes con CURP al hacer check-in. Eso los convierte en instituciones obligadas a interconectarse con la PUI.</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 border border-red-100 reveal-up" style="transition-delay:.3s">
+        <span class="material-symbols-outlined icon-lg text-red-400 mb-3" style="display:block;">gavel</span>
+        <div class="text-xs font-semibold text-red-500 uppercase tracking-wider mb-2">Que pasa si no cumples</div>
+        <p class="text-sm text-gray-600 leading-relaxed">Multas de <strong class="text-red-600">$1.17M a $2.34M MXN</strong> por infraccion (Art. 43 Bis LGMDFP). El plazo de inscripcion ya vencio en Marzo 2026.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA (Chat flow) -->
+<section id="como-funciona" class="py-20">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="text-center mb-10 reveal-up">
+      <h2 class="text-3xl font-bold text-gray-900 mb-2">Como funciona dia a dia</h2>
+      <p class="text-gray-500">El proceso es automatico. El operador solo supervisa.</p>
+    </div>
+    <div class="space-y-4">
+      <div class="reveal-left">
+        <div class="text-xs text-gray-400 mb-1 ml-1">PUI Gobierno</div>
+        <div class="chat-msg chat-left">
+          <div class="text-sm font-semibold text-gray-800">Nuevo reporte de persona desaparecida</div>
+          <div class="text-xs text-gray-500 mt-1">CURP: GARL******HDFXXX01 — Nombre: Roberto G. L. — Desaparicion: 15/Mar/2024</div>
+        </div>
+      </div>
+      <div class="reveal-right" style="transition-delay:.15s">
+        <div class="text-xs text-gray-400 mb-1 text-right mr-1">NT Identity Connect</div>
+        <div class="chat-msg chat-right">
+          <div class="text-sm font-semibold text-brand-700">Reporte recibido. Iniciando busqueda automatica.</div>
+          <div class="text-xs text-gray-500 mt-1">Fase 1: Buscando datos basicos del CURP en registros...</div>
+        </div>
+      </div>
+      <div class="reveal-right" style="transition-delay:.3s">
+        <div class="chat-msg chat-right">
+          <div class="text-sm font-semibold text-brand-700">Fase 2: Busqueda historica en curso.</div>
+          <div class="text-xs text-gray-500 mt-1">Revisando registros desde 15/Mar/2024 hasta hoy (maximo 12 anos)...</div>
+        </div>
+      </div>
+      <div class="reveal-scale" style="transition-delay:.45s">
+        <div class="chat-msg chat-center">
+          <div class="text-sm font-semibold text-emerald-700">Coincidencia encontrada</div>
+          <div class="text-xs text-gray-500 mt-1">Check-in el 10/Abr/2026 — Habitacion 405 — Datos cifrados y notificados al gobierno automaticamente</div>
+        </div>
+      </div>
+      <div class="reveal-right" style="transition-delay:.6s">
+        <div class="chat-msg chat-right">
+          <div class="text-sm font-semibold text-brand-700">Fase 3 activada: busqueda continua cada 1-4 horas.</div>
+          <div class="text-xs text-gray-500 mt-1">Monitoreando nuevos check-ins contra este reporte y los otros activos. 24/7 automatico.</div>
+        </div>
+      </div>
+      <div class="reveal-left" style="transition-delay:.75s">
+        <div class="text-xs text-gray-400 mb-1 ml-1">Panel del operador</div>
+        <div class="chat-msg chat-left">
+          <div class="text-sm text-gray-600">El operador ve todo en su dashboard: reportes activos, coincidencias, estado de cada fase. <strong>No necesita hacer nada — todo es automatico.</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FUENTES DE DATOS -->
+<section id="fuentes" class="py-20 bg-gray-50">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="text-center mb-10 reveal-up">
+      <h2 class="text-3xl font-bold text-gray-900 mb-2">5 formas de alimentar tus datos</h2>
+      <p class="text-gray-500">Usa la que mejor se adapte a tu operacion — o combinalas</p>
+    </div>
+    <div class="grid md:grid-cols-5 gap-4 mb-4">
+      <div class="source-card bg-white rounded-xl p-5 text-center reveal-up" style="transition-delay:0s">
+        <div class="w-11 h-11 rounded-lg bg-blue-50 flex items-center justify-center mx-auto mb-3"><span class="material-symbols-outlined text-blue-500 icon-md">desktop_windows</span></div>
+        <div class="text-sm font-bold text-gray-800">PMS del hotel</div>
+        <div class="text-xs text-gray-400 mt-1">Opera, Innsist, Cloudbeds u otro</div>
+      </div>
+      <div class="source-card bg-white rounded-xl p-5 text-center reveal-up" style="transition-delay:.08s">
+        <div class="w-11 h-11 rounded-lg bg-emerald-50 flex items-center justify-center mx-auto mb-3"><span class="material-symbols-outlined text-emerald-500 icon-md">upload_file</span></div>
+        <div class="text-sm font-bold text-gray-800">Archivo CSV</div>
+        <div class="text-xs text-gray-400 mt-1">Importacion masiva de registros</div>
+      </div>
+      <div class="source-card bg-white rounded-xl p-5 text-center reveal-up" style="transition-delay:.16s">
+        <div class="w-11 h-11 rounded-lg bg-amber-50 flex items-center justify-center mx-auto mb-3"><span class="material-symbols-outlined text-amber-500 icon-md">edit_note</span></div>
+        <div class="text-sm font-bold text-gray-800">Formulario</div>
+        <div class="text-xs text-gray-400 mt-1">Captura directa en el panel</div>
+      </div>
+      <div class="source-card bg-white rounded-xl p-5 text-center reveal-up" style="transition-delay:.24s">
+        <div class="w-11 h-11 rounded-lg bg-purple-50 flex items-center justify-center mx-auto mb-3"><span class="material-symbols-outlined text-purple-500 icon-md">document_scanner</span></div>
+        <div class="text-sm font-bold text-gray-800">Escaneo INE</div>
+        <div class="text-xs text-gray-400 mt-1">IA extrae CURP de la foto</div>
+      </div>
+      <div class="source-card bg-white rounded-xl p-5 text-center reveal-up" style="transition-delay:.32s">
+        <div class="w-11 h-11 rounded-lg bg-gray-100 flex items-center justify-center mx-auto mb-3"><span class="material-symbols-outlined text-gray-700 icon-md">api</span></div>
+        <div class="text-sm font-bold text-gray-800">API REST</div>
+        <div class="text-xs text-gray-400 mt-1">Integra cualquier sistema</div>
+      </div>
+    </div>
+    <div class="flex justify-center gap-4 mb-4">
+      <div class="source-line" style="transition-delay:0s"></div>
+      <div class="source-line" style="transition-delay:.08s"></div>
+      <div class="source-line" style="transition-delay:.16s"></div>
+      <div class="source-line" style="transition-delay:.24s"></div>
+      <div class="source-line" style="transition-delay:.32s"></div>
+    </div>
+    <div class="flex justify-center gap-4 reveal-scale">
+      <div class="bg-emerald-500 text-white rounded-xl px-8 py-5 text-center">
+        <div class="text-sm font-bold">Registro central de huespedes</div>
+        <div class="text-xs opacity-80 mt-1">CURP + nombre + fecha + check-in</div>
+      </div>
+      <div class="flex items-center text-gray-300 text-2xl">&#8594;</div>
+      <div class="bg-blue-600 text-white rounded-xl px-8 py-5 text-center">
+        <div class="text-sm font-bold">Motor de busqueda PUI</div>
+        <div class="text-xs opacity-80 mt-1">Cruza contra reportes activos</div>
+      </div>
+    </div>
+    <p class="text-center text-sm text-gray-400 mt-6 reveal-up">No importa si tu hotel tiene PMS moderno o registra huespedes en papel. <strong class="text-gray-600">NT Identity Connect se adapta.</strong></p>
+  </div>
+</section>
+
+<!-- ESCANEO INTELIGENTE (Antes/Despues) -->
+<section class="py-20">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="text-center mb-10 reveal-up">
+      <h2 class="text-3xl font-bold text-gray-900 mb-2">Escaneo inteligente de documentos</h2>
+      <p class="text-gray-500">El huesped presenta su INE. El operador toma foto. La IA hace el resto.</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8 items-start">
+      <div class="reveal-left">
+        <div class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">El operador sube la foto</div>
+        <div class="ocr-doc">
+          <div class="text-center text-gray-300 mb-3">[Foto de INE — frente]</div>
+          <div>INSTITUTO NACIONAL ELECTORAL</div>
+          <div>NOMBRE <span class="ocr-highlight">ROBERTO</span></div>
+          <div>APELLIDO PATERNO <span class="ocr-highlight">GARCIA</span></div>
+          <div>APELLIDO MATERNO <span class="ocr-highlight">LOPEZ</span></div>
+          <div>FECHA DE NACIMIENTO <span class="ocr-highlight">15/05/1990</span></div>
+          <div>CURP <span class="ocr-highlight">GARL900515HDFXXX01</span></div>
+          <div>CLAVE DE ELECTOR ...</div>
+          <div>SECCION ... VIGENCIA ...</div>
+        </div>
+        <div class="text-center mt-3">
+          <span class="text-xs bg-purple-50 text-purple-600 px-3 py-1 rounded-full font-medium">Google Cloud Vision lee el documento</span>
+        </div>
+      </div>
+      <div class="reveal-right" style="transition-delay:.2s">
+        <div class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">La IA extrae los datos</div>
+        <div class="ocr-result">
+          <div class="space-y-3">
+            <div>
+              <div class="text-xs text-gray-400">CURP (extraido automaticamente)</div>
+              <div class="text-lg font-mono font-bold text-gray-900">GARL900515HDFXXX01</div>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              <div><div class="text-xs text-gray-400">Nombre</div><div class="text-sm font-semibold">Roberto</div></div>
+              <div><div class="text-xs text-gray-400">Primer apellido</div><div class="text-sm font-semibold">Garcia</div></div>
+              <div><div class="text-xs text-gray-400">Segundo apellido</div><div class="text-sm font-semibold">Lopez</div></div>
+              <div><div class="text-xs text-gray-400">Fecha nacimiento</div><div class="text-sm font-semibold">15/05/1990</div></div>
+              <div><div class="text-xs text-gray-400">Sexo</div><div class="text-sm font-semibold">H</div></div>
+              <div><div class="text-xs text-gray-400">Lugar nacimiento</div><div class="text-sm font-semibold">CDMX</div></div>
+            </div>
+            <div class="flex gap-2 mt-2">
+              <span class="bg-emerald-500 text-white text-xs px-4 py-2 rounded-lg font-medium cursor-pointer hover:bg-emerald-600 transition">Confirmar y registrar</span>
+              <span class="bg-gray-100 text-gray-600 text-xs px-4 py-2 rounded-lg font-medium cursor-pointer hover:bg-gray-200 transition">Corregir datos</span>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <span class="text-xs bg-amber-50 text-amber-600 px-3 py-1 rounded-full font-medium">Si la lectura no es clara: Gemini Vision analiza como respaldo</span>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-sm text-brand-600 font-semibold mt-8 reveal-up">Ningun otro proveedor PUI en el mercado ofrece esta capacidad.</p>
+  </div>
+</section>
+
+<!-- SEGURIDAD -->
+<section class="py-20 bg-gray-50">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="text-center mb-10 reveal-up">
+      <h2 class="text-3xl font-bold text-gray-900 mb-2">Seguridad que cumple con el gobierno</h2>
+      <p class="text-gray-500">Arquitectura de 6 capas conforme a la Seccion 11 del Manual Tecnico PUI</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div class="reveal-scale flex justify-center">
+        <div class="relative" style="width:360px;height:360px;">
+          <div class="absolute inset-0 rounded-full border-2 border-red-200 bg-red-50/40 flex items-start justify-center pt-3">
+            <span class="text-[10px] font-semibold text-red-400 uppercase tracking-wider">Perimetro</span>
+          </div>
+          <div class="absolute rounded-full border-2 border-amber-200 bg-amber-50/40 flex items-start justify-center pt-3" style="inset:30px;">
+            <span class="text-[10px] font-semibold text-amber-500 uppercase tracking-wider">Transporte</span>
+          </div>
+          <div class="absolute rounded-full border-2 border-emerald-200 bg-emerald-50/40 flex items-start justify-center pt-3" style="inset:60px;">
+            <span class="text-[10px] font-semibold text-emerald-500 uppercase tracking-wider">Autenticacion</span>
+          </div>
+          <div class="absolute rounded-full border-2 border-teal-200 bg-teal-50/50 flex items-start justify-center pt-3" style="inset:90px;">
+            <span class="text-[10px] font-semibold text-teal-500 uppercase tracking-wider">Cifrado</span>
+          </div>
+          <div class="absolute rounded-full border-2 border-blue-200 bg-blue-50/50 flex items-start justify-center pt-2.5" style="inset:120px;">
+            <span class="text-[9px] font-semibold text-blue-500 uppercase tracking-wider">Validacion</span>
+          </div>
+          <div class="absolute rounded-full border-2 border-violet-300 bg-violet-100 flex items-center justify-center" style="inset:148px;">
+            <div class="text-center">
+              <span class="material-symbols-outlined text-violet-500" style="font-size:20px;">database</span>
+              <div class="text-[8px] font-bold text-violet-600 mt-0.5">Datos<br>protegidos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="space-y-3 reveal-right">
+        <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-gray-100">
+          <div class="w-8 h-8 rounded-full bg-red-50 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-red-400" style="font-size:16px;">shield</span></div>
+          <div><div class="text-xs font-semibold text-gray-800">Perimetro — Cloud Armor WAF</div><div class="text-[11px] text-gray-500 mt-0.5">IP whitelist para PUI gobierno. Geo-restriction Mexico. Proteccion anti-DDoS. Reglas OWASP.</div></div>
+        </div>
+        <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-gray-100">
+          <div class="w-8 h-8 rounded-full bg-amber-50 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-amber-500" style="font-size:16px;">lock</span></div>
+          <div><div class="text-xs font-semibold text-gray-800">Transporte — TLS 1.2+</div><div class="text-[11px] text-gray-500 mt-0.5">Certificados SSL gestionados. Protocolos inseguros deshabilitados. HSTS activo.</div></div>
+        </div>
+        <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-gray-100">
+          <div class="w-8 h-8 rounded-full bg-emerald-50 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-emerald-500" style="font-size:16px;">key</span></div>
+          <div><div class="text-xs font-semibold text-gray-800">Autenticacion — JWT dual</div><div class="text-[11px] text-gray-500 mt-0.5">JWT PUI (gobierno) y Auth0 (operadores) completamente aislados. Expiracion obligatoria.</div></div>
+        </div>
+        <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-gray-100">
+          <div class="w-8 h-8 rounded-full bg-teal-50 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-teal-500" style="font-size:16px;">enhanced_encryption</span></div>
+          <div><div class="text-xs font-semibold text-gray-800">Cifrado — AES-256-GCM por hotel</div><div class="text-[11px] text-gray-500 mt-0.5">Clave unica por tenant en Secret Manager. Rotacion sin downtime. Cifrado de grado militar.</div></div>
+        </div>
+        <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-gray-100">
+          <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-blue-500" style="font-size:16px;">rule</span></div>
+          <div><div class="text-xs font-semibold text-gray-800">Validacion — OWASP</div><div class="text-[11px] text-gray-500 mt-0.5">Validacion estricta de todos los datos. Rechazo de payloads invalidos. Prevencion de inyeccion.</div></div>
+        </div>
+        <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-gray-100">
+          <div class="w-8 h-8 rounded-full bg-violet-50 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-violet-500" style="font-size:16px;">history</span></div>
+          <div><div class="text-xs font-semibold text-gray-800">Auditoria y trazabilidad</div><div class="text-[11px] text-gray-500 mt-0.5">Logs JSON estructurados de toda operacion PUI. Reportes SAST/DAST/SCA listos para SEGOB.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARATIVA -->
+<section class="py-20">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="text-center mb-10 reveal-up">
+      <h2 class="text-3xl font-bold text-gray-900 mb-2">Por que NT y no otras opciones</h2>
+      <p class="text-gray-500">Evaluacion objetiva de las alternativas disponibles en el mercado</p>
+    </div>
+    <div class="overflow-x-auto reveal-up">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr>
+            <th class="text-left py-3 px-4 bg-gray-900 text-white rounded-tl-lg" style="width:28%">Criterio</th>
+            <th class="py-3 px-3 bg-gray-900 text-white text-center">Middleware<br><span class="font-normal text-xs text-gray-400">~$800/mes</span></th>
+            <th class="py-3 px-3 bg-gray-900 text-white text-center">SaaS premium<br><span class="font-normal text-xs text-gray-400">$270K+ setup</span></th>
+            <th class="py-3 px-3 bg-gray-900 text-white text-center">Genericos<br><span class="font-normal text-xs text-gray-400">Precio no publico</span></th>
+            <th class="py-3 px-3 bg-brand-500 text-white text-center rounded-tr-lg">NT Identity<br>Connect</th>
+          </tr>
+        </thead>
+        <tbody class="text-xs">
+          <tr class="border-b border-gray-100"><td class="py-2.5 px-4 font-semibold">Integracion PMS</td><td class="text-center">Opera, Cloudbeds</td><td class="text-center">Solo Oracle/Innsist</td><td class="text-center text-gray-400">Sin PMS</td><td class="text-center bg-brand-50"><span class="compare-check bg-emerald-100 text-emerald-600">Si</span> Cualquier PMS</td></tr>
+          <tr class="border-b border-gray-100"><td class="py-2.5 px-4 font-semibold">OCR inteligente (IA)</td><td class="text-center text-gray-400">Solo QR del INE</td><td class="text-center text-gray-400">No</td><td class="text-center text-gray-400">No</td><td class="text-center bg-brand-50"><span class="compare-check bg-emerald-100 text-emerald-600">Si</span> Cloud Vision + Gemini</td></tr>
+          <tr class="border-b border-gray-100"><td class="py-2.5 px-4 font-semibold">Cifrado por hotel</td><td class="text-center text-gray-400">No detallado</td><td class="text-center text-gray-400">No detallado</td><td class="text-center text-gray-400">Declarado</td><td class="text-center bg-brand-50"><span class="compare-check bg-emerald-100 text-emerald-600">Si</span> AES-256-GCM</td></tr>
+          <tr class="border-b border-gray-100"><td class="py-2.5 px-4 font-semibold">Multi razon social</td><td class="text-center text-gray-400">No</td><td class="text-center">Si</td><td class="text-center text-gray-400">No</td><td class="text-center bg-brand-50"><span class="compare-check bg-emerald-100 text-emerald-600">Si</span> Enterprise</td></tr>
+          <tr class="border-b border-gray-100"><td class="py-2.5 px-4 font-semibold">Suite CFDI + analitica</td><td class="text-center text-gray-400">No</td><td class="text-center text-gray-400">No</td><td class="text-center text-gray-400">No</td><td class="text-center bg-brand-50"><span class="compare-check bg-emerald-100 text-emerald-600">Si</span></td></tr>
+          <tr class="border-b border-gray-100"><td class="py-2.5 px-4 font-semibold">Experiencia hotelera</td><td class="text-center">Media</td><td class="text-center text-gray-400">Baja</td><td class="text-center text-gray-400">Nula</td><td class="text-center bg-brand-50"><span class="compare-check bg-emerald-100 text-emerald-600">Si</span> +10 anos</td></tr>
+          <tr><td class="py-2.5 px-4 font-semibold">Reportes SAST/DAST</td><td class="text-center text-gray-400">No</td><td class="text-center text-gray-400">No</td><td class="text-center text-gray-400">Declarado</td><td class="text-center bg-brand-50"><span class="compare-check bg-emerald-100 text-emerald-600">Si</span> Automatizados</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- HACERLO TU MISMO -->
+<section class="py-20 bg-gray-50">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="text-center mb-10 reveal-up">
+      <h2 class="text-3xl font-bold text-gray-900 mb-2">Hacerlo tu mismo vs contratarnos</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-red-50 border border-red-100 rounded-xl p-6 reveal-left">
+        <div class="text-sm font-bold text-red-800 mb-4">Desarrollo interno</div>
+        <div class="space-y-2 text-sm text-gray-600">
+          <div class="py-1.5 border-b border-red-100/50">Contratar 2-4 desarrolladores especializados</div>
+          <div class="py-1.5 border-b border-red-100/50">4 a 12 meses de desarrollo</div>
+          <div class="py-1.5 border-b border-red-100/50">Construir endpoints + cifrado + motor de busqueda</div>
+          <div class="py-1.5 border-b border-red-100/50">Pasar pruebas de seguridad del gobierno</div>
+          <div class="py-1.5 border-b border-red-100/50">Operar y mantener servidores 24/7</div>
+          <div class="py-1.5 border-b border-red-100/50">Actualizar con cada cambio regulatorio</div>
+          <div class="py-1.5 font-bold text-red-700">Costo estimado: +$3M MXN y 6+ meses</div>
+        </div>
+      </div>
+      <div class="bg-emerald-50 border border-emerald-100 rounded-xl p-6 reveal-right" style="transition-delay:.15s">
+        <div class="text-sm font-bold text-emerald-800 mb-4">NT Identity Connect</div>
+        <div class="space-y-2 text-sm text-gray-600">
+          <div class="py-1.5 border-b border-emerald-100/50">Producto listo — implementacion inmediata</div>
+          <div class="py-1.5 border-b border-emerald-100/50">Operando en dias, no en meses</div>
+          <div class="py-1.5 border-b border-emerald-100/50">Todo construido, probado y aprobado</div>
+          <div class="py-1.5 border-b border-emerald-100/50">Reportes de seguridad incluidos</div>
+          <div class="py-1.5 border-b border-emerald-100/50">Operacion y monitoreo 24/7 incluidos</div>
+          <div class="py-1.5 border-b border-emerald-100/50">Actualizaciones regulatorias incluidas</div>
+          <div class="py-1.5 font-bold text-emerald-700">Fraccion del costo, cero riesgo</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANES -->
+<section id="planes" class="py-20">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="text-center mb-10 reveal-up">
+      <h2 class="text-3xl font-bold text-gray-900 mb-2">Planes modulares</h2>
+      <p class="text-gray-500">Todos incluyen cumplimiento PUI completo. Paga solo lo que necesitas.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-5">
+      <div class="bg-white border border-gray-200 rounded-xl p-6 reveal-up" style="transition-delay:0s">
+        <span class="material-symbols-outlined text-gray-300 icon-xl" style="display:block;margin-bottom:8px;">home_work</span>
+        <div class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Basico</div>
+        <div class="text-sm text-gray-500 mt-1 mb-5">Hotel independiente</div>
+        <div class="space-y-2.5 text-sm">
+          <div class="flex items-center gap-2"><span class="compare-check bg-emerald-100 text-emerald-600 text-xs">Si</span> Cumplimiento PUI completo</div>
+          <div class="flex items-center gap-2"><span class="compare-check bg-emerald-100 text-emerald-600 text-xs">Si</span> Panel de operacion</div>
+          <div class="flex items-center gap-2"><span class="compare-check bg-emerald-100 text-emerald-600 text-xs">Si</span> CSV + formulario</div>
+          <div class="flex items-center gap-2 text-gray-300"><span class="compare-check bg-gray-100 text-gray-400 text-xs">—</span> Integracion PMS</div>
+          <div class="flex items-center gap-2 text-gray-300"><span class="compare-check bg-gray-100 text-gray-400 text-xs">—</span> Escaneo IA</div>
+        </div>
+        <a href="#contacto" class="block mt-6 text-center bg-gray-100 text-gray-700 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-200 transition">Solicitar cotizacion</a>
+      </div>
+      <div class="bg-white border-2 border-brand-400 rounded-xl p-6 relative reveal-up" style="transition-delay:.1s">
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-400 text-white text-xs px-3 py-0.5 rounded-full font-medium">Recomendado</div>
+        <span class="material-symbols-outlined text-brand-400 icon-xl" style="display:block;margin-bottom:8px;">domain</span>
+        <div class="text-xs font-semibold text-brand-500 uppercase tracking-wider">Profesional</div>
+        <div class="text-sm text-gray-500 mt-1 mb-5">Cadena hotelera</div>
+        <div class="space-y-2.5 text-sm">
+          <div class="flex items-center gap-2"><span class="compare-check bg-emerald-100 text-emerald-600 text-xs">Si</span> Cumplimiento PUI completo</div>
+          <div class="flex items-center gap-2"><span class="compare-check bg-emerald-100 text-emerald-600 text-xs">Si</span> Panel de operacion</div>
+          <div class="flex items-center gap-2"><span class="compare-check bg-emerald-100 text-emerald-600 text-xs">Si</span> CSV + formulario</div>
+          <div class="flex items-center gap-2"><span class="compare-check bg-emerald-100 text-emerald-600 text-xs">Si</span> Integracion PMS</div>
+          <div class="flex items-center gap-2"><span class="compare-check bg-emerald-100 text-emerald-600 text-xs">Si</span> Escaneo IA</div>
+        </div>
+        <a href="#contacto" class="block mt-6 text-center bg-brand-400 text-white py-2.5 rounded-lg text-sm font-medium hover:bg-brand-500 transition">Solicitar cotizacion</a>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-xl p-6 reveal-up" style="transition-delay:.2s">
+        <span class="material-symbols-outlined text-gray-300 icon-xl" style="display:block;margin-bottom:8px;">corporate_fare</span>
+        <div class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Enterprise</div>
+        <div class="text-sm text-gray-500 mt-1 mb-5">Grupo hotelero</div>
+        <div class="space-y-2.5 text-sm">
+          <div class="flex items-center gap-2"><span class="compare-check bg-emerald-100 text-emerald-600 text-xs">Si</span> Todo lo de Profesional</div>
+          <div class="flex items-center gap-2"><span class="compare-check bg-emerald-100 text-emerald-600 text-xs">Si</span> Multi razon social</div>
+          <div class="flex items-center gap-2"><span class="compare-check bg-emerald-100 text-emerald-600 text-xs">Si</span> API abierta</div>
+          <div class="flex items-center gap-2"><span class="compare-check bg-emerald-100 text-emerald-600 text-xs">Si</span> Suite CFDI + analitica</div>
+          <div class="flex items-center gap-2"><span class="compare-check bg-emerald-100 text-emerald-600 text-xs">Si</span> Panel corporativo</div>
+        </div>
+        <a href="#contacto" class="block mt-6 text-center bg-gray-100 text-gray-700 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-200 transition">Solicitar cotizacion</a>
+      </div>
+    </div>
+    <p class="text-center text-xs text-gray-400 mt-5">Precios en MXN + IVA. Hosting, mantenimiento, soporte y actualizaciones regulatorias incluidos.</p>
+  </div>
+</section>
+
+<!-- NT GROUP -->
+<section class="py-20 bg-gray-50">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="text-center mb-10 reveal-up">
+      <h2 class="text-3xl font-bold text-gray-900 mb-2">NT Group — Next Technologies</h2>
+      <p class="text-gray-500">La empresa detras de NT Identity Connect</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8 mb-10 reveal-up">
+      <div class="text-center"><div class="text-4xl font-extrabold text-brand-500">+10</div><div class="text-sm text-gray-500 mt-1">anos en tecnologia para hoteleria</div></div>
+      <div class="text-center"><div class="text-4xl font-extrabold text-brand-500">+100</div><div class="text-sm text-gray-500 mt-1">hoteles operando con nuestra suite</div></div>
+      <div class="text-center"><div class="text-4xl font-extrabold text-brand-500">GCP</div><div class="text-sm text-gray-500 mt-1">Partner de Google Cloud Platform</div></div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-5 reveal-up">
+      <div class="bg-white rounded-xl p-6 border border-gray-100">
+        <span class="material-symbols-outlined text-brand-400 icon-lg mb-2" style="display:block;">apartment</span>
+        <div class="text-sm font-bold text-gray-800 mb-2">Experiencia real en hoteleria</div>
+        <p class="text-sm text-gray-500">Facturacion electronica CFDI, integraciones con Opera, Micros, SAP y Dynamics. Conocemos la operacion hotelera mexicana.</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 border border-gray-100">
+        <span class="material-symbols-outlined text-brand-400 icon-lg mb-2" style="display:block;">support_agent</span>
+        <div class="text-sm font-bold text-gray-800 mb-2">Soporte continuo</div>
+        <p class="text-sm text-gray-500">Soporte tecnico con SLA. Monitoreo proactivo 24/7. Actualizaciones regulatorias cuando el gobierno cambie los lineamientos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA / CONTACTO -->
+<section id="contacto" class="py-20" style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 60%,#1a3d45 100%);">
+  <div class="max-w-3xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">El producto ya esta listo.<br>Tu hotel puede cumplir hoy.</h2>
+    <p class="text-gray-400 mb-3">No es un proyecto que toma meses. No es un middleware basico. Es una plataforma completa con IA, construida por expertos en hoteleria.</p>
+    <p class="text-red-400 text-sm font-medium mb-8">La multa por no cumplir puede superar los $2.3 millones de pesos. El costo de cumplir es una fraccion de eso.</p>
+    <div class="flex gap-3 justify-center flex-wrap">
+      <a href="mailto:ventas@next-technologies.com.mx?subject=Demo NT Identity Connect" class="bg-brand-400 text-white px-8 py-3.5 rounded-lg text-base font-semibold hover:bg-brand-500 transition">Agendar demo</a>
+      <a href="mailto:ventas@next-technologies.com.mx?subject=Propuesta NT Identity Connect" class="border border-white/20 text-white px-8 py-3.5 rounded-lg text-base hover:border-brand-400 hover:text-brand-400 transition">Solicitar propuesta</a>
+    </div>
+    <p class="text-gray-500 mt-6 text-sm">ventas@next-technologies.com.mx &nbsp;|&nbsp; +52 55 1205 8000</p>
+    <p class="text-gray-600 mt-2 text-xs">
+      <a href="../index.html" class="hover:text-brand-400 transition">next-technologies.com.mx</a>
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 py-6 text-center">
+  <a href="../index.html">
+    <img src="../assets/images/logos/nt-white.png" alt="Next Technologies" style="height:28px;width:auto;margin:0 auto 8px;">
+  </a>
+  <div class="text-brand-400 font-bold text-sm tracking-wider">NT GROUP</div>
+  <p class="text-gray-600 text-xs mt-1">NT Identity Connect. Todos los derechos reservados 2026.</p>
+</footer>
+
+<!-- SCROLL ANIMATIONS -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) { entry.target.classList.add('visible'); }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right, .reveal-scale, .stepper-bar, .source-line, .shield-layer')
+      .forEach(function(el) { observer.observe(el); });
+  });
+</script>
+</body>
+</html>

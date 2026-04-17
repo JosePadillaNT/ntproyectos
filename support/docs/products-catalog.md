@@ -87,3 +87,40 @@
 | FactoSuite | ✅ | ✅ | ✅ | ✅ |
 
 Disponible / En desarrollo
+
+---
+
+## NT Identity Connect
+
+**Tipo:** Plataforma SaaS de cumplimiento regulatorio
+**Mercado:** Solo Mexico (MX)
+**Regulacion:** PUI — Plataforma Unica de Identidad (SEGOB / RENAPO / CNB)
+
+### Descripcion
+Automatiza el cumplimiento obligatorio de la ley PUI para hoteles en Mexico.
+La Plataforma Unica de Identidad exige que los hoteles busquen personas desaparecidas en sus registros de huespedes.
+El incumplimiento conlleva multas de $1.17M a $2.34M MXN por infraccion (Art. 43 Bis LGMDFP).
+
+### Funcionalidades clave
+- Busqueda automatica en 3 fases: datos basicos, historica (hasta 12 anos), continua (cada 1-4 hrs)
+- OCR inteligente de INE con Google Cloud Vision + Gemini Vision como respaldo
+- 5 fuentes de datos: PMS, CSV, formulario, escaneo INE, API REST
+- Cifrado AES-256-GCM por hotel con clave unica en Secret Manager
+- Notificacion cifrada automatica al gobierno cuando hay coincidencia
+- Dashboard de operacion para el personal del hotel
+- Reportes SAST/DAST/SCA listos para SEGOB
+- JWT dual: PUI gobierno + Auth0 para operadores
+
+### Planes
+| Plan | Perfil | Incluye |
+|---|---|---|
+| Basico | Hotel independiente | PUI + panel + CSV/formulario |
+| Profesional | Cadena hotelera | + Integracion PMS + Escaneo IA |
+| Enterprise | Grupo hotelero | + Multi razon social + API abierta + CFDI + analitica |
+
+### Ventaja competitiva
+Unico producto en el mercado con OCR IA (Cloud Vision + Gemini), integracion con cualquier PMS
+(Opera, Innsist, Cloudbeds, SisHotel) y suite CFDI incluida.
+
+### URL de producto
+`/identity-connect/` — subpagina del sitio MX
