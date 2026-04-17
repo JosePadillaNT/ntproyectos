@@ -46,37 +46,67 @@
     .dev-topbar a.spec-link:hover { background: #1e293b; color: #a5b4fc; }
 
     /* ── Hero ── */
+    /* ── Compact info bar (replaces tall hero) ── */
     .dev-hero {
-      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 60%, #0f172a 100%);
-      padding: 3rem 2rem 2.5rem;
+      background: #0f172a;
       border-bottom: 1px solid #1e293b;
+      padding: .6rem 2rem;
     }
-    .dev-hero-inner { max-width: 900px; margin: 0 auto; }
-    .dev-hero-kicker { font-size: .75rem; font-weight: 600; color: #818cf8; letter-spacing: .08em; text-transform: uppercase; margin-bottom: .75rem; font-family: 'JetBrains Mono', monospace; }
-    .dev-hero h1 { font-size: 2rem; font-weight: 800; color: #f1f5f9; line-height: 1.2; margin-bottom: .75rem; }
-    .dev-hero p { color: #94a3b8; font-size: .95rem; max-width: 560px; line-height: 1.7; margin-bottom: 1.5rem; }
-
-    /* ── Quick start cards ── */
-    .qs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; max-width: 900px; margin: 0 auto 0; }
-    @media (max-width: 700px) { .qs-grid { grid-template-columns: 1fr; } }
+    .dev-hero-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .dev-hero-kicker {
+      font-size: .7rem;
+      font-weight: 700;
+      color: #818cf8;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      font-family: 'JetBrains Mono', monospace;
+      white-space: nowrap;
+    }
+    .dev-hero-sep { width: 1px; height: 14px; background: #1e293b; flex-shrink: 0; }
+    .dev-hero h1 { display: none; }
+    .dev-hero p  { display: none; }
+    /* Quick start pills (replaces cards) */
+    .qs-grid {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      flex-wrap: wrap;
+      flex: 1;
+    }
     .qs-card {
       background: #1e293b;
       border: 1px solid #334155;
-      border-radius: var(--radius);
-      padding: 1.25rem 1.5rem;
-      cursor: default;
+      border-radius: 100px;
+      padding: .3rem .85rem;
+      white-space: nowrap;
       transition: border-color .2s;
     }
     .qs-card:hover { border-color: #818cf8; }
-    .qs-card-step { font-size: .7rem; font-weight: 700; color: #818cf8; letter-spacing: .06em; text-transform: uppercase; margin-bottom: .5rem; font-family: 'JetBrains Mono', monospace; }
-    .qs-card h3 { font-size: .9rem; font-weight: 700; color: #f1f5f9; margin-bottom: .35rem; }
-    .qs-card p { font-size: .8rem; color: #94a3b8; line-height: 1.5; }
-    .qs-card code { font-family: 'JetBrains Mono', monospace; font-size: .75rem; background: #0f172a; color: #7dd3fc; padding: .15rem .4rem; border-radius: 4px; }
+    .qs-card-step { display: none; }
+    .qs-card h3 {
+      font-size: .72rem;
+      font-weight: 600;
+      color: #94a3b8;
+      margin: 0;
+    }
+    .qs-card p { display: none; }
+    .qs-card code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .7rem;
+      color: #7dd3fc;
+    }
 
     /* ── Stoplight wrapper ── */
     .stoplight-wrap {
-      height: calc(100vh - 220px);
-      min-height: 600px;
+      height: calc(100vh - 94px);
+      min-height: 500px;
     }
     elements-api {
       display: block;
@@ -117,29 +147,15 @@
   <div class="dev-hero">
     <div class="dev-hero-inner">
       <div class="dev-hero-kicker">NT FactoSuite API · CFDI 4.0 SAT</div>
-      <h1>Integra facturación electrónica<br>en minutos</h1>
-      <p>API REST para emisión, cancelación y validación de comprobantes fiscales en México. Autenticación JWT, webhooks y soporte para Opera PMS, SAP, Oracle y cualquier ERP.</p>
-
+      <div class="dev-hero-sep"></div>
       <div class="qs-grid">
-        <div class="qs-card">
-          <div class="qs-card-step">Paso 01</div>
-          <h3>Autenticarse</h3>
-          <p>Obtén tu JWT con <code>POST /auth/token</code> usando tu API Key de sandbox.</p>
-        </div>
-        <div class="qs-card">
-          <div class="qs-card-step">Paso 02</div>
-          <h3>Emitir comprobante</h3>
-          <p>Llama <code>/cfdi/emitir</code> con los datos del emisor, receptor y conceptos.</p>
-        </div>
-        <div class="qs-card">
-          <div class="qs-card-step">Paso 03</div>
-          <h3>Recibir webhook</h3>
-          <p>Configura tu URL en <code>POST /webhooks</code> para recibir eventos en tiempo real.</p>
-        </div>
+        <div class="qs-card"><h3>POST <code>/auth/token</code></h3></div>
+        <div class="qs-card"><h3>POST <code>/emitir</code></h3></div>
+        <div class="qs-card"><h3>Webhooks</h3></div>
+        <div class="qs-card"><h3>Hospitality</h3></div>
       </div>
     </div>
   </div>
-
   <!-- STOPLIGHT ELEMENTS -->
   <div class="stoplight-wrap">
     <elements-api
