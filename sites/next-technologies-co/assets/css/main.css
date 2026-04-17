@@ -207,3 +207,164 @@ footer { background: var(--text); color: rgba(255,255,255,.9); padding: 4rem 0 2
 /* ── Animations (AOS supplement) ── */
 [data-aos] { will-change: transform, opacity; }
 
+
+/* ─────────────────────────────────────────────────────
+   KONFIO PATTERNS — Floating tab, Bottom bar, Steps, Trust
+───────────────────────────────────────────────────── */
+
+/* Hero gradient (no heavy image) */
+.hero-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #eef2ff 55%, #f5f3ff 100%);
+}
+
+/* Floating CTA tab — left side, rotated */
+.floating-tab {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg) translateX(-50%);
+  transform-origin: left center;
+  z-index: 40;
+  background: var(--primary);
+  color: #fff;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  padding: .6rem 1.25rem;
+  border-radius: 0 0 8px 8px;
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: 2px 0 12px rgba(79,70,229,.25);
+  transition: background var(--transition);
+  text-decoration: none;
+}
+.floating-tab:hover { background: var(--primary-dk); }
+
+/* Sticky bottom bar */
+.bottom-bar {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 49;
+  background: rgba(255,255,255,.95);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid var(--border);
+  padding: .875rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  transform: translateY(100%);
+  transition: transform .35s cubic-bezier(.4,0,.2,1);
+  box-shadow: 0 -4px 16px rgba(0,0,0,.06);
+}
+.bottom-bar.visible { transform: translateY(0); }
+.bottom-bar-text { font-size: .9rem; font-weight: 600; color: var(--text); }
+.bottom-bar-sub { font-size: .8rem; color: var(--text-2); margin-top: .1rem; }
+.bottom-bar-actions { display: flex; gap: .75rem; align-items: center; flex-shrink: 0; }
+@media (max-width: 600px) {
+  .bottom-bar { flex-direction: column; text-align: center; padding: 1rem 5%; }
+  .bottom-bar-actions { width: 100%; justify-content: center; }
+}
+
+/* Trust badges */
+.trust-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+.trust-badge {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: .78rem;
+  font-weight: 500;
+  color: var(--text-2);
+}
+.trust-badge svg { color: var(--green); flex-shrink: 0; }
+
+/* 3-step process */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  position: relative;
+}
+.steps-grid::before {
+  content: '';
+  position: absolute;
+  top: 2.25rem;
+  left: calc(16.66% + 1rem);
+  right: calc(16.66% + 1rem);
+  height: 1px;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+  opacity: .25;
+}
+.step-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  position: relative;
+}
+.step-number {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -.04em;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+.step-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: .5rem; }
+.step-card p { font-size: .875rem; color: var(--text-2); line-height: 1.6; }
+@media (max-width: 640px) {
+  .steps-grid { grid-template-columns: 1fr; }
+  .steps-grid::before { display: none; }
+}
+
+/* Animated arrow on buttons */
+.btn .arrow-icon {
+  transition: transform .2s cubic-bezier(.4,0,.2,1);
+  display: inline-flex;
+}
+.btn:hover .arrow-icon { transform: translateX(4px); }
+
+/* Client logos strip — with real images */
+.clients-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+.clients-grid img {
+  height: 32px;
+  width: auto;
+  opacity: .5;
+  filter: grayscale(1);
+  transition: all var(--transition);
+}
+.clients-grid img:hover { opacity: 1; filter: none; }
+
+/* Feature pill tag */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  background: #eef2ff;
+  color: var(--primary);
+  border: 1px solid #c7d2fe;
+  padding: .3rem .9rem;
+  border-radius: 100px;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}

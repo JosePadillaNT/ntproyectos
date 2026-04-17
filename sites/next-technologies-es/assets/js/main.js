@@ -79,3 +79,17 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
+// ── Sticky bottom bar (aparece después de 600px de scroll) ──
+(function () {
+  var bar = document.querySelector('.bottom-bar');
+  if (!bar) return;
+  var shown = false;
+  window.addEventListener('scroll', function () {
+    var should = window.scrollY > 600;
+    if (should !== shown) {
+      bar.classList.toggle('visible', should);
+      shown = should;
+    }
+  }, { passive: true });
+})();
