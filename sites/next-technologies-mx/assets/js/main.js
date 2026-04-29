@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   let current = 0;
   let timer = null;
-  const interval = 6500;
+  const interval = 7000;
 
   const goTo = (index) => {
     current = (index + slides.length) % slides.length;
