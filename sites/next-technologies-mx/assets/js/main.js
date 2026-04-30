@@ -99,6 +99,30 @@ document.addEventListener('DOMContentLoaded', function () {
   start();
 });
 
+// Experience carousel
+document.addEventListener('DOMContentLoaded', function () {
+  const carousel = document.querySelector('[data-experience-carousel]');
+  if (!carousel) return;
+
+  const slides = Array.from(carousel.querySelectorAll('.experience-slide'));
+  if (slides.length < 2) return;
+
+  let current = 0;
+  const interval = 3600;
+
+  const goTo = (index) => {
+    current = (index + slides.length) % slides.length;
+    const next = (current + 1) % slides.length;
+    slides.forEach((slide, slideIndex) => {
+      slide.classList.toggle('is-active', slideIndex === current);
+      slide.classList.toggle('is-next', slideIndex === next);
+    });
+  };
+
+  goTo(0);
+  window.setInterval(() => goTo(current + 1), interval);
+});
+
 // Animated counters
 document.addEventListener('DOMContentLoaded', function () {
   const counters = document.querySelectorAll('[data-count]');
