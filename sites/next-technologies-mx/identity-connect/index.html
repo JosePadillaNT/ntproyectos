@@ -64,6 +64,9 @@
 
         /* Compare */
         .compare-check { width:20px; height:20px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; }
+        .identity-comparison-table tbody td { color:#111827; font-weight:600; }
+        .identity-comparison-table tbody td.text-gray-400 { color:#111827 !important; }
+        .identity-comparison-table tbody td:first-child { font-weight:700; }
 
         /* Contact */
         .nt-contact { background:#fff; padding:80px 0; }
@@ -102,7 +105,7 @@
         .nt-footer-col a:hover { color:rgba(255,255,255,.9); }
         .nt-footer-bottom { border-top:1px solid rgba(255,255,255,.08); padding-top:2rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; }
         .nt-footer-bottom p { font-size:.8rem; color:rgba(255,255,255,.35); }
-        .nt-whatsapp-btn { position:fixed; bottom:1.25rem; right:2rem; z-index:50; width:52px; height:52px; background:#25d366; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(37,211,102,.4); transition:transform .2s ease; color:#fff; }
+        .nt-whatsapp-btn { position:fixed; bottom:.55rem; right:2rem; z-index:50; width:52px; height:52px; background:#25d366; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(37,211,102,.4); transition:transform .2s ease; color:#fff; }
         .nt-whatsapp-btn:hover { transform:scale(1.1); }
         .nt-bottom-bar { position:fixed; bottom:0; left:0; right:0; z-index:49; background:rgba(255,255,255,.95); backdrop-filter:blur(10px); border-top:1px solid #e2e8f0; padding:.875rem 5%; display:flex; align-items:center; justify-content:space-between; gap:1rem; box-shadow:0 -4px 16px rgba(0,0,0,.06); }
         .nt-bottom-bar-text { font-size:.9rem; font-weight:600; color:#0f172a; }
@@ -439,7 +442,7 @@
             </div>
 
             <div class="overflow-x-auto reveal-up">
-                <table class="w-full text-sm border-collapse">
+                <table class="identity-comparison-table w-full text-sm border-collapse">
                     <thead>
                         <tr>
                             <th class="text-left py-3 px-4 bg-brand-700 text-white rounded-tl-lg" style="width:28%">Criterio</th>
