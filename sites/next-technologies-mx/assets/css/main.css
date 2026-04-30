@@ -239,13 +239,21 @@ section.dense { padding: 64px 0; }
 .why-card .icon-wrap { width: 44px; height: 44px; background: #eef4fb; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem; color: var(--primary); }
 .why-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: .5rem; }
 .why-card p { font-size: .9rem; color: var(--text-2); line-height: 1.6; }
-.product-logo-card { position: relative; isolation: isolate; text-align: center; display: flex; flex-direction: column; align-items: center; min-height: 260px; overflow: hidden; background-position: center; background-size: cover; background-repeat: no-repeat; }
-.product-logo-card::before { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(255,255,255,.72); }
+#por-que-next .feature-card { position: relative; min-height: 190px; overflow: hidden; cursor: pointer; display: flex; flex-direction: column; justify-content: center; }
+#por-que-next .feature-card .icon-wrap { width: 66px; height: 66px; margin-left: auto; margin-right: auto; }
+#por-que-next .feature-card .icon-wrap svg { width: 33px; height: 33px; }
+#por-que-next .feature-card h3 { text-align: center; margin-bottom: 0; }
+#por-que-next .feature-card .card-detail { position: absolute; inset: 0; z-index: 2; margin: 0; padding: 2rem; background: rgba(8,22,60,.92); color: #fff; opacity: 0; transform: translateY(20px); transition: opacity .3s ease, transform .3s ease; display: flex; align-items: center; justify-content: center; text-align: center; }
+#por-que-next .feature-card:hover .card-detail { opacity: 1; transform: translateY(0); }
+.product-logo-card { position: relative; isolation: isolate; text-align: center; display: flex; flex-direction: column; align-items: center; min-height: 260px; overflow: hidden; background-position: center; background-size: cover; background-repeat: no-repeat; transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease, background-size .4s ease; }
+.product-logo-card::before { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(255,255,255,.72); transition: background .3s ease; }
+.product-logo-card:hover { transform: translateY(-6px) scale(1.02); border-color: rgba(67,115,151,.55); box-shadow: 0 20px 40px rgba(6,11,53,.22); background-size: auto 108%; }
+.product-logo-card:hover::before { background: rgba(255,255,255,.58); }
 .product-logo-card h3 { margin-top: .25rem; font-size: 1.05rem; }
 .product-logo-card p { margin-top: .2rem; color: #000; font-size: 1.215rem; line-height: 1.45; }
 .product-logo-card .product-card-link { margin-top: auto; }
-.product-logo-wrap { height: 70px; width: 100%; margin-bottom: 1.25rem; display: flex; align-items: center; justify-content: center; }
-.product-logo-wrap img { width: auto; height: 42px; max-width: 220px; object-fit: contain; }
+.product-logo-wrap { height: 95px; width: 100%; margin-bottom: 1.25rem; display: flex; align-items: center; justify-content: center; }
+.product-logo-wrap img { width: auto; height: 63px; max-width: 330px; object-fit: contain; }
 .product-logo-placeholder { width: 190px; height: 60px; margin-left: auto; margin-right: auto; border: 1px dashed #b9cde2; border-radius: 10px; color: var(--primary); background: #eef4fb; font-weight: 800; font-size: .95rem; letter-spacing: 0; }
 #facto-hospitality.product-logo-card { background-image: url("../../../../imagenes/hospitalityminiaturainiatura.jpg"); }
 #facto-identity.product-logo-card { background-image: url("../../../../imagenes/puiminiaturainiatura.png"); }
