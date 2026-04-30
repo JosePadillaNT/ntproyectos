@@ -64,6 +64,54 @@
 
         /* Compare */
         .compare-check { width:20px; height:20px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; }
+
+        /* Contact */
+        .nt-contact { background:#fff; padding:80px 0; }
+        .nt-contact-inner { max-width:1280px; margin:0 auto; padding:0 5%; }
+        .nt-contact-grid { display:grid; grid-template-columns:1fr 1.5fr; gap:4rem; align-items:start; }
+        .nt-contact .label { color:#437397; font-size:.78rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; margin-bottom:.75rem; }
+        .nt-contact .headline { font-size:clamp(2.25rem,4vw,3.45rem); line-height:1.08; font-weight:800; color:#0f172a; margin-bottom:.75rem; }
+        .nt-contact .body { color:#475569; font-size:1.05rem; line-height:1.7; margin-bottom:1rem; }
+        .nt-contact-item { display:flex; gap:.75rem; align-items:flex-start; margin-bottom:1.25rem; color:#475569; font-size:.95rem; }
+        .nt-contact-item svg { flex:0 0 20px; color:#437397; margin-top:2px; }
+        .nt-form-card { background:#fff; border:1px solid #e2e8f0; border-radius:20px; padding:2.5rem; box-shadow:0 12px 30px rgba(6,11,53,.08); }
+        .nt-form-row { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+        .nt-form-group { margin-bottom:1.25rem; }
+        .nt-form-group label { display:block; font-size:.85rem; font-weight:700; margin-bottom:.4rem; color:#0f172a; }
+        .nt-form-group input,
+        .nt-form-group select,
+        .nt-form-group textarea { width:100%; padding:.85rem 1rem; border:1.5px solid #e2e8f0; border-radius:8px; font-size:.95rem; font-family:inherit; color:#0f172a; background:#f8fafc; outline:none; transition:border-color .2s ease, background .2s ease; }
+        .nt-form-group input:focus,
+        .nt-form-group select:focus,
+        .nt-form-group textarea:focus { border-color:#437397; background:#fff; }
+        .nt-form-group textarea { resize:vertical; min-height:140px; }
+        .nt-form-button { width:100%; border:0; border-radius:10px; background:#437397; color:#fff; font-weight:800; padding:.95rem 1.25rem; cursor:pointer; transition:background .2s ease, transform .2s ease; }
+        .nt-form-button:hover { background:#2b5574; transform:translateY(-1px); }
+        .nt-form-meta { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:1rem; color:#94a3b8; font-size:.75rem; }
+
+        /* NT MX footer */
+        .nt-footer { background:#060b35; color:rgba(255,255,255,.9); padding:4rem 0 8rem; }
+        .nt-footer-inner { max-width:1280px; margin:0 auto; padding:0 5%; }
+        .nt-footer-grid { display:grid; grid-template-columns:1.4fr repeat(5, 1fr); gap:2.5rem; margin-bottom:3rem; }
+        .nt-footer-logo { width:min(260px, 100%); height:auto; margin-bottom:1rem; object-fit:contain; }
+        .nt-footer-desc { font-size:.85rem; color:rgba(255,255,255,.5); line-height:1.7; }
+        .nt-footer-col h5 { font-size:.75rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:rgba(255,255,255,.4); margin-bottom:1rem; }
+        .nt-footer-col ul { list-style:none; padding:0; margin:0; }
+        .nt-footer-col li { margin-bottom:.5rem; }
+        .nt-footer-col a { font-size:.875rem; color:rgba(255,255,255,.6); transition:color .2s ease; }
+        .nt-footer-col a:hover { color:rgba(255,255,255,.9); }
+        .nt-footer-bottom { border-top:1px solid rgba(255,255,255,.08); padding-top:2rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; }
+        .nt-footer-bottom p { font-size:.8rem; color:rgba(255,255,255,.35); }
+        .nt-whatsapp-btn { position:fixed; bottom:1.25rem; right:2rem; z-index:50; width:52px; height:52px; background:#25d366; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(37,211,102,.4); transition:transform .2s ease; color:#fff; }
+        .nt-whatsapp-btn:hover { transform:scale(1.1); }
+        .nt-bottom-bar { position:fixed; bottom:0; left:0; right:0; z-index:49; background:rgba(255,255,255,.95); backdrop-filter:blur(10px); border-top:1px solid #e2e8f0; padding:.875rem 5%; display:flex; align-items:center; justify-content:space-between; gap:1rem; box-shadow:0 -4px 16px rgba(0,0,0,.06); }
+        .nt-bottom-bar-text { font-size:.9rem; font-weight:600; color:#0f172a; }
+        .nt-bottom-bar-sub { font-size:.8rem; color:#475569; margin-top:.1rem; }
+        .nt-bottom-bar-actions { display:flex; gap:.75rem; align-items:center; flex-shrink:0; padding-right:5rem; }
+        .nt-bottom-cta { display:inline-flex; align-items:center; justify-content:center; gap:.45rem; border-radius:8px; background:#437397; color:#fff; font-size:.85rem; font-weight:800; padding:.6rem 1.25rem; transition:background .2s ease, transform .2s ease; }
+        .nt-bottom-cta:hover { background:#2b5574; transform:translateY(-1px); }
+        @media (max-width:768px) { .nt-contact-grid { grid-template-columns:1fr; gap:2.5rem; } .nt-form-row { grid-template-columns:1fr; } .nt-footer-grid { grid-template-columns:1fr 1fr; gap:2rem; } }
+        @media (max-width:560px) { .nt-footer-grid { grid-template-columns:1fr; } .nt-bottom-bar { flex-direction:column; text-align:center; padding:1rem 5%; } .nt-bottom-bar-actions { width:100%; justify-content:center; padding-right:0; } }
     </style>
 </head>
 <body class="bg-white text-brand-700 antialiased">
@@ -451,52 +499,117 @@
         </div>
     </section>
 
-    <!-- ==================== NT GROUP ==================== -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-5xl mx-auto px-6">
-            <div class="text-center mb-10 reveal-up">
-                <h2 class="text-3xl font-bold text-gray-900 mb-2">Next Technologies</h2>
-                <p class="text-gray-500">La empresa detrás de Facto Identity</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8 mb-10 reveal-up">
-                <div class="text-center"><div class="text-4xl font-extrabold text-brand-500">+10</div><div class="text-sm text-gray-500 mt-1">años innovando soluciones tecnológicas en hotelería</div></div>
-                <div class="text-center"><div class="text-4xl font-extrabold text-brand-500">+500</div><div class="text-sm text-gray-500 mt-1">hoteles operando con nuestra Facto Suite</div></div>
-                <div class="text-center"><div class="text-4xl font-extrabold text-brand-500">GCP</div><div class="text-sm text-gray-500 mt-1">Partner de Google Cloud Platform</div></div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-5 reveal-up">
-                <div class="bg-white rounded-xl p-6 border border-gray-100">
-                    <span class="material-symbols-outlined text-brand-400 icon-lg mb-2" style="display:block;">apartment</span>
-                    <div class="text-sm font-bold text-gray-800 mb-2">Experiencia real en hotelería</div>
-                    <p class="text-sm text-gray-500">Facturación electrónica CFDI, integraciones con Opera, Micros, SAP y Dynamics. Conocemos la operación hotelera mexicana.</p>
+    <section id="contacto" class="nt-contact">
+        <div class="nt-contact-inner">
+            <div class="nt-contact-grid">
+                <div class="reveal-up">
+                    <p class="label">Contacto</p>
+                    <h2 class="headline">Hablemos de tu operaci&oacute;n</h2>
+                    <p class="body">Cu&eacute;ntanos qu&eacute; proceso necesitas optimizar: facturaci&oacute;n hotelera, n&oacute;mina, validaci&oacute;n CFDI, compras, PUI o inteligencia fiscal. Nuestro equipo puede ayudarte a definir la soluci&oacute;n adecuada.</p>
+                    <div class="nt-contact-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.32 1.78.6 2.63a2 2 0 0 1-.45 2.11L8 9.71a16 16 0 0 0 6.29 6.29l1.25-1.25a2 2 0 0 1 2.11-.45c.85.28 1.73.48 2.63.6A2 2 0 0 1 22 16.92Z"/></svg>
+                        <span>+52 55 1205 8000</span>
+                    </div>
+                    <div class="nt-contact-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg>
+                        <span>ventas@next-technologies.com.mx</span>
+                    </div>
+                    <div class="nt-contact-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>Insurgentes Sur 800, Col. Del Valle, Ciudad de M&eacute;xico</span>
+                    </div>
                 </div>
-                <div class="bg-white rounded-xl p-6 border border-gray-100">
-                    <span class="material-symbols-outlined text-brand-400 icon-lg mb-2" style="display:block;">support_agent</span>
-                    <div class="text-sm font-bold text-gray-800 mb-2">Soporte continuo</div>
-                    <p class="text-sm text-gray-500">Soporte técnico con SLA. Monitoreo proactivo 24/7. Actualizaciones regulatorias cuando el gobierno cambie los lineamientos.</p>
+                <div class="reveal-up">
+                    <div class="nt-form-card">
+                        <form>
+                            <div class="nt-form-row">
+                                <div class="nt-form-group"><label>Nombre</label><input type="text" placeholder="Tu nombre" required></div>
+                                <div class="nt-form-group"><label>Empresa</label><input type="text" placeholder="Nombre de tu empresa" required></div>
+                            </div>
+                            <div class="nt-form-row">
+                                <div class="nt-form-group"><label>Email</label><input type="email" placeholder="correo@empresa.com" required></div>
+                                <div class="nt-form-group"><label>Tel&eacute;fono</label><input type="tel" placeholder="N&uacute;mero de contacto"></div>
+                            </div>
+                            <div class="nt-form-group">
+                                <label>Producto de inter&eacute;s</label>
+                                <select><option value="">Seleccionar...</option><option>Facto Identity - PUI</option><option>Facto Hospitality</option><option>Facto N&oacute;mina</option><option>Facto Valid</option><option>Facto Orders</option><option>Facto IA</option><option>No s&eacute; a&uacute;n - quiero asesor&iacute;a</option></select>
+                            </div>
+                            <div class="nt-form-group"><label>Mensaje</label><textarea placeholder="Cu&eacute;ntanos sobre tu empresa y qu&eacute; necesitas..."></textarea></div>
+                            <button type="submit" class="nt-form-button">Enviar mensaje -&gt;</button>
+                            <div class="nt-form-meta"><span>Datos seguros</span><span>Respuesta en 24 hrs</span><span>Sin compromiso</span></div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== CTA ==================== -->
-    <section id="contacto" class="py-20" style="background:linear-gradient(135deg,#060b35 0%,#0a2777 55%,#2b5574 100%);">
-        <div class="max-w-3xl mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Cumplir con la normativa nunca fue tan fácil.<br>¡Comienza hoy!</h2>
-            <p class="text-gray-400 mb-3">No es un proyecto que toma meses. No es un middleware básico. Es una plataforma completa con IA, construida por expertos en hotelería.</p>
-            <p class="text-brand-100 text-sm mb-8">La multa por no cumplir puede superar los $2.3 millones de pesos. El costo de cumplir es una fracción de eso.</p>
-            <div class="flex gap-3 justify-center flex-wrap">
-                <a href="mailto:comercial@next-technologies.com.mx?subject=Demo Facto Identity" class="bg-brand-400 text-white px-8 py-3.5 rounded-lg text-base font-semibold hover:bg-brand-500 transition">Agendar demo</a>
-                <a href="mailto:comercial@next-technologies.com.mx?subject=Propuesta Facto Identity" class="border border-white/20 text-white px-8 py-3.5 rounded-lg text-base hover:border-brand-400 hover:text-brand-400 transition">Solicitar propuesta</a>
+    <footer class="nt-footer">
+        <div class="nt-footer-inner">
+            <div class="nt-footer-grid">
+                <div>
+                    <img src="../assets/images/logos/nt-white.png" alt="Next Technologies" class="nt-footer-logo">
+                    <p class="nt-footer-desc">Soluciones empresariales para una operaci&oacute;n m&aacute;s inteligente: cumplimiento fiscal, automatizaci&oacute;n e integraci&oacute;n tecnol&oacute;gica.</p>
+                </div>
+                <div class="nt-footer-col">
+                    <h5>Soluciones</h5>
+                    <ul>
+                        <li><a href="../index.html#productos">Cat&aacute;logo FACTO</a></li>
+                        <li><a href="../index.html#como-funciona">C&oacute;mo funciona</a></li>
+                        <li><a href="../index.html#presencia">Aplicaciones</a></li>
+                        <li><a href="index.html">P&aacute;gina PUI</a></li>
+                        <li><a href="../developers/index.html">API Docs</a></li>
+                    </ul>
+                </div>
+                <div class="nt-footer-col">
+                    <h5>Empresa</h5>
+                    <ul>
+                        <li><a href="../index.html#por-que-next">Nosotros</a></li>
+                        <li><a href="../index.html#presencia">Aplicaciones</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="nt-footer-col">
+                    <h5>Contacto</h5>
+                    <ul>
+                        <li><a href="tel:+525512058000">+52 55 1205 8000</a></li>
+                        <li><a href="mailto:ventas@next-technologies.com.mx">ventas@next-technologies.com.mx</a></li>
+                    </ul>
+                </div>
+                <div class="nt-footer-col">
+                    <h5>OPEN SOURCE</h5>
+                    <ul>
+                        <li><a href="https://github.com/Next-Technologies-Group/com-nt-group-emision-sistema-facturacion-v1" target="_blank" rel="noopener">Repositorio GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="nt-footer-col">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="../aviso-de-privacidad/index.html">Aviso de privacidad</a></li>
+                    </ul>
+                </div>
             </div>
-            <p class="text-gray-500 mt-6 text-sm">comercial@next-technologies.com.mx | www.next-technologies.com.mx</p>
+            <div class="nt-footer-bottom">
+                <p>&copy; 2026 NT Group. Todos los derechos reservados.</p>
+                <p>Next Technologies</p>
+            </div>
         </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="bg-brand-700 py-6 text-center">
-        <div class="text-brand-400 font-bold text-sm tracking-wider">NT GROUP</div>
-        <p class="text-gray-600 text-xs mt-1">Facto Identity. Todos los derechos reservados 2026.</p>
     </footer>
+    <a href="https://wa.me/525566582073?text=Hola%2C+me+interesa+m%C3%A1s+informaci%C3%B3n+de+sus+productos" target="_blank" rel="noopener" class="nt-whatsapp-btn" aria-label="WhatsApp">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.118 1.524 5.845L.057 23.886a.5.5 0 00.611.61l6.04-1.466A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.797 9.797 0 01-5.028-1.381l-.36-.214-3.732.906.944-3.634-.235-.374A9.789 9.789 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+        </svg>
+    </a>
+    <div class="nt-bottom-bar">
+        <div>
+            <div class="nt-bottom-bar-text">Soluciones FACTO — cumplimiento fiscal y operaci&oacute;n empresarial</div>
+            <div class="nt-bottom-bar-sub">Cumplimiento fiscal &middot; Automatizaci&oacute;n &middot; Integraci&oacute;n &middot; IA</div>
+        </div>
+        <div class="nt-bottom-bar-actions">
+            <a href="#contacto" class="nt-bottom-cta">Cont&aacute;ctanos <span aria-hidden="true">-&gt;</span></a>
+        </div>
+    </div>
 
     <!-- ==================== SCROLL ANIMATIONS ==================== -->
     <script>

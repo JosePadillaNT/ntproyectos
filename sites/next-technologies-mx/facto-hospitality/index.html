@@ -43,23 +43,22 @@
     .nav-links a:hover { color: #fff; }
     .nav-cta { padding: .62rem 1rem; border-radius: 8px; background: var(--primary); color: #fff; font-weight: 800; }
 
-    .hero { min-height: 88vh; display: flex; align-items: center; padding: 116px 0 80px; color: #fff; background: linear-gradient(90deg, rgba(4,8,36,.86), rgba(4,8,36,.62), rgba(4,8,36,.22)), url("../../../imagenes/NG_TemplatePortadaPrincipal.jpg") center / cover no-repeat; }
-    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(320px, .92fr); gap: clamp(3rem, 7vw, 6rem); align-items: center; }
-    .hero-logo { width: min(420px, 78vw); margin-bottom: 3rem; filter: drop-shadow(0 16px 32px rgba(2,6,24,.4)); }
+    .hero { min-height: 100vh; display: flex; align-items: center; padding: 112px 0 80px; color: #fff; background: linear-gradient(rgba(6,11,53,.86), rgba(10,39,119,.82)), url("../../../imagenes/NG_TemplatePortadaPrincipal.jpg") center / cover no-repeat; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(320px, .88fr); gap: clamp(3rem, 5vw, 4.5rem); align-items: center; }
     .eyebrow { color: #7fcdff; font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 1rem; }
-    .hero h1 { max-width: 760px; font-size: clamp(2.28rem, 4.4vw, 4rem); line-height: 1.02; font-weight: 800; letter-spacing: 0; text-wrap: balance; text-shadow: 0 16px 36px rgba(6,11,53,.48); }
-    .hero p { max-width: 760px; margin-top: 1.75rem; font-size: clamp(1.1rem, 1.7vw, 1.35rem); color: rgba(255,255,255,.88); line-height: 1.65; text-shadow: 0 10px 26px rgba(6,11,53,.4); }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.5rem; }
+    .hero h1 { max-width: 760px; font-size: clamp(2.28rem, 3.5vw, 3.16rem); line-height: 1.01; font-weight: 800; letter-spacing: 0; text-wrap: balance; text-shadow: 0 16px 36px rgba(6,11,53,.48); }
+    .hero p { max-width: 620px; margin-top: 1.5rem; font-size: clamp(1rem, 1.22vw, 1.12rem); color: rgba(255,255,255,.86); line-height: 1.65; text-shadow: 0 10px 26px rgba(6,11,53,.4); }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: .85rem; margin-top: 2rem; }
     .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: .85rem 1.45rem; border-radius: 999px; font-weight: 800; transition: transform var(--transition), background var(--transition), border-color var(--transition); }
     .btn-primary { background: #2b5574; color: #fff; box-shadow: 0 16px 34px rgba(43,85,116,.34); }
     .btn-primary:hover { transform: translateY(-2px); background: #376b91; }
     .btn-outline { color: #fff; border: 1px solid rgba(255,255,255,.38); background: rgba(255,255,255,.06); }
     .btn-outline:hover { transform: translateY(-2px); border-color: #fff; }
-    .hero-panel { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); border-radius: 20px; padding: clamp(1.5rem, 3vw, 2.5rem); backdrop-filter: blur(12px); box-shadow: 0 24px 60px rgba(0,0,0,.24); }
-    .hero-panel-title { font-size: 1.35rem; font-weight: 800; margin-bottom: 1.4rem; }
-    .hero-panel-list { display: grid; gap: .9rem; }
-    .hero-panel-item { display: flex; gap: .8rem; align-items: flex-start; color: rgba(255,255,255,.84); font-size: .95rem; }
-    .hero-panel-item span:first-child { width: 28px; height: 28px; border-radius: 8px; flex: 0 0 28px; display: inline-flex; align-items: center; justify-content: center; background: rgba(127,159,192,.28); color: #fff; font-size: .78rem; font-weight: 800; }
+    .hero-panel { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); border-radius: 20px; padding: clamp(1.75rem, 3vw, 2.5rem); backdrop-filter: blur(12px); box-shadow: 0 24px 60px rgba(0,0,0,.2); }
+    .hero-panel-title { font-size: 1.5rem; font-weight: 400; margin-bottom: 1.75rem; text-align: center; }
+    .hero-panel-list { display: grid; gap: 1.3rem; }
+    .hero-panel-item { display: flex; gap: .9rem; align-items: center; color: rgba(255,255,255,.88); font-size: .92rem; }
+    .hero-panel-item span:first-child { width: 40px; height: 40px; border-radius: 10px; flex: 0 0 40px; display: inline-flex; align-items: center; justify-content: center; background: rgba(67,115,151,.22); color: #d8e4f3; font-size: .82rem; font-weight: 800; }
 
     .section-header { max-width: 820px; margin: 0 auto 4rem; text-align: center; }
     .section-header h2 { font-size: clamp(1.8rem, 3.12vw, 3rem); line-height: 1.06; font-weight: 800; letter-spacing: 0; margin-bottom: 1rem; color: var(--text); }
@@ -69,45 +68,66 @@
     .intro-card { border-radius: 20px; border: 1px solid var(--border); background: #fff; padding: clamp(1.6rem, 3vw, 2.4rem); box-shadow: 0 20px 40px rgba(6,11,53,.08); }
     .intro-card h2 { font-size: clamp(1.8rem, 3.12vw, 3rem); line-height: 1.06; font-weight: 800; margin-bottom: 1rem; }
     .intro-card p { color: var(--text-2); font-size: 1.05rem; line-height: 1.75; }
-    .integration-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: .85rem; margin-top: 1.6rem; }
-    .integration-pill { border: 1px solid var(--border); border-radius: 999px; padding: .65rem .8rem; text-align: center; font-size: .82rem; font-weight: 800; color: var(--primary-dk); background: var(--bg-2); }
+    .integration-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: .9rem; margin-top: 1.6rem; }
+    .integration-logo { min-height: 74px; border: 1px solid var(--border); border-radius: 18px; padding: .9rem 1rem; display: flex; align-items: center; justify-content: center; background: var(--bg-2); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+    .integration-logo:hover { transform: translateY(-3px); border-color: rgba(43,85,116,.35); box-shadow: 0 14px 28px rgba(6,11,53,.1); }
+    .integration-logo img { width: 100%; max-width: 112px; height: 42px; object-fit: contain; filter: grayscale(100%) opacity(.82); transition: filter .25s ease, transform .25s ease; }
+    .integration-logo:hover img { filter: none; transform: scale(1.04); }
 
-    .functionality { background: linear-gradient(135deg, #07142b 0%, #111827 58%, #0b2540 100%); color: #fff; }
-    .functionality .section-header h2,
-    .functionality .section-header p { color: #fff; }
-    .functionality-map { position: relative; max-width: 1040px; margin: 0 auto; }
-    .functionality-map img { width: 100%; border-radius: 18px; filter: drop-shadow(0 26px 60px rgba(0,0,0,.28)); }
-    .map-link { position: absolute; left: 46%; width: 36%; height: 10.8%; border-radius: 10px; transition: background var(--transition), box-shadow var(--transition), transform var(--transition); }
-    .map-link:hover { background: rgba(127,205,255,.12); box-shadow: 0 0 0 2px rgba(127,205,255,.45); transform: translateX(4px); }
-    .map-link-1 { top: 4%; }
-    .map-link-2 { top: 16%; }
-    .map-link-3 { top: 28.1%; }
-    .map-link-4 { top: 40.2%; }
-    .map-link-5 { top: 52.3%; }
-    .map-link-6 { top: 64.4%; }
-    .map-link-7 { top: 76.5%; }
-    .map-link-8 { top: 88.1%; }
-    .functionality-links { display: grid; grid-template-columns: repeat(4, 1fr); gap: .85rem; margin-top: 2rem; }
-    .functionality-links a { padding: .8rem 1rem; border-radius: 10px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); color: rgba(255,255,255,.86); font-size: .86rem; font-weight: 800; text-align: center; transition: background var(--transition), transform var(--transition), border-color var(--transition); }
-    .functionality-links a:hover { background: rgba(255,255,255,.14); border-color: rgba(127,205,255,.46); transform: translateY(-2px); }
+    .functionality { background: #6f95b0; color: #fff; }
+    .functionality .section-header { margin-bottom: 2.5rem; }
+    .functionality .section-header p { color: rgba(255,255,255,.88); font-size: clamp(1.5rem, 2vw, 1.75rem); }
+    .functionality .eyebrow { color: #d9efff; font-size: clamp(1.35rem, 1.95vw, 1.75rem); }
+    .functionality-object { max-width: 1040px; margin: 0 auto; perspective: 1500px; }
+    .functionality-board { position: relative; display: grid; grid-template-columns: minmax(300px, .9fr) minmax(440px, 1.1fr); gap: clamp(1.4rem, 4vw, 3.4rem); align-items: center; padding: clamp(1rem, 2vw, 1.4rem); transform-style: preserve-3d; }
+    .functionality-board::after { content: ""; position: absolute; inset: auto 12% -24px; height: 54px; border-radius: 50%; background: rgba(6,11,53,.22); filter: blur(20px); transform: translateZ(-40px); pointer-events: none; }
+    .functionality-emblem { position: relative; min-height: 520px; transform-style: preserve-3d; }
+    .functionality-logo { position: absolute; z-index: 2; width: 430px; max-width: 100%; right: 0; top: 50%; filter: drop-shadow(0 18px 28px rgba(6,11,53,.28)); transform: translateY(-50%) translateZ(58px); }
+    .functionality-list { position: relative; z-index: 2; display: grid; gap: .78rem; transform: translateZ(72px); }
+    .functionality-node { display: grid; grid-template-columns: 104px minmax(0, 1fr); min-height: 74px; color: #08163c; filter: drop-shadow(8px 10px 0 rgba(0,0,0,.18)) drop-shadow(0 12px 18px rgba(6,11,53,.24)); transition: transform .25s ease, filter .25s ease; }
+    .functionality-node:hover { transform: translateX(7px) translateZ(24px); filter: drop-shadow(10px 13px 0 rgba(0,0,0,.2)) drop-shadow(0 18px 24px rgba(6,11,53,.3)); }
+    .functionality-number { display: flex; align-items: center; justify-content: center; border-radius: 10px 0 0 10px; background: linear-gradient(145deg, #07144a, #0a2777); color: #fff; font-size: clamp(2.05rem, 3.4vw, 3.05rem); font-weight: 800; line-height: 1; box-shadow: inset 0 0 0 1px rgba(255,255,255,.1); }
+    .functionality-node:nth-child(1) .functionality-number { background: linear-gradient(145deg, #060b35, #0a2777); }
+    .functionality-node:nth-child(2) .functionality-number { background: linear-gradient(145deg, #0a2777, #123a8c); }
+    .functionality-node:nth-child(3) .functionality-number { background: linear-gradient(145deg, #437397, #5b96b5); }
+    .functionality-node:nth-child(4) .functionality-number { background: linear-gradient(145deg, #2b5574, #437397); }
+    .functionality-node:nth-child(5) .functionality-number { background: linear-gradient(145deg, #5b96b5, #2b5574); }
+    .functionality-node:nth-child(6) .functionality-number { background: linear-gradient(145deg, #060b35, #0a2777); }
+    .functionality-node:nth-child(7) .functionality-number { background: linear-gradient(145deg, #0a2777, #1f5d9c); }
+    .functionality-node:nth-child(8) .functionality-number { background: linear-gradient(145deg, #437397, #2b5574); }
+    .functionality-copy { display: flex; flex-direction: column; justify-content: center; padding: .62rem 1.1rem; border-radius: 0 10px 10px 0; background: linear-gradient(135deg, #ffffff 0%, #eef3fb 74%, #dfe8f7 100%); border: 4px solid #06305a; border-left: 0; box-shadow: inset 0 0 0 1px rgba(255,255,255,.65); }
+    .functionality-copy strong { color: #0a2777; font-size: clamp(.88rem, 1.25vw, 1.08rem); line-height: 1.06; font-weight: 800; }
+    .functionality-copy small { margin-top: .18rem; color: #263d66; font-size: clamp(.68rem, .95vw, .82rem); line-height: 1.12; font-weight: 600; }
 
-    .features { background: var(--bg-2); }
-    .feature-list { display: grid; gap: 1.5rem; }
-    .feature-section { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: stretch; background: #fff; border: 1px solid var(--border); border-radius: 20px; overflow: hidden; box-shadow: 0 10px 26px rgba(6,11,53,.06); }
+    .features { background: var(--bg-2); overflow: hidden; }
+    .feature-carousel { position: relative; }
+    .feature-viewport { overflow: hidden; padding: .5rem 0 1.25rem; }
+    .feature-list { display: flex; gap: 1.5rem; align-items: stretch; overflow-x: auto; scroll-behavior: smooth; scroll-snap-type: x mandatory; scrollbar-width: none; }
+    .feature-list::-webkit-scrollbar { display: none; }
+    .feature-section { flex: 0 0 min(840px, 82vw); height: 220px; display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: clamp(1rem, 3vw, 2rem); align-items: stretch; background: #fff; border: 1px solid var(--border); border-radius: 20px; overflow: hidden; box-shadow: 0 10px 26px rgba(6,11,53,.06); scroll-snap-align: center; opacity: .52; transform: scale(.96); transition: opacity .35s ease, transform .35s ease, box-shadow .35s ease; }
+    .feature-section.is-active { opacity: 1; transform: scale(1); box-shadow: 0 26px 58px rgba(6,11,53,.14); }
     .feature-number { background: linear-gradient(180deg, #060b35, #0a2777); color: #fff; display: flex; align-items: center; justify-content: center; font-size: clamp(2.2rem, 5vw, 4rem); font-weight: 800; line-height: 1; }
-    .feature-body { padding: clamp(1.5rem, 3vw, 2.4rem); }
-    .feature-body h3 { font-size: clamp(1.35rem, 2.5vw, 2rem); line-height: 1.12; font-weight: 800; margin-bottom: .2rem; color: var(--text); }
-    .feature-body .subtitle { color: var(--primary); font-weight: 800; margin-bottom: 1rem; }
-    .feature-body p { color: var(--text-2); font-size: 1rem; line-height: 1.75; margin-top: .75rem; }
-    .feature-body ul { margin-top: 1.2rem; display: grid; gap: .75rem; list-style: none; }
-    .feature-body li { color: var(--text-2); padding-left: 1.35rem; position: relative; line-height: 1.6; }
+    .feature-body { min-height: 0; overflow-y: auto; padding: 1.35rem 1.55rem; scrollbar-width: thin; scrollbar-color: var(--primary) transparent; }
+    .feature-body h3 { font-size: clamp(1.12rem, 1.9vw, 1.5rem); line-height: 1.12; font-weight: 800; margin-bottom: .2rem; color: var(--text); }
+    .feature-body .subtitle { color: var(--primary); font-weight: 800; margin-bottom: .65rem; font-size: .92rem; }
+    .feature-body p { color: var(--text-2); font-size: .94rem; line-height: 1.55; margin-top: .55rem; }
+    .feature-body ul { margin-top: .8rem; display: grid; gap: .45rem; list-style: none; }
+    .feature-body li { color: var(--text-2); padding-left: 1.15rem; position: relative; line-height: 1.4; font-size: .9rem; }
     .feature-body li::before { content: ""; position: absolute; left: 0; top: .65rem; width: 7px; height: 7px; border-radius: 50%; background: var(--primary); }
+    .feature-dots { display: flex; justify-content: center; gap: .55rem; margin-top: 1.25rem; }
+    .feature-dot { width: 10px; height: 10px; border: 0; border-radius: 999px; background: #b9cde2; cursor: pointer; transition: width var(--transition), background var(--transition); }
+    .feature-dot.is-active { width: 30px; background: var(--primary-dk); }
 
-    .workflow-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-    .step-card { background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 2rem; box-shadow: 0 12px 30px rgba(6,11,53,.07); }
-    .step-number { color: var(--primary); font-size: 2.4rem; font-weight: 800; line-height: 1; margin-bottom: 1rem; }
-    .step-card h3 { font-size: 1.1rem; margin-bottom: .65rem; }
-    .step-card p { color: var(--text-2); }
+    .workflow-timeline { position: relative; }
+    .workflow-grid { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .step-card { position: relative; min-height: 220px; background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 2.4rem; box-shadow: 0 12px 30px rgba(6,11,53,.07); }
+    .step-icon { width: 70px; height: 70px; margin-bottom: 1.45rem; border-radius: 18px; display: inline-flex; align-items: center; justify-content: center; color: #fff; background: linear-gradient(135deg, #060b35, #2b5574); box-shadow: 0 14px 26px rgba(43,85,116,.28); }
+    .step-icon svg { width: 36px; height: 36px; stroke: currentColor; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    .step-card h3 { font-size: 1.32rem; margin-bottom: .75rem; }
+    .step-card p { color: var(--text-2); font-size: 1.05rem; }
+    .workflow-timeline .step-card.reveal { transition-duration: .7s; }
+    .workflow-timeline .step-card.reveal:nth-child(2) { transition-delay: .75s; }
+    .workflow-timeline .step-card.reveal:nth-child(3) { transition-delay: 1.5s; }
 
     .benefits { background: linear-gradient(135deg, #07142b 0%, #0a2777 58%, #2b5574 100%); color: #fff; }
     .benefits .section-header h2,
@@ -121,8 +141,43 @@
     .cta h2 { font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.05; font-weight: 800; max-width: 820px; margin: 0 auto 1rem; }
     .cta p { color: rgba(255,255,255,.72); max-width: 720px; margin: 0 auto 2rem; }
 
-    .footer { background: #040720; color: rgba(255,255,255,.76); padding: 2rem 0; text-align: center; }
-    .footer-logo { height: 56px; margin: 0 auto 1rem; filter: brightness(0) invert(1); }
+    .nt-footer { background: var(--primary-deep); color: rgba(255,255,255,.9); padding: 4rem 0 8rem; }
+    .nt-footer-grid { display: grid; grid-template-columns: 1.4fr repeat(5, 1fr); gap: 2.5rem; margin-bottom: 3rem; }
+    .nt-footer-logo { width: min(260px, 100%); height: auto; margin-bottom: 1rem; object-fit: contain; }
+    .nt-footer-desc { font-size: .85rem; color: rgba(255,255,255,.5); line-height: 1.7; }
+    .nt-footer-col h5 { font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: rgba(255,255,255,.4); margin-bottom: 1rem; }
+    .nt-footer-col ul { list-style: none; }
+    .nt-footer-col li { margin-bottom: .5rem; }
+    .nt-footer-col a { font-size: .875rem; color: rgba(255,255,255,.6); transition: color var(--transition); }
+    .nt-footer-col a:hover { color: rgba(255,255,255,.9); }
+    .nt-footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .nt-footer-bottom p { font-size: .8rem; color: rgba(255,255,255,.35); }
+    .nt-whatsapp-btn { position: fixed; bottom: 1.25rem; right: 2rem; z-index: 50; width: 52px; height: 52px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(37,211,102,.4); transition: transform var(--transition); color: #fff; }
+    .nt-whatsapp-btn:hover { transform: scale(1.1); }
+    .nt-bottom-bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 49; background: rgba(255,255,255,.95); backdrop-filter: blur(10px); border-top: 1px solid var(--border); padding: .875rem 5%; display: flex; align-items: center; justify-content: space-between; gap: 1rem; box-shadow: 0 -4px 16px rgba(0,0,0,.06); }
+    .nt-bottom-bar-text { font-size: .9rem; font-weight: 600; color: var(--text); }
+    .nt-bottom-bar-sub { font-size: .8rem; color: var(--text-2); margin-top: .1rem; }
+    .nt-bottom-bar-actions { display: flex; gap: .75rem; align-items: center; flex-shrink: 0; padding-right: 5rem; }
+    .nt-contact { background: #fff; }
+    .nt-contact-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem; align-items: start; }
+    .nt-contact .label { color: var(--primary); font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; margin-bottom: .75rem; }
+    .nt-contact .headline { font-size: clamp(2.25rem, 4vw, 3.45rem); line-height: 1.08; font-weight: 800; color: var(--text); margin-bottom: .75rem; }
+    .nt-contact .body { color: var(--text-2); font-size: 1.05rem; line-height: 1.7; margin-bottom: 1rem; }
+    .nt-contact-item { display: flex; gap: .75rem; align-items: flex-start; margin-bottom: 1.25rem; color: var(--text-2); font-size: .95rem; }
+    .nt-contact-item svg { flex: 0 0 20px; color: var(--primary); margin-top: 2px; }
+    .nt-form-card { background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 2.5rem; box-shadow: 0 12px 30px rgba(6,11,53,.08); }
+    .nt-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .nt-form-group { margin-bottom: 1.25rem; }
+    .nt-form-group label { display: block; font-size: .85rem; font-weight: 700; margin-bottom: .4rem; color: var(--text); }
+    .nt-form-group input,
+    .nt-form-group select,
+    .nt-form-group textarea { width: 100%; padding: .85rem 1rem; border: 1.5px solid var(--border); border-radius: 8px; font-size: .95rem; font-family: inherit; color: var(--text); background: var(--bg-2); outline: none; transition: border-color var(--transition), background var(--transition); }
+    .nt-form-group input:focus,
+    .nt-form-group select:focus,
+    .nt-form-group textarea:focus { border-color: var(--primary); background: #fff; }
+    .nt-form-group textarea { resize: vertical; min-height: 140px; }
+    .nt-form-meta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem; color: var(--text-3); font-size: .75rem; }
+    .nt-form-meta span { display: inline-flex; align-items: center; gap: .35rem; }
 
     .reveal { opacity: 0; transform: translateY(28px); transition: opacity .6s ease, transform .6s ease; }
     .reveal.visible { opacity: 1; transform: translateY(0); }
@@ -135,20 +190,30 @@
       .benefit-grid { grid-template-columns: 1fr; }
       .hero { min-height: auto; }
       .hero-panel { display: none; }
-      .feature-section { grid-template-columns: 1fr; }
-      .feature-number { min-height: 92px; }
+      .nt-footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+      .nt-contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .nt-form-row { grid-template-columns: 1fr; }
+      .feature-section { flex-basis: 88vw; height: 340px; grid-template-columns: 1fr; grid-template-rows: 76px minmax(0, 1fr); }
+      .feature-number { min-height: 76px; }
       .integration-strip { grid-template-columns: repeat(2, 1fr); }
-      .functionality-map { overflow-x: auto; }
-      .functionality-map img { min-width: 760px; }
-      .map-link { display: none; }
-      .functionality-links { grid-template-columns: repeat(2, 1fr); }
+      .functionality-board { grid-template-columns: 1fr; transform: none; }
+      .functionality-emblem { min-height: 360px; }
+      .functionality-logo { left: 50%; right: auto; width: 340px; transform: translate(-50%, -50%) translateZ(58px); }
+      .step-card { min-height: 190px; padding-left: 7.2rem; }
+      .step-icon { position: absolute; left: 1.4rem; top: 1.6rem; }
     }
 
     @media (max-width: 560px) {
       section { padding: 72px 0; }
-      .hero-logo { width: min(300px, 82vw); margin-bottom: 2rem; }
       .integration-strip { grid-template-columns: 1fr; }
-      .functionality-links { grid-template-columns: 1fr; }
+      .functionality-board { padding: 0; }
+      .functionality-emblem { min-height: 300px; }
+      .functionality-logo { width: 280px; }
+      .functionality-node { grid-template-columns: 78px minmax(0, 1fr); min-height: 68px; filter: drop-shadow(5px 7px 0 rgba(0,0,0,.16)) drop-shadow(0 10px 14px rgba(6,11,53,.2)); }
+      .functionality-copy { padding: .55rem .8rem; border-width: 3px; }
+      .nt-footer-grid { grid-template-columns: 1fr; }
+      .nt-bottom-bar { flex-direction: column; text-align: center; padding: 1rem 5%; }
+      .nt-bottom-bar-actions { width: 100%; justify-content: center; padding-right: 0; }
     }
   </style>
 </head>
@@ -156,14 +221,14 @@
   <nav class="nav">
     <div class="nav-inner">
       <a href="../index.html" aria-label="Volver a Next Technologies">
-        <img src="../../../imagenes/Logotipo_hospitalityWhite_icon.png" alt="Facto Hospitality" class="nav-logo">
+        <img src="../../../imagenes/logohospitality.png" alt="Facto Hospitality" class="nav-logo">
       </a>
       <ul class="nav-links">
         <li><a href="#que-es">Qué es</a></li>
         <li><a href="#funcionalidades">Funcionalidades</a></li>
         <li><a href="#como-funciona">Cómo funciona</a></li>
         <li><a href="#beneficios">Beneficios</a></li>
-        <li><a href="#contacto" class="nav-cta">Solicitar demo</a></li>
+        <li><a href="mailto:ventas@next-technologies.com.mx?subject=Demo Facto Hospitality" class="nav-cta">Solicitar demo</a></li>
       </ul>
     </div>
   </nav>
@@ -171,13 +236,12 @@
   <section class="hero">
     <div class="container hero-grid">
       <div class="reveal">
-        <img src="../../../imagenes/Logotipo_hospitalityWhite_icon.png" alt="Facto Hospitality" class="hero-logo">
         <p class="eyebrow">Facturación y operación para hospitality</p>
         <h1>El puente tecnológico entre tu operación, contabilidad y cumplimiento fiscal</h1>
         <p>Facto Hospitality conecta PMS, POS, ERP y procesos fiscales para automatizar la facturación hotelera y restaurantera sin fricciones operativas.</p>
         <div class="hero-actions">
           <a href="#funcionalidades" class="btn btn-primary">Ver funcionalidades</a>
-          <a href="#contacto" class="btn btn-outline">Solicitar demo</a>
+          <a href="mailto:ventas@next-technologies.com.mx?subject=Demo Facto Hospitality" class="btn btn-outline">Solicitar demo</a>
         </div>
       </div>
       <div class="hero-panel reveal">
@@ -203,12 +267,12 @@
         <h2>Integraciones nativas</h2>
         <p>Conectamos la operación del hotel o restaurante con los sistemas que ya usa tu equipo para eliminar retrabajo, errores administrativos y fricción fiscal.</p>
         <div class="integration-strip">
-          <div class="integration-pill">Opera</div>
-          <div class="integration-pill">Simphony</div>
-          <div class="integration-pill">Shiji</div>
-          <div class="integration-pill">Aloha</div>
-          <div class="integration-pill">HotelKey</div>
-          <div class="integration-pill">Silverware</div>
+          <div class="integration-logo"><img src="../../../imagenes/logospartners/logoopera2.png" alt="Opera"></div>
+          <div class="integration-logo"><img src="../../../imagenes/logospartners/microslogo2.png" alt="Micros Simphony"></div>
+          <div class="integration-logo"><img src="../../../imagenes/logospartners/shijlogo.webp" alt="Shiji"></div>
+          <div class="integration-logo"><img src="../../../imagenes/logospartners/aloha2.png" alt="Aloha"></div>
+          <div class="integration-logo"><img src="../../../imagenes/logospartners/logohotelkey.png" alt="HotelKey"></div>
+          <div class="integration-logo"><img src="../../../imagenes/logospartners/netsuitelogo.png" alt="NetSuite"></div>
         </div>
       </div>
     </div>
@@ -218,29 +282,72 @@
     <div class="container">
       <div class="section-header reveal">
         <p class="eyebrow">Funcionalidades</p>
-        <h2>Haz click en cada apartado para ver el detalle</h2>
         <p>Una vista ejecutiva de los bloques principales que componen Facto Hospitality.</p>
       </div>
-      <div class="functionality-map reveal">
-        <img src="../../../imagenes/funcionalidadeshospitality.png" alt="Funcionalidades de Facto Hospitality">
-        <a class="map-link map-link-1" href="#integracion" aria-label="Integración con PMS y POS"></a>
-        <a class="map-link map-link-2" href="#cumplimiento" aria-label="Cumplimiento fiscal"></a>
-        <a class="map-link map-link-3" href="#operacion" aria-label="Toda tu operación en un solo lugar"></a>
-        <a class="map-link map-link-4" href="#expertos" aria-label="Especialistas en Hospitality"></a>
-        <a class="map-link map-link-5" href="#fiscales" aria-label="Consultores fiscales"></a>
-        <a class="map-link map-link-6" href="#automatizacion" aria-label="Automatización de facturación"></a>
-        <a class="map-link map-link-7" href="#tiempo-real" aria-label="Operación y contabilidad en tiempo real"></a>
-        <a class="map-link map-link-8" href="#puente" aria-label="Puente tecnológico PMS POS"></a>
-      </div>
-      <div class="functionality-links reveal" aria-label="Accesos a funcionalidades">
-        <a href="#integracion">01 Integración</a>
-        <a href="#cumplimiento">02 Cumplimiento</a>
-        <a href="#operacion">03 Operación</a>
-        <a href="#expertos">04 Expertos</a>
-        <a href="#fiscales">05 Fiscal</a>
-        <a href="#automatizacion">06 Automatización</a>
-        <a href="#tiempo-real">07 Tiempo real</a>
-        <a href="#puente">08 Puente tecnológico</a>
+      <div class="functionality-object reveal" aria-label="Mapa interactivo de funcionalidades de Facto Hospitality">
+        <div class="functionality-board">
+          <div class="functionality-emblem" aria-hidden="true">
+            <img class="functionality-logo" src="../../../imagenes/funcionalidadeshospitalitylogo.png" alt="">
+          </div>
+          <div class="functionality-list">
+            <a class="functionality-node" href="#integracion">
+              <span class="functionality-number">01</span>
+              <span class="functionality-copy">
+                <strong>Integraci&oacute;n con los principales PMS y POS de la industria</strong>
+                <small>Easy to integration</small>
+              </span>
+            </a>
+            <a class="functionality-node" href="#cumplimiento">
+              <span class="functionality-number">02</span>
+              <span class="functionality-copy">
+                <strong>Cumplimiento fiscal</strong>
+                <small>Compliance</small>
+              </span>
+            </a>
+            <a class="functionality-node" href="#operacion">
+              <span class="functionality-number">03</span>
+              <span class="functionality-copy">
+                <strong>Toda tu operaci&oacute;n en un solo lugar</strong>
+                <small>Efficiency</small>
+              </span>
+            </a>
+            <a class="functionality-node" href="#expertos">
+              <span class="functionality-number">04</span>
+              <span class="functionality-copy">
+                <strong>Somos especialistas en el sector Hospitality</strong>
+                <small>Industry Experts</small>
+              </span>
+            </a>
+            <a class="functionality-node" href="#fiscales">
+              <span class="functionality-number">05</span>
+              <span class="functionality-copy">
+                <strong>Consultores especializados en temas fiscales</strong>
+                <small>Tax Compliance Experts</small>
+              </span>
+            </a>
+            <a class="functionality-node" href="#automatizacion">
+              <span class="functionality-number">06</span>
+              <span class="functionality-copy">
+                <strong>Automatizaci&oacute;n de los principales procesos para facturaci&oacute;n</strong>
+                <small>Automating Essential Invoicing Ecosystems</small>
+              </span>
+            </a>
+            <a class="functionality-node" href="#tiempo-real">
+              <span class="functionality-number">07</span>
+              <span class="functionality-copy">
+                <strong>Conectamos la operaci&oacute;n y contabilidad de tu hotel en tiempo real</strong>
+                <small>Real-time connection for your hotel operations and accounting</small>
+              </span>
+            </a>
+            <a class="functionality-node" href="#puente">
+              <span class="functionality-number">08</span>
+              <span class="functionality-copy">
+                <strong>El puente tecnol&oacute;gico entre tu operaci&oacute;n PMS/POS y tu gesti&oacute;n administrativa y fiscal</strong>
+                <small>Bridging operations with administrative and tax management</small>
+              </span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -251,8 +358,10 @@
         <p class="eyebrow">Capacidades clave</p>
         <h2>Diseñado para resolver los flujos reales de hoteles y restaurantes</h2>
       </div>
-      <div class="feature-list">
-        <article id="integracion" class="feature-section reveal">
+      <div class="feature-carousel" data-feature-carousel>
+        <div class="feature-viewport" data-feature-viewport>
+      <div class="feature-list" data-feature-track>
+        <article id="integracion" class="feature-section reveal is-active">
           <div class="feature-number">01</div>
           <div class="feature-body">
             <h3>Integración con los principales PMS y POS de la industria</h3>
@@ -334,6 +443,9 @@
           </div>
         </article>
       </div>
+        </div>
+        <div class="feature-dots" data-feature-dots aria-label="Seleccionar capacidad"></div>
+      </div>
     </div>
   </section>
 
@@ -343,21 +455,23 @@
         <p class="eyebrow">¿Cómo funciona?</p>
         <h2>Lo hacemos simple para que tú no te detengas</h2>
       </div>
-      <div class="workflow-grid">
-        <div class="step-card reveal">
-          <div class="step-number">01</div>
-          <h3>Configuración técnica</h3>
-          <p>Nos encargamos de pruebas, reglas, parametrización e integración para que tu equipo solo vea los resultados.</p>
-        </div>
-        <div class="step-card reveal">
-          <div class="step-number">02</div>
-          <h3>Facturación automática</h3>
-          <p>Generamos facturas a partir de transacciones de check-out o cierre de cheque, evitando retrabajo administrativo.</p>
-        </div>
-        <div class="step-card reveal">
-          <div class="step-number">03</div>
-          <h3>Trazabilidad fiscal</h3>
-          <p>El sistema genera CFDI siguiendo reglas vigentes y mantiene trazabilidad completa de todo el flujo de negocio.</p>
+      <div class="workflow-timeline">
+        <div class="workflow-grid">
+          <div class="step-card reveal">
+            <div class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 1 0 12 8a3.5 3.5 0 0 0 0 7.5Z"></path><path d="M19.4 15a1.8 1.8 0 0 0 .36 1.98l.05.05a2.1 2.1 0 1 1-2.97 2.97l-.05-.05A1.8 1.8 0 0 0 14.8 19.6a1.8 1.8 0 0 0-1.08 1.65V21.4a2.1 2.1 0 0 1-4.2 0v-.08A1.8 1.8 0 0 0 8.4 19.6a1.8 1.8 0 0 0-1.98.36l-.05.05A2.1 2.1 0 1 1 3.4 17l.05-.05A1.8 1.8 0 0 0 3.8 15a1.8 1.8 0 0 0-1.65-1.08H2.1a2.1 2.1 0 0 1 0-4.2h.08A1.8 1.8 0 0 0 3.8 8.6a1.8 1.8 0 0 0-.36-1.98l-.05-.05A2.1 2.1 0 1 1 6.36 3.6l.05.05A1.8 1.8 0 0 0 8.4 4a1.8 1.8 0 0 0 1.08-1.65V2.2a2.1 2.1 0 0 1 4.2 0v.08A1.8 1.8 0 0 0 14.8 4a1.8 1.8 0 0 0 1.98-.36l.05-.05A2.1 2.1 0 1 1 19.8 6.56l-.05.05A1.8 1.8 0 0 0 19.4 8.6a1.8 1.8 0 0 0 1.65 1.08h.08a2.1 2.1 0 0 1 0 4.2h-.08A1.8 1.8 0 0 0 19.4 15Z"></path></svg></div>
+            <h3>Configuración técnica</h3>
+            <p>Nos encargamos de pruebas, reglas, parametrización e integración para que tu equipo solo vea los resultados.</p>
+          </div>
+          <div class="step-card reveal">
+            <div class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h9l3 3v15H6z"></path><path d="M14 3v4h4"></path><path d="M8.5 12h7"></path><path d="M8.5 16h4"></path><path d="M16 11l2 2 4-4"></path></svg></div>
+            <h3>Facturación automática</h3>
+            <p>Generamos facturas a partir de transacciones de check-out o cierre de cheque, evitando retrabajo administrativo.</p>
+          </div>
+          <div class="step-card reveal">
+            <div class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V5"></path><path d="M4 19h16"></path><path d="M7 15l4-4 3 3 5-7"></path><path d="M16 7h3v3"></path></svg></div>
+            <h3>Trazabilidad fiscal</h3>
+            <p>El sistema genera CFDI siguiendo reglas vigentes y mantiene trazabilidad completa de todo el flujo de negocio.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -380,21 +494,118 @@
       </div>
     </div>
   </section>
-
-  <section id="contacto" class="cta">
+  <section id="contacto" class="nt-contact">
     <div class="container">
-      <h2>Automatiza la facturación de tu operación hospitality</h2>
-      <p>Conecta PMS, POS, ERP y cumplimiento fiscal en un solo ecosistema diseñado por especialistas del sector.</p>
-      <a href="mailto:ventas@next-technologies.com.mx?subject=Demo Facto Hospitality" class="btn btn-primary">Solicitar demo</a>
+      <div class="nt-contact-grid">
+        <div class="reveal">
+          <p class="label">Contacto</p>
+          <h2 class="headline">Hablemos de tu operaci&oacute;n</h2>
+          <p class="body">Cu&eacute;ntanos qu&eacute; proceso necesitas optimizar: facturaci&oacute;n hotelera, n&oacute;mina, validaci&oacute;n CFDI, compras, PUI o inteligencia fiscal. Nuestro equipo puede ayudarte a definir la soluci&oacute;n adecuada.</p>
+          <div class="nt-contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.32 1.78.6 2.63a2 2 0 0 1-.45 2.11L8 9.71a16 16 0 0 0 6.29 6.29l1.25-1.25a2 2 0 0 1 2.11-.45c.85.28 1.73.48 2.63.6A2 2 0 0 1 22 16.92Z"/></svg>
+            <span>+52 55 1205 8000</span>
+          </div>
+          <div class="nt-contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg>
+            <span>ventas@next-technologies.com.mx</span>
+          </div>
+          <div class="nt-contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Insurgentes Sur 800, Col. Del Valle, Ciudad de M&eacute;xico</span>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="nt-form-card">
+            <form>
+              <div class="nt-form-row">
+                <div class="nt-form-group"><label>Nombre</label><input type="text" placeholder="Tu nombre" required></div>
+                <div class="nt-form-group"><label>Empresa</label><input type="text" placeholder="Nombre de tu empresa" required></div>
+              </div>
+              <div class="nt-form-row">
+                <div class="nt-form-group"><label>Email</label><input type="email" placeholder="correo@empresa.com" required></div>
+                <div class="nt-form-group"><label>Tel&eacute;fono</label><input type="tel" placeholder="N&uacute;mero de contacto"></div>
+              </div>
+              <div class="nt-form-group">
+                <label>Producto de inter&eacute;s</label>
+                <select><option value="">Seleccionar...</option><option>Facto Hospitality</option><option>Facto Identity - PUI</option><option>Facto N&oacute;mina</option><option>Facto Valid</option><option>Facto Orders</option><option>Facto IA</option><option>No s&eacute; a&uacute;n - quiero asesor&iacute;a</option></select>
+              </div>
+              <div class="nt-form-group"><label>Mensaje</label><textarea placeholder="Cu&eacute;ntanos sobre tu empresa y qu&eacute; necesitas..."></textarea></div>
+              <button type="submit" class="btn btn-primary" style="width:100%">Enviar mensaje <span aria-hidden="true">-&gt;</span></button>
+              <div class="nt-form-meta"><span>Datos seguros</span><span>Respuesta en 24 hrs</span><span>Sin compromiso</span></div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-
-  <footer class="footer">
+  <footer class="nt-footer">
     <div class="container">
-      <img src="../../../imagenes/Logotipo_NEXT_TECHNOLOGIESWhite.png" alt="Next Technologies" class="footer-logo">
-      <p>Facto Hospitality. Next Technologies. Todos los derechos reservados.</p>
+      <div class="nt-footer-grid">
+        <div>
+          <img src="../assets/images/logos/nt-white.png" alt="Next Technologies" class="nt-footer-logo">
+          <p class="nt-footer-desc">Soluciones empresariales para una operaci&oacute;n m&aacute;s inteligente: cumplimiento fiscal, automatizaci&oacute;n e integraci&oacute;n tecnol&oacute;gica.</p>
+        </div>
+        <div class="nt-footer-col">
+          <h5>Soluciones</h5>
+          <ul>
+            <li><a href="../index.html#productos">Cat&aacute;logo FACTO</a></li>
+            <li><a href="../index.html#como-funciona">C&oacute;mo funciona</a></li>
+            <li><a href="../index.html#presencia">Aplicaciones</a></li>
+            <li><a href="../identity-connect/index.html">P&aacute;gina PUI</a></li>
+            <li><a href="../developers/index.html">API Docs</a></li>
+          </ul>
+        </div>
+        <div class="nt-footer-col">
+          <h5>Empresa</h5>
+          <ul>
+            <li><a href="../index.html#por-que-next">Nosotros</a></li>
+            <li><a href="../index.html#presencia">Aplicaciones</a></li>
+            <li><a href="mailto:ventas@next-technologies.com.mx">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="nt-footer-col">
+          <h5>Contacto</h5>
+          <ul>
+            <li><a href="tel:+525512058000">+52 55 1205 8000</a></li>
+            <li><a href="mailto:ventas@next-technologies.com.mx">ventas@next-technologies.com.mx</a></li>
+          </ul>
+        </div>
+        <div class="nt-footer-col">
+          <h5>OPEN SOURCE</h5>
+          <ul>
+            <li><a href="https://github.com/Next-Technologies-Group/com-nt-group-emision-sistema-facturacion-v1" target="_blank" rel="noopener">Repositorio GitHub</a></li>
+          </ul>
+        </div>
+        <div class="nt-footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="../aviso-de-privacidad/index.html">Aviso de privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="nt-footer-bottom">
+        <p>&copy; 2026 NT Group. Todos los derechos reservados.</p>
+        <p>Next Technologies</p>
+      </div>
     </div>
   </footer>
+  <a href="https://wa.me/525566582073?text=Hola%2C+me+interesa+m%C3%A1s+informaci%C3%B3n+de+sus+productos" target="_blank" rel="noopener" class="nt-whatsapp-btn" aria-label="WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.118 1.524 5.845L.057 23.886a.5.5 0 00.611.61l6.04-1.466A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.797 9.797 0 01-5.028-1.381l-.36-.214-3.732.906.944-3.634-.235-.374A9.789 9.789 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+    </svg>
+  </a>
+  <div class="nt-bottom-bar">
+    <div>
+      <div class="nt-bottom-bar-text">Soluciones FACTO — cumplimiento fiscal y operaci&oacute;n empresarial</div>
+      <div class="nt-bottom-bar-sub">Cumplimiento fiscal &middot; Automatizaci&oacute;n &middot; Integraci&oacute;n &middot; IA</div>
+    </div>
+    <div class="nt-bottom-bar-actions">
+      <a href="mailto:ventas@next-technologies.com.mx?subject=Demo Facto Hospitality" class="btn btn-primary" style="font-size:.85rem;padding:.6rem 1.25rem">
+        Cont&aacute;ctanos <span aria-hidden="true">-&gt;</span>
+      </a>
+    </div>
+  </div>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -407,6 +618,77 @@
       document.querySelectorAll('.reveal').forEach(function(el) {
         observer.observe(el);
       });
+
+      var featureIds = ['integracion', 'cumplimiento', 'operacion', 'expertos', 'fiscales', 'automatizacion', 'tiempo-real', 'puente'];
+      var featureTrack = document.querySelector('[data-feature-track]');
+      var featureSlides = featureTrack ? Array.prototype.slice.call(featureTrack.querySelectorAll('.feature-section')) : [];
+      var featureDots = document.querySelector('[data-feature-dots]');
+      var featureIndex = 0;
+      var featureTimer;
+
+      function setFeatureActive(index) {
+        if (!featureSlides.length) return;
+        featureIndex = (index + featureSlides.length) % featureSlides.length;
+        featureSlides.forEach(function(slide, slideIndex) {
+          slide.classList.toggle('is-active', slideIndex === featureIndex);
+        });
+        if (featureDots) {
+          Array.prototype.slice.call(featureDots.children).forEach(function(dot, dotIndex) {
+            dot.classList.toggle('is-active', dotIndex === featureIndex);
+          });
+        }
+      }
+
+      function goToFeature(index, options) {
+        if (!featureTrack || !featureSlides.length) return;
+        var slide = featureSlides[(index + featureSlides.length) % featureSlides.length];
+        var left = slide.offsetLeft - ((featureTrack.clientWidth - slide.clientWidth) / 2);
+        setFeatureActive(index);
+        featureTrack.scrollTo({ left: Math.max(0, left), behavior: options && options.instant ? 'auto' : 'smooth' });
+      }
+
+      function resetFeatureTimer() {
+        window.clearInterval(featureTimer);
+        featureTimer = window.setInterval(function() {
+          goToFeature(featureIndex + 1);
+        }, 6200);
+      }
+
+      if (featureSlides.length) {
+        featureSlides.forEach(function(slide, index) {
+          if (featureDots) {
+            var dot = document.createElement('button');
+            dot.type = 'button';
+            dot.className = 'feature-dot' + (index === 0 ? ' is-active' : '');
+            dot.setAttribute('aria-label', 'Ver capacidad ' + (index + 1));
+            dot.addEventListener('click', function() {
+              goToFeature(index);
+              resetFeatureTimer();
+            });
+            featureDots.appendChild(dot);
+          }
+        });
+
+        document.querySelectorAll('.functionality-node[href^="#"]').forEach(function(link) {
+          link.addEventListener('click', function(event) {
+            var id = link.getAttribute('href').slice(1);
+            var index = featureIds.indexOf(id);
+            if (index === -1) return;
+            event.preventDefault();
+            document.querySelector('.features').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            goToFeature(index);
+            resetFeatureTimer();
+            history.replaceState(null, '', '#' + id);
+          });
+        });
+
+        if (location.hash) {
+          var initialIndex = featureIds.indexOf(location.hash.slice(1));
+          if (initialIndex > -1) goToFeature(initialIndex, { instant: true });
+        }
+
+        resetFeatureTimer();
+      }
     });
   </script>
 </body>
