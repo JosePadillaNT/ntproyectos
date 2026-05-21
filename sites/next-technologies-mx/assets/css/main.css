@@ -159,7 +159,7 @@ section.dense { padding: 64px 0; }
 .global-presence-map { min-height: 62vh; margin: 0; display: flex; align-items: stretch; justify-content: stretch; overflow: hidden; }
 .global-presence-map img { display: block; width: 100%; height: 100%; object-fit: cover; filter: drop-shadow(0 26px 42px rgba(0,0,0,.18)); transform: none; transform-origin: center; }
 .global-presence-content { transform: none; }
-.global-presence-metrics-panel { min-height: 82vh; padding: clamp(1.35rem, 2.5vw, 2rem) clamp(3rem, 6vw, 6rem) clamp(3rem, 6vw, 6rem); background: linear-gradient(90deg, rgba(6,20,51,.16), rgba(6,20,51,.3)), url("../../../../imagenes/+200 mill.png") center / cover no-repeat; display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start; }
+.global-presence-metrics-panel { min-height: 82vh; padding: clamp(1.35rem, 2.5vw, 2rem) clamp(3rem, 6vw, 6rem) clamp(3rem, 6vw, 6rem); background: linear-gradient(90deg, rgba(6,20,51,.16), rgba(6,20,51,.3)), url("../images/backgrounds/global-presence-metrics.jpg") center / cover no-repeat; display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start; }
 .global-presence-metrics { width: 100%; flex: 1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(3.5rem, 8vw, 7rem) clamp(4rem, 7vw, 7rem); align-content: center; font-family: 'Open Sans', sans-serif; }
 .global-presence-metric { min-height: auto; padding: 0; border: 0; background: transparent; box-shadow: none; backdrop-filter: none; display: flex; flex-direction: column; justify-content: center; }
 .global-presence-number { color: #fff; font-size: clamp(2.08rem, 3.52vw, 4rem); line-height: .95; font-weight: 400; letter-spacing: 0; text-shadow: 0 8px 20px rgba(2,6,24,.42); }
@@ -256,14 +256,14 @@ section.dense { padding: 64px 0; }
 .product-logo-wrap { height: 95px; width: 100%; margin-bottom: 1.25rem; display: flex; align-items: center; justify-content: center; }
 .product-logo-wrap img { width: auto; height: 63px; max-width: 330px; object-fit: contain; }
 .product-logo-placeholder { width: 190px; height: 60px; margin-left: auto; margin-right: auto; border: 1px dashed #b9cde2; border-radius: 10px; color: var(--primary); background: #eef4fb; font-weight: 800; font-size: .95rem; letter-spacing: 0; }
-#facto-hospitality.product-logo-card { background-image: url("../../../../imagenes/hospitalityminiaturainiatura.jpg"); }
-#facto-identity.product-logo-card { background-image: url("../../../../imagenes/puiminiaturainiatura.png"); }
-#facto-data.product-logo-card { background-image: url("../../../../imagenes/factodataminiatura.jpg"); }
-#facto-valid.product-logo-card { background-image: url("../../../../imagenes/factovalidminiatura.png"); }
-#facto-nomina.product-logo-card { background-image: url("../../../../imagenes/factonominaminiatura.jpg"); }
-#facto-orders.product-logo-card { background-image: url("../../../../imagenes/factoordersminiatura.jpg"); }
-#facto-ia.product-logo-card { background-image: url("../../../../imagenes/factoiaminiatura.jpg"); }
-#facto-business.product-logo-card { background-image: url("../../../../imagenes/factobusinessminiatura.jpg"); }
+#facto-hospitality.product-logo-card { background-image: url("../images/products/cards/facto-hospitality.jpg"); }
+#facto-identity.product-logo-card { background-image: url("../images/products/cards/facto-identity.jpg"); }
+#facto-data.product-logo-card { background-image: url("../images/products/cards/facto-data.jpg"); }
+#facto-valid.product-logo-card { background-image: url("../images/products/cards/facto-valid.jpg"); }
+#facto-nomina.product-logo-card { background-image: url("../images/products/cards/facto-nomina.jpg"); }
+#facto-orders.product-logo-card { background-image: url("../images/products/cards/facto-orders.jpg"); }
+#facto-ia.product-logo-card { background-image: url("../images/products/cards/facto-ia.jpg"); }
+#facto-business.product-logo-card { background-image: url("../images/products/cards/facto-business.jpg"); }
 @media (max-width: 768px) { .why-grid { grid-template-columns: 1fr; } }
 
 /* ── Feature split ── */
@@ -348,7 +348,7 @@ footer { background: var(--primary-deep); color: rgba(255,255,255,.9); padding: 
 .mt-4 { margin-top: 2rem; }
 .mb-4 { margin-bottom: 2rem; }
 .bg-light { background: var(--bg-2); }
-#por-que-next { background: url("../../../../imagenes/wallpapernext3.png") center / cover no-repeat; }
+#por-que-next { background: url("../images/backgrounds/why-next-background.jpg") center / cover no-repeat; }
 #por-que-next .section-header { max-width: 980px; }
 #por-que-next .section-header .label { color: #fff; font-size: 1.125rem; }
 #por-que-next .section-header .headline { color: #fff; font-size: clamp(1.5rem, 3.12vw, 3rem); line-height: 1.02; font-weight: 800; letter-spacing: 0; text-shadow: 0 10px 26px rgba(2,6,24,.42); }

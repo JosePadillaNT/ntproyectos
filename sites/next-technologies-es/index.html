@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Next Technologies España — Factura electrónica y soluciones empresariales</title>
-  <meta name="description" content="Factura electrónica FacturaE, TicketBAI y Verifactu para España. Integración con SAP, Oracle y Dynamics. Cumplimiento AEAT garantizado.">
-  <meta name="theme-color" content="#ffffff">
+  <title>Next Technologies España | Soluciones FACTO para automatización y gestión empresarial</title>
+  <meta name="description" content="Soluciones tecnológicas especializadas para automatización, integración, analítica y gestión empresarial: Facto Valid, Facto Orders, Facto IA, Facto Data y Facto Business.">
+  <meta name="theme-color" content="#060b35">
   <link rel="icon" href="assets/images/logos/nt-black.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -17,16 +17,25 @@
 
   <nav id="navbar">
     <div class="nav-inner">
-      <a href="index.html"><img src="assets/images/logos/nt-black.png" alt="Next Technologies" class="nav-logo"></a>
+      <a href="index.html"><img src="assets/images/logos/next-technologies-white-horizontal.png" alt="Next Technologies" class="nav-logo"></a>
       <ul class="nav-links">
-        <li><a href="#productos">Productos</a></li>
+        <li><a href="#nuestra-experiencia">Nuestra Experiencia</a></li>
+        <li><a href="#por-que-next">Nosotros</a></li>
+        <li><a href="#productos">Soluciones</a></li>
         <li><a href="#como-funciona">Cómo funciona</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="#contacto">Contacto</a></li>
         <li><a href="developers/login.html">Developers</a></li>
+        <li class="nav-presence">
+          <button class="nav-presence-trigger" type="button" aria-haspopup="true" aria-expanded="false">Presencia</button>
+          <div class="nav-presence-menu" aria-label="Presencia internacional">
+            <a href="../next-technologies-mx/index.html"><span class="flag"><img src="https://flagcdn.com/mx.svg" alt=""></span><span>México</span></a>
+            <a href="https://next-technologies.com.do/" target="_blank" rel="noopener"><span class="flag"><img src="https://flagcdn.com/do.svg" alt=""></span><span>República Dominicana</span></a>
+            <a href="#presencia"><span class="flag"><img src="https://flagcdn.com/co.svg" alt=""></span><span>Colombia</span></a>
+            <a href="#presencia"><span class="flag"><img src="https://flagcdn.com/es.svg" alt=""></span><span>España</span></a>
+          </div>
+        </li>
       </ul>
       <div class="nav-cta">
-        <a href="https://wa.me/34600000000?text=Hola%2C+me+interesa+informaci%C3%B3n+de+sus+servicios" target="_blank" rel="noopener" class="btn btn-ghost" style="font-size:.85rem">WhatsApp</a>
         <a href="#contacto" class="btn btn-primary" style="font-size:.85rem;padding:.6rem 1.25rem">
           Solicitar demo <span class="arrow-icon"><i data-lucide="arrow-right" style="width:14px;height:14px"></i></span>
         </a>
@@ -36,279 +45,295 @@
       </button>
     </div>
   </nav>
-  <a href="https://wa.me/34600000000?text=Hola%2C+me+interesa+informaci%C3%B3n+de+sus+servicios" target="_blank" rel="noopener" class="floating-tab">Ventas WhatsApp</a>
 
-  <!-- HERO -->
-  <section class="hero hero-gradient">
+  <section class="hero-video spain-hero-video" aria-label="Next Technologies España">
+    <div class="spain-hero-slide">
+      <img class="hero-slide-media" src="assets/images/backgrounds/spain-hero.jpg" alt="Soluciones FACTO para España" loading="eager" decoding="async">
+      <div class="spain-hero-content">
+        <img class="spain-hero-logo" src="assets/images/logos/factosuite-white.png" alt="Facto Suite">
+        <p>Soluciones FACTO para automatización, integración y gestión empresarial</p>
+        <a href="#contacto" class="hero-product-cta">Solicitar demo</a>
+      </div>
+      <button class="spain-hero-arrow" type="button" aria-label="Siguiente">›</button>
+      <div class="spain-hero-dots" aria-label="Slide activo">
+        <span></span>
+        <span class="is-active"></span>
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="spain-intro-strip">
     <div class="container">
-      <div class="hero-grid">
-        <div data-aos="fade-right">
-          <div class="pill">
-            <i data-lucide="shield-check" style="width:13px;height:13px"></i>
-            Cumplimiento AEAT garantizado
-          </div>
-          <h1 class="hero-display">Factura electrónica<br>y tecnología <span class="gradient-text">empresarial</span><br>para España</h1>
-          <p class="hero-sub">FacturaE, TicketBAI y Verifactu con el respaldo de 15 años de experiencia en Latinoamérica. Integración nativa con SAP, Oracle y Dynamics 365.</p>
-          <div class="hero-actions">
-            <a href="#contacto" class="btn btn-primary btn-lg">
-              Solicitar demo <span class="arrow-icon"><i data-lucide="arrow-right" style="width:16px;height:16px"></i></span>
-            </a>
-            <a href="#productos" class="btn btn-outline btn-lg">Ver soluciones</a>
-          </div>
-          <div class="trust-row"><span class="trust-badge"><i data-lucide="check-circle" style="width:14px;height:14px"></i>Cumplimiento AEAT</span><span class="trust-badge"><i data-lucide="check-circle" style="width:14px;height:14px"></i>FacturaE · TicketBAI · Verifactu</span><span class="trust-badge"><i data-lucide="check-circle" style="width:14px;height:14px"></i>Soporte en horario CET</span></div>
-        </div>
-        <div data-aos="fade-left" data-aos-delay="120">
-          <img src="assets/images/products/hospitality.png" alt="Soluciones NT para España" class="hero-image rellax" data-rellax-speed="-1">
+      <div class="spain-intro-grid">
+        <p>En Next Technologies desarrollamos plataformas diseñadas para resolver procesos críticos de negocio con foco en eficiencia operativa, integración tecnológica, analítica y trazabilidad.</p>
+        <div class="trust-row">
+          <span class="trust-badge"><i data-lucide="check-circle" style="width:14px;height:14px"></i>Integraciones ERP, TPV y sistemas administrativos</span>
+          <span class="trust-badge"><i data-lucide="check-circle" style="width:14px;height:14px"></i>Automatización de procesos</span>
+          <span class="trust-badge"><i data-lucide="check-circle" style="width:14px;height:14px"></i>IA y analítica operativa</span>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="stats-bar"><div class="container"><div class="stats-grid"><div><div class="stat-number" data-count="1500" data-suffix="+">0+</div><div class="stat-label">Empresas en LATAM</div></div><div><div class="stat-number" data-count="15" data-suffix="+ años">0+ años</div><div class="stat-label">Experiencia regional</div></div><div><div class="stat-number" data-count="5" data-suffix=" países">0 países</div><div class="stat-label">Presencia activa</div></div><div><div class="stat-number" data-count="99" data-suffix="%">0%</div><div class="stat-label">Disponibilidad</div></div></div></div></div>
+  <section class="global-presence" id="presencia">
+    <div class="container">
+      <div class="global-presence-grid">
+        <div class="global-presence-map" data-aos="fade-right">
+          <img src="assets/images/backgrounds/global-presence-map.jpg" alt="Mapa de presencia global de Next Technologies" loading="lazy" decoding="async">
+        </div>
+        <div class="global-presence-content" data-aos="fade-left" data-aos-delay="120">
+          <div class="global-presence-metrics-panel">
+            <h2 class="global-presence-title">Presencia global</h2>
+            <p class="global-presence-copy">Capacidad tecnológica del grupo para empresas con procesos críticos, múltiples ubicaciones y necesidad de continuidad operativa.</p>
+            <div class="global-presence-metrics">
+              <div class="global-presence-metric">
+                <div class="global-presence-number">+400</div>
+                <div class="global-presence-label">Millones de documentos fiscales procesados</div>
+              </div>
+              <div class="global-presence-metric">
+                <div class="global-presence-number">+100.000</div>
+                <div class="global-presence-label">Usuarios simultáneos</div>
+              </div>
+              <div class="global-presence-metric">
+                <div class="global-presence-number">+1.700</div>
+                <div class="global-presence-label">Establecimientos</div>
+              </div>
+              <div class="global-presence-metric">
+                <div class="global-presence-number">+2.000</div>
+                <div class="global-presence-label">Clientes</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- PARTNERS -->
   <div class="logos-strip">
     <div class="container">
-      <p class="logos-label">Partners tecnológicos</p>
+      <p class="logos-label">Partners estratégicos</p>
       <div class="clients-grid">
-        <img src="assets/images/clients/aws.png" alt="Amazon Web Services">
-        <img src="assets/images/clients/azure.png" alt="Microsoft Azure">
+        <span class="partner-chip">Oracle</span>
+        <span class="partner-chip">NetSuite</span>
+        <span class="partner-chip">SAP</span>
+        <img src="assets/images/clients/aws.png" alt="AWS">
+        <img src="assets/images/clients/azure.png" alt="Azure">
         <img src="assets/images/clients/gcp.png" alt="Google Cloud">
+        <span class="partner-chip">Infor</span>
       </div>
     </div>
   </div>
 
-  <!-- PRODUCTS -->
-  <section id="productos" class="bg-light">
+  <section id="nuestra-experiencia" class="experience-editorial">
     <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <p class="label">NT Soluciones</p>
-        <h2 class="headline">Soluciones para cada <span class="gradient-text">tipo de empresa</span></h2>
-        <p class="body-lg">Factura electrónica integrada con los sistemas que ya usas. Cumplimiento AEAT sin complicaciones técnicas ni cambios en tu operación.</p>
-      </div>
-            <div class="products-grid">
-
-        <div class="product-card" data-aos="fade-up">
-          <div class="product-card-icon-wrap"><i data-lucide="brain-circuit"></i></div>
-          <h3>FactoIA</h3>
-          <p>Inteligencia artificial para procesos fiscales. Automatiza la captura y conciliación de facturas con IA.</p>
-          <a href="#contacto" class="product-card-link">Conocer más <span class="arrow-icon"><i data-lucide="arrow-right" style="width:14px;height:14px"></i></span></a>
+      <div class="experience-editorial-grid">
+        <div class="experience-editorial-copy" data-aos="fade-right">
+          <p class="experience-eyebrow">Nuestra experiencia</p>
+          <h2>Tecnología contrastada para operaciones exigentes</h2>
+          <h3>Inteligente, fiable y eficiente</h3>
+          <p>Optimizamos tu gestión, potenciamos nuestro talento y experiencia con IA, y ofrecemos resultados sólidos y duraderos, respaldados por nuestros expertos.</p>
         </div>
-
-        <div class="product-card" data-aos="fade-up">
-          <div class="product-card-icon-wrap"><i data-lucide="hotel"></i></div>
-          <h3>Hospitality</h3>
-          <p>Facturación electrónica para hoteles y restaurantes. Integración con Opera PMS y Micros POS.</p>
-          <a href="#contacto" class="product-card-link">Conocer más <span class="arrow-icon"><i data-lucide="arrow-right" style="width:14px;height:14px"></i></span></a>
-        </div>
-
-        <div class="product-card" data-aos="fade-up">
-          <div class="product-card-icon-wrap"><i data-lucide="building-2"></i></div>
-          <h3>Business</h3>
-          <p>Suite ERP + facturación electrónica. Integración con SAP, Oracle y Dynamics 365.</p>
-          <a href="#contacto" class="product-card-link">Conocer más <span class="arrow-icon"><i data-lucide="arrow-right" style="width:14px;height:14px"></i></span></a>
-        </div>
-
-        <div class="product-card" data-aos="fade-up">
-          <div class="product-card-icon-wrap"><i data-lucide="shopping-cart"></i></div>
-          <h3>Orders</h3>
-          <p>Gestión inteligente de órdenes de compra. Aprobaciones automatizadas y control de proveedores.</p>
-          <a href="#contacto" class="product-card-link">Conocer más <span class="arrow-icon"><i data-lucide="arrow-right" style="width:14px;height:14px"></i></span></a>
-        </div>
-
-        <div class="product-card" data-aos="fade-up">
-          <div class="product-card-icon-wrap"><i data-lucide="shield-check"></i></div>
-          <h3>Valid</h3>
-          <p>Factura electrónica FacturaE, TicketBAI y Verifactu. Validación y resguardo automático.</p>
-          <a href="#contacto" class="product-card-link">Conocer más <span class="arrow-icon"><i data-lucide="arrow-right" style="width:14px;height:14px"></i></span></a>
-        </div>
-
-        <div class="product-card" data-aos="fade-up">
-          <div class="product-card-icon-wrap"><i data-lucide="globe-2"></i></div>
-          <h3>FactoSuite</h3>
-          <p>Suite multi-país. Un solo proveedor para España, México, Dominicana y Colombia.</p>
-          <a href="#contacto" class="product-card-link">Conocer más <span class="arrow-icon"><i data-lucide="arrow-right" style="width:14px;height:14px"></i></span></a>
+        <div class="experience-editorial-visual" data-aos="fade-left" data-aos-delay="120">
+          <div class="experience-mosaic" aria-label="Sectores">
+            <article>
+              <img src="assets/images/industries/retail.jpg" alt="Retail" loading="lazy" decoding="async">
+              <span>Retail</span>
+            </article>
+            <article>
+              <img src="assets/images/industries/hospitality.jpg" alt="Hostelería" loading="lazy" decoding="async">
+              <span>Hostelería</span>
+            </article>
+            <article>
+              <img src="assets/images/industries/logistics.jpg" alt="Logística" loading="lazy" decoding="async">
+              <span>Logística</span>
+            </article>
+            <article>
+              <img src="assets/images/industries/education.jpg" alt="Educación" loading="lazy" decoding="async">
+              <span>Educación</span>
+            </article>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <section id="por-que-next" class="bg-light">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="label">¿Por qué Next Technologies?</p>
+        <h2 class="headline">Especialistas en integración, automatización e inteligencia operativa</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card" data-aos="fade-up">
+          <div class="icon-wrap"><i data-lucide="workflow"></i></div>
+          <h3>Automatización empresarial</h3>
+          <p>Procesos diseñados para reducir tareas manuales, mejorar la trazabilidad y ganar en eficiencia operativa cada día.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="icon-wrap"><i data-lucide="plug-zap"></i></div>
+          <h3>Integraciones empresariales</h3>
+          <p>Conectamos plataformas con ERP, TPV, sistemas administrativos, contabilidad, recursos humanos y flujos de proveedores para eliminar los silos operativos.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="icon-wrap"><i data-lucide="building-2"></i></div>
+          <h3>Especialización por sector</h3>
+          <p>Plataformas creadas para empresas exigentes del retail, la restauración, corporativos, logística, educación y negocios con alto volumen transaccional.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up">
+          <div class="icon-wrap"><i data-lucide="headphones"></i></div>
+          <h3>Soporte consultivo</h3>
+          <p>Acompañamiento técnico y operativo especializado para configurar, probar y poner en marcha las soluciones sin fricciones.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="icon-wrap"><i data-lucide="brain-circuit"></i></div>
+          <h3>Innovación con IA</h3>
+          <p>La inteligencia artificial ayuda a detectar errores, identificar patrones, resolver dudas y convertir datos operativos en decisiones.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="icon-wrap"><i data-lucide="scan-line"></i></div>
+          <h3>Trazabilidad continua</h3>
+          <p>Mayor visibilidad de los procesos, informes fiables y control operativo desde la integración hasta la ejecución diaria.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="productos">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="label">Productos FACTO</p>
+        <h2 class="headline">Diseñados para gestionar, validar y automatizar</h2>
+        <p class="body-lg">Cada plataforma resuelve una parte específica de la gestión empresarial: validación documental, compras, analítica, inteligencia fiscal y facturación electrónica empresarial.</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card product-media-card" id="facto-data" data-aos="fade-up">
+          <div class="product-card-icon-wrap"><i data-lucide="bar-chart-3"></i></div>
+          <h3>Facto Data</h3>
+          <p>Plataforma de analítica de datos diseñada para convertir información operativa en indicadores útiles para la toma de decisiones.</p>
+          <span class="product-tag">Analítica</span>
+        </div>
+        <div class="product-card product-media-card" id="facto-valid" data-aos="fade-up" data-aos-delay="80">
+          <div class="product-card-icon-wrap"><i data-lucide="shield-check"></i></div>
+          <h3>Facto Valid</h3>
+          <p>Solución orientada a la recepción y validación de documentos de proveedores, facilitando el control de los procesos operativos y administrativos.</p>
+          <span class="product-tag">Validación</span>
+        </div>
+        <div class="product-card product-media-card" id="facto-orders" data-aos="fade-up" data-aos-delay="160">
+          <div class="product-card-icon-wrap"><i data-lucide="shopping-cart"></i></div>
+          <h3>Facto Orders</h3>
+          <p>Solución orientada a la gestión y automatización de pedidos de compra, facilitando el control de los procesos comerciales y administrativos.</p>
+          <span class="product-tag">Compras</span>
+        </div>
+        <div class="product-card product-media-card" id="facto-ia" data-aos="fade-up">
+          <div class="product-card-icon-wrap"><i data-lucide="brain-circuit"></i></div>
+          <h3>Facto IA</h3>
+          <p>Aplica inteligencia y analítica avanzada sobre la información fiscal, administrativa y operativa de tu empresa.</p>
+          <span class="product-tag">IA operativa</span>
+        </div>
+        <div class="product-card product-media-card" id="facto-business" data-aos="fade-up" data-aos-delay="80">
+          <div class="product-card-icon-wrap"><i data-lucide="file-check-2"></i></div>
+          <h3>Facto Business</h3>
+          <p>Plataforma de facturación electrónica orientada a empresas y grupos corporativos que requieren control, trazabilidad y eficiencia en sus procesos administrativos y fiscales.</p>
+          <span class="product-tag">Facturación empresarial</span>
+        </div>
+        <div class="product-card product-card-muted product-media-card" id="facto-nomina" data-aos="fade-up" data-aos-delay="160">
+          <div class="product-card-icon-wrap"><i data-lucide="users"></i></div>
+          <h3>Facto Nómina</h3>
+          <p>Producto pendiente de validación para España. Requiere confirmar adaptación al modelo español de nómina, IRPF y Seguridad Social antes de publicarlo como oferta activa.</p>
+          <span class="product-tag">Pendiente de validación</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section id="como-funciona" class="bg-light">
     <div class="container">
       <div class="section-header" data-aos="fade-up">
-        <p class="label">Proceso AEAT</p>
-        <h2 class="headline">Implementación <span class="gradient-text">sin complicaciones</span></h2>
+        <p class="label">Cómo funciona</p>
+        <h2 class="headline">De la integración a la gestión automatizada</h2>
       </div>
       <div class="steps-grid">
-        <div class="step-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="step-card" data-aos="fade-up">
           <div class="step-number">01</div>
-          <h3>Diagnóstico sin coste</h3>
-          <p>Analizamos tu situación con la AEAT y te presentamos la solución más adecuada sin compromiso.</p>
+          <h3>Conectamos tus sistemas</h3>
+          <p>Nos integramos con tu ERP, TPV, sistemas de recursos humanos, contabilidad, portales de proveedores o plataformas administrativas según la solución requerida.</p>
         </div>
         <div class="step-card" data-aos="fade-up" data-aos-delay="100">
           <div class="step-number">02</div>
-          <h3>Integración en días</h3>
-          <p>Conectamos con tu ERP o sistema de ventas actual. Sin interrupciones. Sin cambios en tus procesos.</p>
+          <h3>Automatizamos las validaciones</h3>
+          <p>Sincronizamos la información, validamos las reglas operativas y configuramos los flujos para facturación, compras, analítica o inteligencia fiscal.</p>
         </div>
         <div class="step-card" data-aos="fade-up" data-aos-delay="200">
           <div class="step-number">03</div>
-          <h3>Factura con la AEAT</h3>
-          <p>Tus facturas electrónicas cumplen FacturaE, TicketBAI o Verifactu desde el primer día de operación.</p>
+          <h3>Gestionas con trazabilidad</h3>
+          <p>Tu equipo trabaja con procesos claros, informes fiables, soporte especializado y menor dependencia de tareas manuales.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WHY NT -->
-  <section id="nosotros">
+  <section id="aplicaciones">
     <div class="container">
       <div class="section-header" data-aos="fade-up">
-        <p class="label">Por qué elegirnos</p>
-        <h2 class="headline">La experiencia de LATAM llega a España</h2>
+        <p class="label">Aplicaciones</p>
+        <h2 class="headline">Soluciones para sectores y equipos exigentes</h2>
       </div>
-      <div class="why-grid">
-        
-        <div class="why-card" data-aos="fade-up">
-          <div class="icon-wrap"><i data-lucide="shield-check" style="width:22px;height:22px"></i></div>
-          <h3>Cumplimiento AEAT</h3>
-          <p>FacturaE, TicketBAI y Verifactu. Actualizaciones automáticas ante cada cambio normativo.</p>
-        </div>
-        
-        <div class="why-card" data-aos="fade-up">
-          <div class="icon-wrap"><i data-lucide="zap" style="width:22px;height:22px"></i></div>
-          <h3>Implementación ágil</h3>
-          <p>De cero a producción en días. Equipo especializado que minimiza la interrupción de tu operación.</p>
-        </div>
-        
-        <div class="why-card" data-aos="fade-up">
-          <div class="icon-wrap"><i data-lucide="headphones" style="width:22px;height:22px"></i></div>
-          <h3>Soporte en horario CET</h3>
-          <p>Equipo disponible en tu horario. Respuesta rápida en español peninsular.</p>
-        </div>
-        
-        <div class="why-card" data-aos="fade-up">
-          <div class="icon-wrap"><i data-lucide="plug" style="width:22px;height:22px"></i></div>
-          <h3>Integración nativa</h3>
-          <p>SAP, Oracle, Dynamics 365, Sage y más de 40 sistemas sin desarrollos adicionales.</p>
-        </div>
-        
-        <div class="why-card" data-aos="fade-up">
-          <div class="icon-wrap"><i data-lucide="brain-circuit" style="width:22px;height:22px"></i></div>
-          <h3>IA para automatización</h3>
-          <p>FactoIA aplica inteligencia artificial a la captura, clasificación y conciliación de facturas.</p>
-        </div>
-        
-        <div class="why-card" data-aos="fade-up">
-          <div class="icon-wrap"><i data-lucide="globe" style="width:22px;height:22px"></i></div>
-          <h3>Respaldo multinacional</h3>
-          <p>Si tu empresa opera también en LATAM, un solo proveedor cubre México, Colombia, Dominicana y España.</p>
-        </div>
+      <div class="applications-grid">
+        <div class="application-card"><strong>TPV</strong><span>Restauración</span><p>TPV / autofactura / gestión diaria</p><small>Gestión diaria</small></div>
+        <div class="application-card"><strong>ERP</strong><span>Corporativos</span><p>ERP / contabilidad / administración</p><small>Integración</small></div>
+        <div class="application-card"><strong>DOC</strong><span>Finanzas</span><p>Validación / cuentas a pagar</p><small>Control documental</small></div>
+        <div class="application-card"><strong>IA</strong><span>TI y fiscal</span><p>Análisis / decisiones</p><small>Inteligencia operativa</small></div>
+        <div class="application-card"><strong>DATA</strong><span>Dirección y operaciones</span><p>Indicadores / informes / analítica</p><small>Visibilidad ejecutiva</small></div>
       </div>
     </div>
   </section>
 
-  <!-- PRESENCIA -->
-  <section id="presencia" class="bg-light">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <p class="label">Cobertura</p>
-        <h2 class="headline">Presencia en Europa y Latinoamérica</h2>
-      </div>
-      <div class="presence-grid">
-        
-        <div class="presence-card" data-aos="fade-up">
-          <div class="country-code">ES</div>
-          <div class="country-name">España</div>
-          <div class="country-reg">FacturaE / AEAT</div>
-          <div style="display:flex;align-items:center;gap:.4rem;justify-content:center;margin-top:.75rem">
-            <div class="status-dot status-active"></div>
-            <span style="font-size:.72rem;color:var(--text-3);font-weight:600">Activo</span>
-          </div>
-        </div>
-        
-        <div class="presence-card" data-aos="fade-up">
-          <div class="country-code">MX</div>
-          <div class="country-name">México</div>
-          <div class="country-reg">CFDI / SAT</div>
-          <div style="display:flex;align-items:center;gap:.4rem;justify-content:center;margin-top:.75rem">
-            <div class="status-dot status-active"></div>
-            <span style="font-size:.72rem;color:var(--text-3);font-weight:600">Activo</span>
-          </div>
-        </div>
-        
-        <div class="presence-card" data-aos="fade-up">
-          <div class="country-code">DO</div>
-          <div class="country-name">Rep. Dominicana</div>
-          <div class="country-reg">NCF / DGII</div>
-          <div style="display:flex;align-items:center;gap:.4rem;justify-content:center;margin-top:.75rem">
-            <div class="status-dot status-active"></div>
-            <span style="font-size:.72rem;color:var(--text-3);font-weight:600">Activo</span>
-          </div>
-        </div>
-        
-        <div class="presence-card" data-aos="fade-up">
-          <div class="country-code">CO</div>
-          <div class="country-name">Colombia</div>
-          <div class="country-reg">FE / DIAN</div>
-          <div style="display:flex;align-items:center;gap:.4rem;justify-content:center;margin-top:.75rem">
-            <div class="status-dot status-soon"></div>
-            <span style="font-size:.72rem;color:var(--text-3);font-weight:600">Próximamente</span>
-          </div>
-        </div>
-        
-        <div class="presence-card" data-aos="fade-up">
-          <div class="country-code">CR</div>
-          <div class="country-name">Costa Rica</div>
-          <div class="country-reg">FE / Hacienda</div>
-          <div style="display:flex;align-items:center;gap:.4rem;justify-content:center;margin-top:.75rem">
-            <div class="status-dot status-active"></div>
-            <span style="font-size:.72rem;color:var(--text-3);font-weight:600">Activo</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contacto">
+  <section id="contacto" class="bg-light">
     <div class="container">
       <div class="contact-grid">
         <div data-aos="fade-right">
           <p class="label">Contacto</p>
-          <h2 class="headline">Hablemos de tu proyecto</h2>
-          <p class="body">Cuéntanos qué necesita tu empresa. Nuestro equipo responde en menos de 24 horas con una propuesta sin compromiso.</p>
-          <div class="contact-item"><i data-lucide="mail" style="width:18px;height:18px"></i><span>ventas@next-technologies.es</span></div><div class="contact-item"><i data-lucide="map-pin" style="width:18px;height:18px"></i><span>Madrid, España</span></div>
+          <h2 class="headline">Hablemos de tu negocio</h2>
+          <p class="body-lg">Cuéntanos qué proceso necesitas optimizar: validación documental, compras, analítica, inteligencia fiscal o facturación electrónica empresarial. Nuestro equipo puede ayudarte a definir la solución más adecuada.</p>
+          <div class="contact-item"><i data-lucide="mail" style="width:18px;height:18px"></i><span>ventas@next-technologies.es</span></div>
+          <div class="contact-item"><i data-lucide="map-pin" style="width:18px;height:18px"></i><span>Madrid, España</span></div>
         </div>
         <div data-aos="fade-left">
           <div class="form-card">
             <form id="contact-form">
               <div class="form-row">
-                <div class="form-group"><label>Nombre</label><input type="text" placeholder="Tu nombre" required></div>
-                <div class="form-group"><label>Empresa</label><input type="text" placeholder="Nombre de tu empresa" required></div>
+                <div class="form-group"><label for="nombre">Nombre</label><input id="nombre" type="text" placeholder="Tu nombre" required></div>
+                <div class="form-group"><label for="empresa">Empresa</label><input id="empresa" type="text" placeholder="Nombre de tu empresa" required></div>
               </div>
               <div class="form-row">
-                <div class="form-group"><label>Email</label><input type="email" placeholder="correo@empresa.com" required></div>
-                <div class="form-group"><label>Teléfono</label><input type="tel" placeholder="Número de contacto"></div>
+                <div class="form-group"><label for="correo">Correo electrónico</label><input id="correo" type="email" placeholder="correo@empresa.com" required></div>
+                <div class="form-group"><label for="telefono">Teléfono</label><input id="telefono" type="tel" placeholder="+34 000 000 000"></div>
               </div>
               <div class="form-group">
-                <label>Producto de interés</label>
-                <select><option value="">Seleccionar...</option><option>FactoIA</option><option>Hospitality</option><option>Business</option><option>Orders</option><option>Valid</option><option>FactoSuite</option><option>No sé aún — quiero asesoría</option></select>
+                <label for="producto">Producto de interés</label>
+                <select id="producto">
+                  <option value="">Seleccionar...</option>
+                  <option>Facto Valid</option>
+                  <option>Facto Orders</option>
+                  <option>Facto Data</option>
+                  <option>Facto IA</option>
+                  <option>Facto Business</option>
+                  <option>Aún no lo sé, quiero asesoramiento</option>
+                </select>
               </div>
-              <div class="form-group"><label>Mensaje</label><textarea placeholder="Cuéntanos sobre tu empresa y qué necesitas..."></textarea></div>
+              <div class="form-group"><label for="mensaje">Mensaje</label><textarea id="mensaje" placeholder="Cuéntanos qué proceso quieres optimizar..."></textarea></div>
+              <label class="consent-check">
+                <input type="checkbox" required>
+                <span>He leído y acepto la <a href="#politica-privacidad">Política de Privacidad</a> y consiento el tratamiento de mis datos para gestionar mi solicitud.</span>
+              </label>
               <button type="submit" class="btn btn-primary btn-lg" style="width:100%">
                 Enviar mensaje <span class="arrow-icon"><i data-lucide="send" style="width:16px;height:16px"></i></span>
               </button>
-              <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1rem">
-                <span style="font-size:.75rem;color:var(--text-3);display:flex;align-items:center;gap:.3rem">
-                  <i data-lucide="lock" style="width:12px;height:12px"></i> Datos seguros
-                </span>
-                <span style="font-size:.75rem;color:var(--text-3);display:flex;align-items:center;gap:.3rem">
-                  <i data-lucide="clock" style="width:12px;height:12px"></i> Respuesta en 24 hrs
-                </span>
-                <span style="font-size:.75rem;color:var(--text-3);display:flex;align-items:center;gap:.3rem">
-                  <i data-lucide="shield-check" style="width:12px;height:12px"></i> Sin compromiso
-                </span>
+              <div class="form-badges">
+                <span><i data-lucide="lock"></i> Datos protegidos</span>
+                <span><i data-lucide="clock"></i> Respuesta en 24 h</span>
+                <span><i data-lucide="shield-check"></i> Sin compromiso</span>
               </div>
             </form>
           </div>
@@ -322,55 +347,48 @@
       <div class="footer-grid">
         <div>
           <img src="assets/images/logos/nt-white.png" alt="Next Technologies" class="footer-logo">
-          <p class="footer-desc">Soluciones tecnológicas para empresas en Latinoamérica y Europa. Parte del Next Group.</p>
+          <p class="footer-desc">Soluciones empresariales para una gestión más inteligente: automatización, integración tecnológica, analítica y trazabilidad.</p>
         </div>
         <div class="footer-col">
-          <h5>Productos</h5>
+          <h5>Soluciones</h5>
           <ul>
-            <li><a href="#productos">FactoIA</a></li>
-            <li><a href="#productos">Hospitality</a></li>
-            <li><a href="#productos">Business</a></li>
-            <li><a href="#productos">Orders</a></li>
-            <li><a href="#productos">FactoSuite</a></li>
+            <li><a href="#productos">Catálogo FACTO</a></li>
+            <li><a href="#como-funciona">Cómo funciona</a></li>
+            <li><a href="#aplicaciones">Aplicaciones</a></li>
             <li><a href="developers/index.html">API Docs</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h5>Empresa</h5>
           <ul>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#presencia">Presencia</a></li>
+            <li><a href="#por-que-next">Quiénes somos</a></li>
+            <li><a href="#aplicaciones">Aplicaciones</a></li>
             <li><a href="#contacto">Contacto</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h5>Contacto</h5>
+          <h5>Legal</h5>
           <ul>
-            <li><a href="tel:+34600000000">+34 600 000 000</a></li>
-            <li><a href="mailto:ventas@next-technologies.es">ventas@next-technologies.es</a></li>
-            <li><span>next-technologies.es</span></li>
+            <li><a id="politica-privacidad" href="#contacto">Política de privacidad</a></li>
+            <li><a href="#contacto">Aviso legal</a></li>
+            <li><a href="#contacto">Política de cookies</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2025 NT Group. Todos los derechos reservados.</p>
-        <p>Next Technologies</p>
+        <p>© 2026 NT Group. Todos los derechos reservados. · Next Technologies España</p>
+        <p>FACTO España</p>
       </div>
     </div>
   </footer>
-  <a href="https://wa.me/34600000000?text=Hola%2C+me+interesa+informaci%C3%B3n+de+sus+servicios" target="_blank" rel="noopener" class="whatsapp-btn" aria-label="WhatsApp">
-    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.118 1.524 5.845L.057 23.886a.5.5 0 00.611.61l6.04-1.466A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.797 9.797 0 01-5.028-1.381l-.36-.214-3.732.906.944-3.634-.235-.374A9.789 9.789 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
-    </svg>
-  </a>
+
   <div class="bottom-bar">
     <div>
-      <div class="bottom-bar-text">Factura electrónica AEAT — Next Technologies España</div>
-      <div class="bottom-bar-sub">FacturaE · TicketBAI · Verifactu · Soporte en horario CET</div>
+      <div class="bottom-bar-text">Next Technologies España · Soluciones FACTO</div>
+      <div class="bottom-bar-sub">Automatización · Integración tecnológica · Analítica · Trazabilidad</div>
     </div>
     <div class="bottom-bar-actions">
-      <a href="https://wa.me/34600000000?text=Hola%2C+me+interesa+informaci%C3%B3n+de+sus+servicios" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:.85rem;padding:.6rem 1.1rem">WhatsApp</a>
+      <a href="#productos" class="btn btn-outline" style="font-size:.85rem;padding:.6rem 1.1rem">Ver soluciones</a>
       <a href="#contacto" class="btn btn-primary" style="font-size:.85rem;padding:.6rem 1.25rem">
         Solicitar demo <span class="arrow-icon"><i data-lucide="arrow-right" style="width:14px;height:14px"></i></span>
       </a>
