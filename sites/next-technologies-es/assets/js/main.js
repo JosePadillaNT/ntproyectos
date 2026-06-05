@@ -39,6 +39,90 @@ document.addEventListener('DOMContentLoaded', function () {
   if (typeof lucide !== 'undefined') lucide.createIcons();
 });
 
+// Hero carousel
+document.addEventListener('DOMContentLoaded', function () {
+  const carousel = document.querySelector('[data-hero-carousel]');
+  if (!carousel) return;
+
+  const track = carousel.querySelector('.hero-carousel-track');
+  const slides = Array.from(carousel.querySelectorAll('.hero-slide'));
+  const dots = Array.from(carousel.querySelectorAll('[data-hero-dot]'));
+  const prev = carousel.querySelector('[data-hero-prev]');
+  const next = carousel.querySelector('[data-hero-next]');
+  if (!track || slides.length < 2) return;
+
+  let current = 0;
+  let timer = null;
+  const interval = 7000;
+
+  const goTo = (index) => {
+    current = (index + slides.length) % slides.length;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    slides.forEach((slide, slideIndex) => {
+      slide.classList.toggle('is-active', slideIndex === current);
+    });
+    dots.forEach((dot, dotIndex) => {
+      dot.classList.toggle('is-active', dotIndex === current);
+    });
+  };
+
+  const start = () => {
+    stop();
+    timer = window.setInterval(() => goTo(current + 1), interval);
+  };
+
+  const stop = () => {
+    if (timer) window.clearInterval(timer);
+    timer = null;
+  };
+
+  prev?.addEventListener('click', () => {
+    goTo(current - 1);
+    start();
+  });
+
+  next?.addEventListener('click', () => {
+    goTo(current + 1);
+    start();
+  });
+
+  dots.forEach((dot) => {
+    dot.addEventListener('click', () => {
+      goTo(Number(dot.dataset.heroDot));
+      start();
+    });
+  });
+
+  carousel.addEventListener('mouseenter', stop);
+  carousel.addEventListener('mouseleave', start);
+  goTo(0);
+  start();
+});
+
+// Experience carousel
+document.addEventListener('DOMContentLoaded', function () {
+  const carousel = document.querySelector('[data-experience-carousel]');
+  if (!carousel) return;
+
+  const slides = Array.from(carousel.querySelectorAll('.experience-slide'));
+  if (slides.length < 2) return;
+
+  let current = 0;
+  const interval = 3600;
+
+  const goTo = (index) => {
+    current = (index + slides.length) % slides.length;
+    const next = (current + 1) % slides.length;
+    slides.forEach((slide, slideIndex) => {
+      slide.classList.toggle('is-active', slideIndex === current);
+      slide.classList.toggle('is-next', slideIndex === next);
+    });
+  };
+
+  goTo(0);
+  window.setInterval(() => goTo(current + 1), interval);
+});
+
 // Animated counters
 document.addEventListener('DOMContentLoaded', function () {
   const counters = document.querySelectorAll('[data-count]');
