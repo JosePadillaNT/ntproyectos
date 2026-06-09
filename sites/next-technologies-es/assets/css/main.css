@@ -354,7 +354,7 @@ footer { background: var(--primary-deep); color: rgba(255,255,255,.9); padding: 
 .mt-4 { margin-top: 2rem; }
 .mb-4 { margin-bottom: 2rem; }
 .bg-light { background: var(--bg-2); }
-#por-que-next { background: url("../images/backgrounds/why-next-background.jpg") center / cover no-repeat; }
+#por-que-next { background: #437397; }
 #por-que-next .section-header { max-width: 980px; }
 #por-que-next .section-header .label { color: #fff; font-size: 1.125rem; }
 #por-que-next .section-header .headline { color: #fff; font-size: clamp(1.5rem, 3.12vw, 3rem); line-height: 1.02; font-weight: 800; letter-spacing: 0; text-shadow: 0 10px 26px rgba(2,6,24,.42); }
